@@ -1,0 +1,23 @@
+Best practices of json .......
+
+1.JSON  সবসময়  ১-৫ কেবি এর মধ্যে রাখতে হবে।
+২..JSON Key and value পেয়ার এ থাকবে যেমন "name":"Dip"
+3.
+   JSON ডাটা  ডাবল QOUTE এর রাখব।  KEY  Camel Case তে লেখবো কখনও Key  এর মধ্যে  hypens Use করবো না।
+
+  ডেমোঃ
+{
+    "firstName": "Jason",
+    "lastName": "Jones",
+    "address": {
+        "city": "San Francisco, CA",
+        "zip": 94121,
+        "address": "444 Columbus Ave"
+    },
+    "email": [
+        "jason@sf.com",
+        "sjones@adobe.com"
+       ]
+}
+
+4.Always create a Root element.​

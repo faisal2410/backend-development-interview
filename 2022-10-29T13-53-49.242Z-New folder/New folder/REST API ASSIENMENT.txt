@@ -1,0 +1,91 @@
+1. Rest Api Best Practices...
+	1.Using Data in Json Formet.
+	2.Using Noun Not Verbs.
+	3.Using Plurel instead of using singular.
+	4.Using Nesting
+	5.Must Write Api In US english
+	6.Filtering,Sorting,Pagination and Field Selection
+	7.Documetation
+		Properly Maintain Documentation
+	8.Using SSL/TSL
+2.HTTP Method
+	//Common HTTP methods for using Rest Api
+	1.post:Create or Search
+	2.get:read
+	3.Put:UPDATE
+	4.Delete:Delete
+	5.PATCH:Partial Update
+	HTTP STATUS CODE
+	1.INFORMATIONAL RESPONSES:101-199
+	2.SUCCESSFULL RESPONSE:200-299
+	3.REDIRECTS:300-399
+	4.CLIENT ERROR:400-499
+	5.SERVER ERROR:500-599
+	POST METHOD:
+		1.CREATE RESOURCE OPERATION
+		2.READ RESOURCE if URL/query strings exeeds maximun allowed caracters(2048/256)
+		3.Read resource if query parameter contain sensetive information
+		Return status code:
+		.201 created for sucessfull created operation
+		.200 of for successfull read operation if the response contain data
+		.204 No Content for successfull read operation if the response containes no data
+	Get Method.
+		.Read Resouce Operation
+		.Read Status Code
+			.200 ok  if the response contain data
+			.204 no content if the response contains no data
+	PUT Methos.
+		.Update Resouce Operation
+		.Return Status Code
+
+			.200 OK if the response contains data
+			.204 No Containes if the response containes no data
+	Delete Method:
+		.Delete Resource Opearation
+		.Return Status Code
+			.204 no content for successfull delete operation
+			
+	Patch Method:
+		.Partial Update Resource Operation
+		.Return Status Code.
+			.200 ok for successfull Partial update opearation
+	JSON best Practices.
+		.1.Always Use curly bracet from start to end point 
+			Example {}.
+		.2.Wrtie JSON like this
+			"name":"azam"
+		.3.never use like this
+			"name":azam
+		.4.in the json there are various kind of data can be use, like string,array,boolian,intiger.
+	Request and Response Best Practices
+		1.There are two option in request and response 
+			one is clint side and another one is server side
+			Client side sent req to server and server process the req and then send res to the client.
+		2.there are two type of client 
+			1.Browser Level Client
+			2.Aplication Level Client
+		3.Brwoser Site.
+			1.When Browser sent a request its a bit expensive why beacuse it relode the whole webpage.
+			2.But when someone use Application level req by use axiox it will be too first cause it will reduse the number of request.
+	WEB SECURITY PRACTICE:
+		1.What is web app security
+			1.Centrel component of any web-based business
+			2.Collection of security controls engeneered in webapplication
+		2.How can i my web affected.
+			1.sql injection is of the common attack that most of the web site get.
+			2.Cros Site Scripting and DDOS attack also a common attack which web applications are facing most of the time
+			3.Brokent Authintication
+			4.Broken Access Control
+			5.Security Misconfigaration
+		3.How to protect web from this attack
+			1.There are lot of libraries which some one can use to protect their website.
+				Some of them are
+				1.HELMET
+				2.CORS
+				3.HPP
+				4.REATE LIMIT
+				5.XSS-CLEAN
+				6.EXPRESS-MONGO-SANITIZE
+				7.Web Application Firewell
+		
+

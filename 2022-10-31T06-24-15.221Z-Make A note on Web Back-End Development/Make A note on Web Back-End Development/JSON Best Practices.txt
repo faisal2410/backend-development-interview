@@ -1,0 +1,20 @@
+1. Enclose within DOUBLE Quotes
+2. No Hyphens please
+3. Always create a Root element.
+4. Provide META sample
+5. Validating JSON output
+6. No comments in JSON objects.
+7. Choose meaningful property names.
+8. JSON maps can use any Unicode character in key names.
+9. Certain property names are reserved for consistent use across services.
+10. Array types should have plural property names. All other property names should be singular.
+11. Avoid naming conflicts by choosing a new property name or versioning the API.
+12. Property values must be Unicode booleans, numbers, strings, objects, arrays, or null.
+13. Consider removing empty or null values.
+14. Enum values should be represented as strings.
+15. Dates should be formatted as recommended by RFC 3339.
+16. Converting Athena data types to JSON
+17. Time durations should be formatted as recommended by ISO 8601.
+18. Latitudes/Longitudes should be formatted as recommended by ISO 6709.
+19. Keep your data structure DRY, small, and concise
+20. URL for a collection of resources be formed from the resource type

@@ -1,0 +1,111 @@
+Rest API Best Practices 
+*****What is Rest API?
+Rest  মানে হল Representational State Transfer  অর্থাৎ  প্রত্যেকটি URL  কিছু অবজেক্টকে রিপেজেন্ট কিরে। Rest এর সবচেয়ে ছোট সঙ্গা এর নামেই দেওয়া আছে "Representational State Transfer" অর্থাৎ  এটি কোন কিছুর অবস্থা বা স্টেট একটি রিপ্রেজেন্টেশন এর মাধ্যামে ক্লায়েন্ট এর মাধ্মে ক্লাইন্ট টু সার্বার এবং সার্বার টু ক্লায়েন্ট টান্সফার করে 
+Rest API নেটওয়ার্ক এ্যাপ্লিকেশন ডিজাইনের জন্য আর্কিটেকচা
+-----------------Rest API Best Practices ---------------------
+//--->>URL  এ এমন কোন নাম দেওয়া যাবে না যাতে এমম কোন action (Create, Delete,Insert,Read ,find, Update, )  কে ইশারা করে অর্থাৎ আমাদের  (URL) এ এমন নামে use করতে হবে যেতে ঐ নাম কোন action এর কাজ করে তা দেখে যেন ঐ Action এর mining  যেন প্রকাশ না পাই  কেউ বুঝতে না পারে।
+   যেমন ঃ-
+       ------ bed Way-----
+            http://abcd.con/getuser 
+            http://abcd.con/dettuser 
+            http://abcd.con/instuser 
+
+        -----Best Way------
+            http://abcd.con/user 
+            http://abcd.con/user/{id} 
+            http://abcd.con/user/{pass} 
+
+//-- একি url এ যদি একাদিক API  থাকে তখন সেখানে /(স্লেশ) ব্যবহার না করে ,(কমা ) ব্যবহার করা Best Practices ।
+ যেমন
+---------(not best And Not Bed ) Practices
+            http://abcd.con/user/{id}/{id}
+
+---------Best Practices ----------
+            http://abcd.con/user/{id},{id}
+            http://abcd.con/user/{id};{id}
+            
+//--- Query Perams ব্যবহার করে আমরা কোন কিছুকে Short/Filter করার জন্য আমরা প্রশ্নবোধক চিহ্ন ব্যবহার করে Query String  পাঠাতে পারি যেমনঃ--
+        ------------- http://abcd.con/user?fname=kamrul&lname=hasan
+
+/---  আমাদের সবসময় URL API এর নাম গুলো স ছোট অক্ষের লিখতে হবের। 
+যেমনঃ- 
+        -------- bed practices---------
+             http://abcd.con/user?fName=Kamrul&lName=Hasan
+             http://abcd.con/User?Fname=Kamrul&Lname=Hasan
+
+        -------- bed practices---------
+                 http://abcd.con/user?fName=Kamrul&lName=Hasan
+
+//-- আমাদের সবসময় লক্ষ্য রাখতে হবে যে আমাদের API তে কখনো file Extention name (.html/.xml/.php/.js/.css/.json) use করা যাবে না । এতে আমাদের web scurity জন্য ভালা না 
+// যেমন 
+      -------- bed practices---------
+             http://abcd.con/user.html
+             http://abcd.con/User.json
+             http://abcd.con/User.js
+             http://abcd.con/User.js
+             http://abcd.con/User.xml
+
+    -------- bed practices---------
+            http://abcd.con/user/{id}/user
+
+//-- আমাদের url(API)  এরে শেষে (/) ব্যাবাহার করা যাবে না 
+        -------- bed practices---------
+             http://abcd.con/user/
+             http://abcd.con/admin/
+             http://abcd.con/about/
+             http://abcd.con/user?fName=Kamrul&lName=Hasan/
+             http://abcd.con/User?Fname=Kamrul&Lname=Hasan/
+        -------- bed practices---------
+            http://abcd.con/user
+             http://abcd.con/admin
+             http://abcd.con/about
+             http://abcd.con/user?fName=Kamrul&lName=Hasan
+             http://abcd.con/User?Fname=Kamrul&Lname=Hasan
+
+--------------------API Respons Header Best practic--------------------------
+
+//--যেঁ status code গুলো আমাদেরকে মেনেজ করতে হয়  সেগুলো আমাদের   Respons Header  আবশ্যাই (status code use ) করেতে হবে 
+//-- যদি আমাদের Respons এ  কোন ফাইল থাকে তাহলে আমাদের ঐ filetype থকে বা  contentn-type --থেকে সেটিকে আমাদের Respons Header e উল্লেক করতে হবে ।
+//-- যদি Respons এ কোন cache থাকে তা সেটি eneble/disable হবে কিনা তা আবশ্যই respons header বলে দিতে হবে।
+//-- যখন Respons Header e যেঁ valu use করব তা আবশ্যই আমাদের String আকারে দিতে হবে 
+//-- আমার Respons er কতগুলো content আসবে  তা Respons content langht আবশ্যই তা বলে দিতে হবে 
+----------------------API  Respons body Best practic---------------------------
+
+//-- Header e আমারা যে status code use করি সেটা কোনভাবেই body te use করা যাবে না 
+//-- যখন আমরা Respons body te আমারা json use করব তখন আমাদের json best practic follow করতে হবে।
+//-- যকন respons body te (small data/ true&false// boolean }Data result send হবে তখন আমাদের তার জন্য json use  না করে  সেক্ষেত্রে আমাদের single String/ true/false/boolean 
+//-- যখন api থেকে json নিয়ে কাজ করব তখন সেটিকে json আকারে encoede & decode করে Respons body send করব । json valid কিনা  json যেন আলোমেলো না হয় তা ঠিক রেক্ষে নিয়া আসতে হবে ;
+//-- rest API is Stateless  তাই আমাদের ঊচিত respons cookies (don't))use না করতে চেষ্টা করা .যদি করি এতে ঐ ওয়েভ  এ্যাপ্লিকেশন  এর cookies মেনুফুলেট করে scurity low হবে 
+
+----------------------------API get Request Best practic---------------------------
+
+//-- যখন small data নিয়ে কাজ করব তখন আমাদের get Request use  করব; আবার আমাদের যখন big Data & Request file use করবা তখন আমাদের get Request use করা যাবে না । 
+//-- যখন api Request এ করে কোন action  এর কারণে আমার data change হবে না তাখন get Request use  করবে এবং যখন এমন কোন apn action এর জন্য Data(filter/insert/delete/select/find/Update/read/chnage)  হবে তখনা আমাদে get Request  ব্যবহার করতে হবে ।
+//-- যখন এমন কোন api দিয়ে কোন condition দিয়ে স্পেসাল  peramiter use করে api Request করব তখন আমাদের get() Request use ক  রতে হবে 
+
+//-- যখন আমার api Request এ ফলে কোন data change হয় তখন আমাদের Post Request use করব;
+//-- যখন body ও big Data/bynary/file নিয়ে কাজ করব তখন post Request use করতে হবে ; 
+//-- যখন কোণ dcument/ file/image/video/any file client to servar send/upload করব তখন আমাদের post Request  করতে হবে 
+//-- আমারা যখন Request body তে কোন pelot/Data পাঠাব সেতা আবশ্যই structured হতে হবে ;
+//-- Request body পাঠানো ডাটা json Arrary / Json Object pattrem আকারে পাঠাতে হবে 
+//--Request body তে যখন কন ফাইল video/adiou/image/ পাঠাব তখন সেই ফাইল type হতে হবে multiple form Data;
+//-- Request body তে authentication information related  (--sesson/ API Key/ authentication Token--) কোন data পাঠানোন যাবে না ----এই data Header এ পাঠাতে হবে ;
+//-- Header যখন কোন data পাঠাব তা আবশ্যই key-Pair আকারে পাঠাতে হবে ;
+//--  controller function সবসময় clain রাখতে হবে এবং এখানে কোন প্রকার Business logic লিখা যাবে , Business logic লেখার জন্য আমাদের সবসময় আলাদা মডেল /ক্লাস / ফাংশন এ লিখতে হবে 
+//--যখন controller বানাব তখন আমাদের তা ভার্সন করতে হবে --rest API varsion 1.0 // controller varsion 1.0  এখানে দুটি একি হতে হবে 
+//-- controller এ কাজ করা সময় আমাদের get() & post() Request  use করতের 
+// যখন controller এ get()/Post()/put()/lock()---all api Request   use  করব তা আমাদের mention করতে হবে 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+1. Include everyone in security practices
+2. Adopt a cybersecurity framework
+3. Automate and integrate security tools
+4. Follow secure software development practices
+5. Use diverse security measures
+6. Perform security exercises
+7. Maintain a bounty program
+8. Maintain Security During Web App Development
+9. Be Paranoid: Require Injection & Input Validation (User Input Is Not Your Friend)
+10. Encrypt your data
+11. Use Exception Management
+12. Apply Authentication, Role Management & Access Control
+13. Don't Forget Hosting/Service-Focused Measures
+14. Avoid Security Misconfigurations
+15.  Implement HTTPS (and Redirect All HTTP Traffic to HTTPS)
+16. Include Auditing & Logging
+17.  Use Rigorous Quality Assurance and Testing
+18. Be Proactive to Keep Up With the Bad Guys
+19. Use HTTPS protocols to increase website security
+20. Make frequent software updates
+21. Use sufficient password management
+22. Secure personal devices
+23. Ensure adequate access control measures
+24. Change the default configuration settings
+25. Make Frequent website backups
+26. Use continuous monitoring
+27. Deploy firewalls for website security
+28. Validate all user input
+29. Understand third party security issues
+30. Create a website security blueprint
+31. Setup Login Lockdown Feature
+32. Enable 2FA
+33. Disable Directory Indexing and Browsing
+34. Monitor and Test Your Site
+35. Don't reuse passwords.
+36. Be suspicious of external downloads and emails.
+37. Keep an eye on the news for security incidents.
+38. Have a crisis management and response plan.
+39. Wipe data from old technology completely.
+40.  Document all changes in your software
+41. Classify potential entry points for hackers
+42. Use penetration testing
+43. Set up your cookies
+44. Implement real-time monitoring
+45. Manage your permissions
+46. Carry Out a Full-Scale Security Audit
+47. Continuously Check for Common Web Application Vulnerabilities
+48. Implement Security Hardening Measures
+49. Keep your Website Clean
+50. Adopt a cyber security framework

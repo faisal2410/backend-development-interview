@@ -1,0 +1,57 @@
+⭐50 Interview Question on Web Back-End Development are given below:⭐
+
+What is your favorite programming language? And why?
+What do you understand by NoSQL databases? Explain.
+What is the difference between software architecture and software design?
+What is JavaScript, and why is it used?
+What is your approach to debugging?
+How would you find the most expensive queries in an application?
+What is the difference between an acceptance test and a functional test?
+Which sorting algorithm should you use and when?
+What is the meaning of “high cohesion” and “loose coupling”?
+Why should you use microservices architecture?
+Explain the difference between cohesion and coupling?
+When is refactoring useful?
+What is your experience with object-oriented programming (OOP)?
+Tell us about a time when you received criticism about your work and how you handled it.
+If you have to deliver negative feedback to members of your development team, how would you do it?
+Tell me about your favorite development project to date and what it was like from start to finish.
+What is your experience with GoTo, and do you prefer structured programming?
+Tell me about the largest web application you have ever worked on? What coding were you responsible for?
+What's your preferred type of development environment?
+Which programming languages do you want to work with and why?
+What do you think contributes to a successful project?
+How do you keep up with the latest technologies and trends?
+Can a front-end developer work on back-end development?
+Which programming language is the best for back-end development?
+What is the average salary of back-end developers?
+How did you get into coding?
+What's your greatest strength as a coder?
+If you were in charge of a tech company, how would you manage its developers?
+Tell me about a time when someone criticized your work and explain how you responded.
+How do you deliver negative feedback to members of your development team?
+Have you ever worked on a team project where you felt you were doing most of the work? How did you manage that?
+Tell me about the coding accomplishment you’re most proud of?
+What's the most challenging decision you've faced in your career?
+What’s your experience with object-oriented programming (OOP)?
+What’s your favorite programming language, and why?
+What’s your experience with GoTo, and do you prefer structured programming?
+Define the terms “stack” and “heap.” What’s a stack overflow?
+What's the difference between cohesion and coupling?
+When is refactoring useful?
+What do the terms “high cohesion” and “loose coupling” mean?
+What are the pros and cons of holding domain logic in stored procedures?
+What do you think makes object-oriented design the preferred approach?
+What do you find lacking in your favorite development language? How do you cope with those gaps?
+What do classes and closures have in common?
+When are anonymous functions useful?
+What steps would you take to use mysqldump to restore MySQL?
+Define and explain these nine server response error codes: 200, 201, 204, 301, 400, 401, 404, 409 and 500.
+If you have a limited amount of memory, how would you handle a large amount of data?
+What is your approach to debugging?
+How can you build scalability into a software program?
+Explain SQL injection.
+Differentiate between Clustered and Non-clustered indexes?
+How would you manage Web Services API versioning?
+When would you apply asynchronous communication between two systems?
+In what situation would you choose RDBMS and where would you choose NoSQL?

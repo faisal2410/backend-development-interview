@@ -1,0 +1,6 @@
+JSON practices
+
+1.Always enclose the key, value pair within double quotes. Most JSON parsers dont like to parse JSON object with single quotes
+2.Never use hypens in your key fields. Use underscores ,all lower case ,or camel case
+
+3.Use a JSON linter to confirm valid JSON

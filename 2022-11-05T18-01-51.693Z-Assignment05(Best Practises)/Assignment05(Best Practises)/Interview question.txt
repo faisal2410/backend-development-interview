@@ -1,0 +1,449 @@
+1.Differentiate between software architecture and software design.
+Software architecture refers to the program structure. As such, it can be understood as the bare skeleton of a program. Software design refers to the actual implementation of the code for the software requirements. So, software architecture can be considered as the program blueprint and software design can be considered as the process of how to build the program.
+
+2.Talk about continuous integration and continuous delivery.
+Continuous integration and continuous delivery are two interconnected software engineering processes. Continuous integration is a process that takes place in an ongoing manner to ensure that the program is built and tested regularly. Continuous delivery, on the other hand, is the ongoing development process that takes place in the latter part of the program lifecycle just before the production
+
+3.How can you build scalability into a software program?
+Scalability is an important aspect to be considered for enhancing productivity, especially concerning higher user demands and adaptation of functions and elements to higher amounts of user data. To determine the lifetime value of a software program, one must check its scalability. Lack of scalability warrants the need for rewriting the application with a new tech stack that adapts to the growth in audience. The scalability of a program can increase with features like cache, states, API, sort, and asynchronous programming. Moreover, tools like databases and frameworks have greater scalability than some others.
+
+4.Why is Microservices architecture used?
+Microservices architecture is characterized by integrating several small but independently deployable services into one application. It makes the operation more versatile as different programming languages can be used for writing individual services. Thus, different languages can be leveraged for different services. Maintenance is also easier as, even though the services are integrated, they are loosely connected. The microservices architecture model works well with and is preferred by larger teams, however, it may not be completely free of challenges like debugging.
+
+5.What are NoSQL databases?
+With the increase in big data, the internet has become a complex place. NoSQL databases help solve this problem. The NoSQL databases are neither traditional nor relational database management systems. NoSQL stands for ‘Not Only SQL’.
+
+6.Mention different types of NoSQL databases.
+Types of NoSQL databases include:
+-Graph
+-Key-Value
+-Document Oriented
+-Column Oriented
+
+7.Differentiate between acceptance and functional tests.
+The differences are as follows:
+
+Functional testing: Functional testing is done to verify whether the product, especially the application, is working as required or not. It ascertains whether the created software meets the business needs.
+
+Acceptance testing: Acceptance testing is done to validate whether or not you built the right product. It validates that the product meets the customer’s needs. Acceptance tests ascertain that the user (customer) is actually benefiting from the product and is using it for the purpose it was meant for.
+
+
+8.Mention some performance testing steps.
+Below are some performance testing steps:
+
+-Determine the environment for testing
+-Finalize what performance metrics to use
+-Create a plan and design for the performance test
+-Configure the environment for the test
+-Implement the design for the test
+-Execute the performance tests
+-Conduct test analysis, create test report, and advise retest for underperforming applications
+
+
+9.Explain SQL injection.
+An SQL injection can destroy the database by injecting malicious code or hack your database by injecting a hacking code. This occurs because there is little separation between the program code and the user input. SQL injection is a common type of injection attack on databases.
+
+
+10.Mention some advantages of Web Services.
+Web Services have the following advantages:
+
+-Interoperability: Web services can be accessed over the network and run using HTTP/SOAP protocols. For transporting data, web services use XML/JSON, thus, they can be rendered using different programming languages. For example, a web service that is written in Java is accessible over the network, runs on HTTP/SOAP protocol, and uses XML/JSON to transport data, hence it can be developed in any programming language. Web service can be written in java programming with PHP as the client and vice versa.
+-Reusability: Many client applications can use the same web service at the same time.
+-Loose Coupling: Web services client code does not depend on server code, thus, loose coupling is possible in the application.
+-It is easy to deploy and integrate, exactly like web applications.
+-Several versions of the service can run at the same time.
+
+
+11.Differentiate between Clustered and Non-clustered indexes?
+A Clustered index physically stores the rows on the disk in the order they appear on the index. Thus, only one Clustered index is possible. A Clustered index tells the database to store values that are close next to one another on the disk.
+
+
+12.Explain what are the key responsibilities of a Web Developer?
+-Program test and debug all web applications
+-Design, develop, test and deploy web applications
+-Uploading sites onto server and registering it with different search engines
+-Coordinate with other designers and programmers to develop web projects
+-Fix bugs, troubleshoot and resolve problems
+-In case of system failure initiate periodic testing and implement contingency plans
+-Develop appropriate code structures to solve specific tasks
+-Support and assist in the upkeep and maintenance of websites
+-Assume ownership of code throughout staging, development, testing and production
+
+
+13.What web developer should know?
+Html,css,js,react,node js,mongodb
+
+14.Explain what is CORS? How does it work?
+Cross-Origin Resource Sharing is a mechanism that enables many resources on a web page to be requested from another domain outside the domain from which the resource originated.  It is a mechanism supported in HTML5 that manages XMLHttpRequest access to a domain different.
+
+
+15.List out the advantage of HTTP/2 as compared with HTTP 1.1?
+The advantage of HTTP/2 compared to HTTP/1.1 is
+
+-HTTP headers data compression
+-Server push technologies
+-Over a single TCP connection parallel loading of page elements
+-Prioritization of request
+
+
+
+16.Explain what is an ETag and how does it work?
+An ETag is an opaque identifier allocated by a web server to a specific version of a resource found at a URL.  The ETag is a part of HTTP, the protocol for the world wide web and when the server reads the ETag from client request, the server can then tell whether to send the file (HTTP 200) or tell the client just to use their local copy (HTTP 304).
+
+
+17.Explain what is long polling?
+Long polling is a web application development pattern used to emulate pushing data from the server to the client.  When the long polling is used, the client sends a request to the server, and the connection remains intact until the server is ready to send data to the client. The connection will be closed only after the data is sent back to the client or connection timeout occurs.
+
+
+18.Explain what is DTD (Document Type Declaration)?
+A DTD means Document Type Definition (DTD) which defines the structure, legal elements and attributes of an XML document.
+
+
+19.Mention what is the difference between CDATA and PCDATA in DTD?
+-PCDATA: A PCDATA is a Parsed Character Data. XML parsers usually parse all the text in an XML document.
+-CDATA: While CDATA is an Unparsed Character Data, the term CDATA is used about text data that should not be parsed by the XML parser.
+
+
+20.Mention some tips you can use to reduce the load time of a web application that you have written?
+To decrease the load time of a web application you have to follow the following tips
+
+-Optimize images to no longer than screen resolution and save it as a compressed file
+-Eliminate all JavaScript files to reduce the amount of transferable data
+-Combine & Mininify all CSS and JS and call them in footer
+-Defer or Asynch JS Files
+
+
+
+21.Mention what is the correct way to include JavaScript into your HTML?
+The correct way to include JavaScript into your HTML is by using inline event handlers or inline code.
+
+
+22.Explain in CSS, how can you make a form element’s background color change when the user is entering text? Does this work in all browsers?
+Yes, you can change the default look of form elements by styling their HTML tags: input, select and text area but it won’t work for all browsers.
+
+
+23.Explain what is the difference between cookies and local storage?
+Cookies :
+-Data accessible both at client side and server side. The data is sent to the serverside with every cookie request.
+-Storage capacity of cookies is 4095 bytes/cookie-
+-Cookies have expiration and cookie data gets deleted after some time
+
+Local Storage:
+-Only at the local browser side data is accessible. Server cannot use local storage until deliberately sent a request to the server via POST or GET
+-Storage capacity of local storage is 5MB per domain
+-There is no expiration and has to remove manually
+
+
+
+24.In HTML what tag can be used for a multi-line text input control?
+For multi-line text input control, you can use the “textarea tag”.
+
+
+
+25.Explain how can you refer to CSS file in the web page?
+You can refer to the .CSS file in the webpage by using the <link> tag.  It should be kept between <head></head>tag.
+
+
+26.List out few ways you can reduce page load time?
+You can do following things to reduce the page load time
+
+-Reduce image size
+-Remove unnecessary widgets
+-HTTP compression
+-Placing CSS at the top and script reference at the bottom or in external files
+-Reduce lookups
+-Minimize redirects
+-Caching
+
+
+27.In HTML mention the difference between <div> and <frame>?
+Frame
+-With frames, you can show more than one HTML document in the same browser window
+-The frame tag declares one particular window within a frameset
+- Frames can load other resources using HTML
+
+Div:
+-The <div> tag defines a division or a section in an HTML document
+- The <div> is used to group block-elements to format them with styles
+-On the other hand page, divisions can serve local content in the manner of the frames, but that content is not independent of the page though
+
+
+
+28.How XHTML is different from HTML?
+-XHTML requires that all tags should be in lowercase
+-XHTML requires that all tags should be closed properly
+-XHTML requires that all attributes are enclosed in double quotes
+-XHTML forbids inline elements from containing block level elements
+
+
+
+29.List out the new APIs provided by HTML 5 standard?
+-HTML 5 comes with number of new APIs
+-Media API
+-Text track API
+-Application Cache API
+-Data transfer API
+-User Interaction
+-Command API
+-Constraint Validation API
+-History API
+
+
+
+30.What are the Success Factors for Successive Integration?
+Success factors for successive integration are-
+
+-Maintain a code repository
+-Automate the build
+-Make the build self-testing
+-Everyone commits to the baseline every day
+-Every commit (to baseline) should be built
+-Try to keep the build fast
+-Test in a clone of the production environment
+-Make it easy to get the latest deliverables
+-Automate deployment
+
+
+31.Explain DevOps?
+DevOps is a newly emerging term in the IT field, which is nothing but a practice that emphasizes the collaboration and communication of both software developers and other information technology (IT) professionals. It focuses on delivering software products faster and lowering the failure rate of releases.
+
+
+32.What is the Difference Between “Git Pull” and “Git Fetch”?
+In the simplest terms, git pull does a git fetch followed by a git merge.
+
+-When you use pull, Git gets the message to automatically do your work for you. It is context-sensitive, so Git will merge any pulled commits into the branch you are currently working in. pull automatically merges them without giving you any chance to review it first. If you don’t manage your branches with a keen eye, you may be face to face with many problems.
+-When you fetch, Git gathers any commits from the target branch that do not exist in your current branch and stores them in your local repository. However, it does not merge them with your current branch. This is particularly useful if you need to keep your repository up to date, but are working on something that might break if you update your files. To integrate the commits into your master branch, you use merge.
+
+
+
+33.What is Callback Hell?
+The asynchronous function requires callbacks as a return parameter. When multiple asynchronous functions are chained together then a callback hell situation comes up.
+
+
+
+34.What is CORS?
+CORS, abbreviation for Cross-Origin Resource Sharing, is a process used to gain the authority of different web resources on different domains.
+
+
+
+35.What is Multi-Threading?
+The process of improving the performance of the CPU is known as Multi-Threading. Usually, it is seen as the ability of a program to be managed by multiple users at a single time.
+
+
+
+36.What is Continuous Integration?
+ Continuous Integration is the process of implementation of codes that are specially designed & automated for testing. During the time of production, it helps the developers to apply the codes simply. Web developers prefer this process for the integration of codes many times a day. Continuous Integration helps in detecting errors quickly and locating them more easily.
+
+
+
+37.What are the Advantages and Disadvantages of Using “use strict“?
+“use strict” is a statement that is used to enable strict mode to entire scripts or individual functions. Strict mode is a way to opt in to a restricted variant of JavaScript.
+
+Advantages-
+
+-It makes it impossible to create global variables by mistake.
+--Makes assignments that would otherwise silently fail to throw an exception.
+-Makes attempts to delete undeletable properties throw (where before the attempt would simply have no effect).
+-It is mandatory that the function parameter name should be unique.
+-this is undefined in the global context.
+-It catches some common coding bloopers, throwing exceptions.
+-It stops the functioning of features that are confusing.
+Disadvantages-
+
+-A lot of features that most of the developers might be used to are absent.
+-No more access to function.caller and function.arguments.
+-The concatenation of scripts written in different strict modes might cause issues.
+
+
+
+
+38.What do you think of AMD vs CommonJS?
+Both are ways to implement a module system, which was not natively present in JavaScript until ES2015 came along. CommonJS is synchronous while AMD (Asynchronous Module Definition) is obviously asynchronous.
+
+
+
+
+
+39.Explain Prototype Inheritance in Javascript?
+In a language implementing classical inheritance like Java, C#, or C++ you start by creating a class–a blueprint for your objects – and then you can create new objects from that class or you can extend the class, defining a new class that augments the original class.
+
+In JavaScript you first create an object (there is no concept of class), then you can augment your own object or create new objects from it.
+
+Every object in Javascript has a prototype. JavaScript’s inheritance system is based on prototypes, and not class-based. When a message reaches an object, JavaScript will make an attempt to find a property in that object first. If it cannot find it, then the message will be sent directly to the object’s prototype, and so on. That behavior called prototype chain or in many places, prototype inheritance.
+
+
+
+
+40.What is Pair-Programming?
+Pair Programming is one of the core elements of extreme programming in which two developers are required to work on the same terminal.
+
+
+
+41.What is Long Polling?
+Long Polling is a pattern in web development that is used to improve pushing data from the server to the client. By using a Long Polling pattern, the Client requests information from the server.
+
+
+
+42.Explain the difference between REST and GraphQL
+The main and most important difference between REST and GraphQL is that GraphQL does not deal with dedicated resources. Instead, everything is considered as a graph and therefore is connected and can be queried to app exact needs.
+
+
+
+43.What is Event Loop?
+Node.js is a single-threaded application but it supports concurrency via the concept of event and callbacks. As every API of Node js is asynchronous and is a single thread, it uses async function calls to maintain the concurrency. Node uses an observer pattern.
+
+Node thread keeps an event loop and whenever any task gets completed, it fires the corresponding event which signals the event listener function to get executed.
+
+
+
+
+44.Explain the purpose of clearing floats in CSS.
+The clear CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
+
+Clearing floats (or clear fixing) basically force the containing element to expand to contain its child elements. Thus, it forces the subsequent elements to appear below it.
+
+
+
+45.How can you share code between files?
+This depends on the JavaScript environment.
+
+On the client (browser environment), as long as the variables/functions are declared in the global scope (window), all scripts can refer to them. Alternatively, adopt the Asynchronous Module Definition (AMD) via RequireJS for a more modular approach.
+
+On the server (Node.js), the common way has been to use CommonJS. Each file is treated as a module and it can export variables and functions by attaching them to the module.exports object.
+
+ES2015 defines a module syntax that aims to replace both AMD and CommonJS. This will eventually be supported in both browser and Node environments.
+
+
+
+
+46.What is Temporal Dead Zone in ES6?
+In ES6 let and const are hoisted (like var, class and function), but there is a period between entering scope and being declared where they cannot be accessed. This period is the temporal dead zone (TDZ).
+
+
+
+47.What is the difference between a blue/green deployment and a rolling deployment?
+-In Blue/Green Deployment, you have TWO complete environments. The Blue environment is the one that is running and the Green environment is the one to which you want to upgrade. Once you swap the environment from blue to green, the traffic is directed to your new green environment. You can delete or save your old blue environment for backup until the green environment is stable.
+-In Rolling Deployment, you have only ONE complete environment. The code is deployed in the subset of instances of the same environment and moves to another subset after completion.
+
+
+
+
+48.What are the disadvantages of GraphQL?
+Disadvantages of GraphQL are:
+
+-You need to learn how to set up GraphQL. The ecosystem is still rapidly evolving so you have to keep up.
+-You need to send the queries from the client, you can just send strings but if you want more comfort and caching you’ll use a client library -> extra code in your client
+-You need to define the schema beforehand => extra work before you get results
+-You need to have a GraphQL endpoint on your server => new libraries that you don’t know yet
+-Graphql queries are more bytes than simply going to a REST endpoint
+-The server needs to do more processing to parse the query and verify the parameters
+
+
+49.What is an event loop in Node.js? 
+Ans – In general, an event loop is a mechanism that expects and dispatches events or messages in a program. In Node.js, event loops are central flow constructs.
+
+For example, whenever a request needs to be processed, it is inserted into the event loop and processed as soon as it is ready to be processed. 
+
+Rather than doing it alone, the node delegates responsibility for managing the system. Because of this behavior, Node does not actively wait for this task to complete and can process other requests in the meantime.
+
+
+
+50.What is Docker?
+Ans – Docker is an easy way to run virtual machines on your local machine or in the cloud. While they are not strictly separate machines and do not require an operating system to boot, they offer many of these benefits.
+
+Docker can encapsulate legacy applications, allowing them to be deployed to servers that would otherwise not be easy to configure with older software packages and versions. 
+
+Docker can be used to create test blocks during deployment to facilitate ongoing integration testing. Docker can be used to provision boxes in the cloud, and with the swarm, you can also manage clusters.
+
+
+
+
+51.What is a RESTful API?
+Ans – The term REST represents Representational State Transfer. It is a compositional style that is utilized to make Web Services. It utilizes HTTP solicitations to access and utilize the information. We can make, update, read, and erase information.
+
+An API (Application Program Interface) for a site is the code that permits two programming projects to speak with one another. It permits us to compose mentioning administrations from a working framework or other application.
+
+
+
+
+
+52.What is Closure? Give an example.
+Ans – Closures are made at whatever point a variable that is characterized external the current extension is gotten to from inside some inward degree. 
+
+It gives you admittance to an external function’s degree from an internal capacity. In JavaScript, Closures are made each time a capacity is made. To utilize a conclusion, essentially characterize a function inside another function and uncover it.
+
+
+
+
+
+53.Explain the concept of the index?
+Ans –  An index is used to perform tuning in queries. which can be created to increase the performance of data retrieval. The index can be created on one or more columns of a table.
+
+
+
+
+54.What is a connection leak in Java and how can we fix it?
+Ans – In Java, a connection leak is a situation when the developer forgets to close the JDBC connection, it is known as a connection leak. 
+
+The most common type of Connection Leak experienced in Java development, is when using a Connection Pool (such as DBCP). We can fix it by closing the connection and giving special attention to the error handling code.
+
+
+
+
+55.Name a few Full Stack developer tools?
+Ans – Some of the popular tools used by full-stack developers to make development more accessible and efficient are:
+
+Backbone
+Visual Studio Code
+WebStorm
+Slack
+Electron
+TypeScript
+CodePen
+GitHub
+
+
+
+
+56.Which technologies and languages would you need to develop a project from scratch?
+Ans- This is a hypothetical question geared at understanding the level at which the hiring manager will gauge your readiness to start the job.
+
+ It is an easy way to distinguish a good full-stack developer from someone who is an amateur. People who have difficulty transmitting their thoughts will have bleak chances of getting through at this point.
+
+
+
+
+
+
+57.How is multithreading used?
+Ans – The main purpose of multithreading is to provide multiple threads of execution concurrently for maximum utilization of the CPU. It allows multiple threads to exist within the context of a process such that they execute individually but share their process resources.
+
+
+
+
+
+58.What is the Observer pattern?
+Ans – The purpose of the Observer pattern is to define a one-to-many dependency between objects, as when an object changes the state, then all its dependents are notified and updated automatically. 
+
+The object that watches on the state of another object is called the observer, and the object that is being watched is called the subject.
+
+
+
+
+59.What do you mean by data attributes and why is it used? 
+Ans – HTML 5 has “data-*” which are custom attributes defined by the developer. They are used when any existing character is not suitable to be used. These attributes are only used on the page they are written on, and they do not need Ajax calls.
+
+These are Global attributes, so they can be applied to any element.
+
+
+
+
+
+60.What are the two phases committed in the database? Explain 
+Ans – Two-phase Commit (2PC) is the feature of transaction processing systems that enable databases to return to the pre-transaction state if an error condition occurs. 
+
+The two-phase commit strategy is designed to make sure that either all the databases are updated or none of them is updated. As a result, the databases remain synchronized.
+
+
+
+

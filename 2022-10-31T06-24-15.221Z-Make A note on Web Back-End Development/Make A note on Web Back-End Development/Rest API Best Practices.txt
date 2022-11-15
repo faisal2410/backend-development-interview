@@ -1,0 +1,20 @@
+1. Use JSON as the Format for Sending and Receiving Data
+2. Use Nouns Instead of Verbs in Endpoints
+3. Name Collections with Plural Nouns
+4. Use Status Codes in Error Handling
+5. Use Nesting on Endpoints to Show Relationships
+6. Use Filtering, Sorting, and Pagination to Retrieve the Data Requested
+7. Use SSL for Security
+8.  Be Clear with Versioning
+9. Provide Accurate API Documentation
+10. Handle errors gracefully and return standard error codes
+11. Allow filtering, sorting, and pagination
+12. Maintain good security practices
+13. Cache data to improve performance
+14. Versioning our APIs
+15. Prioritize Nouns over Verbs in URI
+16. Prefer using Plural naming conventions
+17. Utilize Resource Nesting Efficiently
+18. Data Filtering options
+19. Utilize SSL/TLS security layers
+20. Focus on Error Handling

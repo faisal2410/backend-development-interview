@@ -1,0 +1,52 @@
+******** Rest API Http Methods Best Practices ********
+
+
+Basically, for CRUD operations (Create, Retrieve, Update and Delete) we can use the HTTP methods as follows:
+
+    i. POST: create resource or search operation
+    ii. GET: read resource operation
+    iii. PUT: update resource operation
+    iv. DELETE: remove resource operation
+    v. PATCH: partial update resource operation
+
+
+i. API end point with POST method:
+Used mainly for Create resource operations, or Read operations in some certain cases:
+
+    * Read resource if URL / query string exceeds maximum allowed characters. Maximum length of URL and query string is 2,048 characters.
+    *. Read resource if query parameters contain sensitive information
+
+Return status code:
+    * 200 OK for successful read operation if the response contains data
+    * 201 Created for successful create operation
+    * 204 No Content for successful read operation if the response contains NO data
+
+
+ii. API end point with GET method:
+Used primary for Read resource operations.
+
+Return status code:
+    * 200 OK if the response contains data
+    * 204 No Content if the response contains no data
+
+
+iii. API end point with PUT method:
+Used for Update resource operations.
+
+Return status code:
+    * 200 OK if the response contains data
+    * 204 No Content if the response contains no data
+
+
+iv. API end point with DELETE method:
+Used for Delete resource operations.
+
+Return status code:
+    * 204 No Content  for successful delete operati
+
+
+v. API end point with PATCH method:
+Used for Partial update resource operations.
+
+Return status code:
+    * 200 OKfor successful partial update operation.

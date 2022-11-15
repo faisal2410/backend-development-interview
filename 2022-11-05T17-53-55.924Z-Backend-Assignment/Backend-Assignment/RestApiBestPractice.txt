@@ -1,0 +1,123 @@
+------------------------------------------API End Naming Best Practice---------------------------------------
+
+1) URIs as resources as nouns:
+-------------------------------
+One of the most recognizable characteristics of REST is the predominant use of nouns in URIs. Restful URIs should not indicate any kind of CRUD functionality.Instead , REST APIs should allow you to manipulate a resource.
+example: /users/{id} instead of /getUser
+
+2)Forward slashes for hierarchy:
+---------------------------------
+Forward slashes are conventionally used to show the hierarchy between individual resources and collections .
+
+example: /users/{id}/address   clearly falls under the /users/{id} resource which falls under the /users collection.
+
+3)Punctuation for lists:
+-------------------------
+When there is no hierarchial relationship (such as in lists), punctuation marks such as the semicolon, or more frequently, the comma should be used.
+
+example: /users/{id1}/{id2} to access multiple user resources.
+
+4) Query parameter where necessary:
+------------------------------------
+In order to sort or filter a collection, a REST API  should allow query parameters to be passed in the URI.
+
+example: /users?location=USA to find all users living in the United States
+
+5) Lowercase letters and dashes:
+---------------------------------
+By conventiuon, resource names should use exclusively lowercase letters. Similarly, dashes (-) are conventionally used in place of underscores (_).
+
+example: /users/{id}/pending-orders instead of /users/{id}/Pending_Orders
+
+6)No file extensions :
+Leave file extensions (such as .cml) out of your URIs. We are sorry to say it, but they're ugly and add length to URIs. If you need to specify the format of the body, instead use the Content-Type header
+
+example: /users/{id}/pending-orders instead of /users/{id}/pending-orders.xml
+
+7)No trailing forward slash:
+-----------------------------
+Similarly, in the interests of keeping URIs clean, do not add a trailing forward slash to the end of URIs.
+
+example: /users/{id}/pending-orders instead of /users/{id}/pending-orders/
+
+
+-------------------------------------------API Response Best Practice---------------------------------------
+
+1) Response Header:
+---------------------
+          =>Provide proper http response status code.
+		  =>Provide proper content-type, file type if any.
+		  =>Provide cache status if any.
+		  =>Authentication token should provide via response header.
+		  =>Only string data is allowed for response header.
+		  =>Provide content length if any.
+		  =>Provide response date and time.
+		  =>Don't Use Verbs in URLs.
+
+2) Response Body:
+-------------------
+          => Avoid providing response status, code , message via response body.
+		  => Use JSON best practice for JSON response body.
+		  => For Single result , can use String , boolean directly.
+		  =>Provide proper JSON encode-decode before writing JSON body.
+		  
+3)Response Cookies:
+---------------------
+          =>A Restful API may send cookies just like a regular Web Application that serves HTML.
+		  =>Avoid using response cookies as it is violate stateless principal.
+		  =>If required use cookie encryption, decryption and other policies.
+		  
+
+----------------------------------------API Request Handling Best Practice---------------------------------------
+
+1)When use get():
+------------------
+		  =>Get is used to request something from server with less amount of data to pass.
+		  =>When nothing should change on the server because of your action.
+		  =>When request only retrives data from a web server by specifying parameters.
+		  =>Get method only carries request url & header not request body.
+
+
+2)When use Post():
+--------------------
+			=>Post should be used when the server state changes due to that action.
+			=>When request needs its body, to pass large amount of data.
+			=>When want to upload documents , images , video from client to server.
+
+3)Request Body:
+-----------------
+			=>Request body should be structured in JSON Array/ Object pattern.
+			=>Request body hold multipart / form-data like images , audio, video etc.
+			=>Request body should not hold any auth related information.
+			=>Request body associated with specific request data model, setter , getter can used for this .
+			
+4)Request Header:
+-------------------
+			=>Request Header should carry all security related info, like token, auth etc.
+			=>Only string Key: Pair value is allowed for header.
+			=>Request header should provide user agent info. of client application.
+			=>If necessary CSRF/XSRF should provide via header.
+			=>Request header should associated with middleware controller, where necessary.
+
+
+5)API controller best practice:
+----------------------------------
+			=>The controller should always be as clean as possible . We shouldn't place any business logic inside it .
+			=>controllers should be responsible for accepting http request.
+			=>consider api versioning .
+			=>use async/await if at all possible .
+			=>Follow solid principals to manage controller classes.
+			=>Mention which method is responsible for get() and which for post().
+			=>controller should be only responsible for calling model, return response , redirect to action etc.
+			
+6) Middleware Uses:
+----------------------
+			=>Use to implement API key, user agent restriction , CSRF/XSRF security, token based API auth.
+			=>use to implement API request rate limit.
+			=>Logging of incoming Http requests .
+			=>redirecting the users based on requests .
+			=>Middleware can inspect a request and decorate it , or reject it, based on what it finds.
+			=>Middleware is most often considered separate from your app. logic.
+			=>Middleware gives you enough freedom to create your own security mechanism.
+			
+			

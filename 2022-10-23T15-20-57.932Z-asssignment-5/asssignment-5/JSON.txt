@@ -1,0 +1,38 @@
+🌟 What is JSON? : 
+
+    JSON is an incredibly popular data format that is easy for humans and computer to read and write.JavaScript Object Notation (JSON) is a data format that was built to be easily readable for both humans and computers. It has become the most popular way for applications to exchange data, and its most commonly encountered when working with APIs.JSON is no doubt a flexible way to share data across systems. But that doesn’t mean JSON can be created any way.
+    JSON is a data interchange format that is easy to parse and generate. JSON is an extension of the syntax used to describe object data in JavaScript. Yet, it’s not restricted to use with JavaScript. It has a text format that uses object and array structures for the portable representation of data. All modern programming languages support these data structures, making JSON completely language independent.
+
+
+🌟🌟 Best Practices Summary :
+
+        1. Publish data using developer friendly JSON.
+        2. Use well-known identifiers when describing data.
+        3. Cache JSON-LD Contexts.
+        4. Use a top-level object.
+        5. Use native values.
+        6. Assume arrays are unordered.
+        7. Provide one or more types for JSON objects.
+        8. Identify objects with a unique identifier.
+        9. Provide a representation of the entity related by URL.
+        10. External references should use typed term.
+        11. Nest referenced inline objects.
+        12. Things not strings.
+        13. When describing an inverse relationship, use a referenced property.
+        14. Enclose within DOUBLE Quotes(" ").
+        15. Never use Hyphens (-) in your Key fields.
+        16. Instead of Hyphens use underscores (_).
+        17. Always create a Root element.
+        18. The data are in key, value pairs.
+
+
+🌟🌟🌟 the Benefits of JSON :
+
+        1. Compact, efficient format: JSON syntax offers easy parsing of data and even faster implementation.
+        2. Easily readable: Both humans and computers can quickly interpret the syntax with minimal errors.  
+        3. Broadly supported: Most languages, operating systems, and browsers can consume JSON out of the box, which allows JSON to be used without compatibility concerns.
+        4. Self-describing: It’s easy to distinguish between data types and makes it easier to interpret the data without knowing what to expect ahead of time.
+        5. Flexible format: JSON supports a wide range of data types that can be combined to express the structure of most data.  
+
+
+================================== THE END ===============================

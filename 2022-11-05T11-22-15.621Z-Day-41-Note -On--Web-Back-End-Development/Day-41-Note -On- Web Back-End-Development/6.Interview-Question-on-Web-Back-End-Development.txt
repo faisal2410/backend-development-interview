@@ -1,0 +1,279 @@
+*** Interview Question on Web Back-End Development ***
+
+
+01. What is npm?
+NPM is a packages manager used in he NodeJs environement. As a rule this software is installed on the user's PC together with other parts of NodeJs.
+
+
+02. Is it free to use NodeJs?
+Yes, it's a free and open-source project available on Github.
+
+
+03. What differences are between AngularJs and NodeJS?
+Node is the environement which requires installation, while Angular is the framework which can be added by stoke in code. That's why Angular is used mostly in front-end and web-apps development, while Node is better for back-end and hard-weight applications. And as Angular is the framework it uses only JavaScript, while Node has components written on C++ together with C and JavaScript.
+
+
+04. What differences are between JavaScript and NodeJS?
+JavaScript is a programming language. It's widely used for web front-end development, web back-end development, Mobile apps development. On the other hand, NodeJs is JavaScript runtime whic can communicate with server. It stablish a connection between Client side and Server side.
+
+
+5. What are the advantages and disadvantages of using Node.js?
+Advantages of Node.js:
+    * Hight-performance for Real-time Applications
+    * Easy Scalability for Modern Applications
+    * Cost-effective with Fullstack JS
+    * Community Support to Simplify Development
+    * Easy to Learn and Quick to Adapt
+    * Helps in building Cross-functional Teams
+    * Improves App Response Time and Boosts Performance
+    * Reduces Time-to-Market of your applications
+    * Extensibility to Meet Customized Requirements
+    * Reduces Loading Time by Quick Caching
+    * Helps in Building Cross-Platform Applications
+
+Disadvantages of Node.js:
+    * Reduces performance when handling Heavy Computing Tasks
+    * Node.js Asynchronous Programming Model makes it difficult to maintain code
+    * Node.js invites a lot of code changes due Unstable API
+    * Choose Wisely - Lack of Library Support can Endanger our code
+    * Hight demand with few Experienced Node.js Developers
+
+
+06. How to work with directories in the Node.js?
+Module fs which realize interaction in Node.js allow sync and async operations with folders. To create and delete files in synchronous mode ther are fs.mkdirSync() and fs.unlinkSync() methods, while in async these can be done with fs.mkdir() and fs.unlink(). To get a list of files in al folder can be used synchronous method fs.readdirSync() or Asynchronous method fs.readdir().
+
+
+07. How to work with files in Node.js?
+In Node.js input/output operations are realized in the fs module, which support synchronous and asynchronous operations.
+
+Key commands for sync interaction with files:
+    * fs.writeFileSync(file, data, option) - create "file" with "data"
+    * fs.unlinkSync(path) - delete file located on "path"
+    * fs.readFileSync(path, option) - open and read file on "path"
+
+Key commands for async interaction with files:
+    * fs.writeFile(file, data, options, callback) - creation "file" with "name"
+    * fs.unlink(path, callback) - file deletion located on "path"
+    * fs.readFile(path, option) - open and read file on "path"
+
+
+08. Is Node a single threaded application?
+Yes, because it was developed for asynchronous operations, which as expected doesn't require multiple threads.
+
+
+09. Can you explain what a REST API is in context with the MERN stack?
+A REST API is an application programming interface that uses HTTP requests to GET, PUT, POST, DELETE data. It is often used in conjunction with the MERN stack, as the MERN stack includes a MongoDB database which can be easily accessed and manipulatde using a REST API.
+
+
+10. What are the key advantages of using MongoDB over MySQL or PostgreSQL?
+MongoDB is a powerful document-oriented database system that offers many advantages over traditional relational database management systems such as MySQL or PostgreSQL. MongoDB is highly scalable and can be easily sharded to support large scale data processing. It also has a rich query language that makes it easy to work with data stored in MongoDB. Additionaly, MongoDB offers built-in replication and high availability, making it a great for mission-critical applications.
+
+
+11. What is “Namespace” in MongoDB?
+MongoDB stores BSON (Binary Interchange and Structure Object Notation) objects in the collection. The concatenation of the collection name and database name is called a namespace.
+
+
+12. Does MongoDB support primary-key, foreign-key relationship?
+No. By Default, MongoDB doesn't support primary key-foreign key relationship.
+
+
+13. In which language MongoDB is written?
+MongoDB is wriiten and implemented in C++.
+
+
+14. Why Use MongoDB?
+    * Document Oriented Storage - Data is stored in the form of JSON style documents.
+    * Index on any attribute
+    * Replication and high availability
+    * Auto-sharding
+    * Rich queries
+    * Fast in-place updates
+    * Professional support by MongoDB
+
+
+15. What is REPL in Node.js?
+REPL stands for Read Eval Print Loop and it represents a computer environement like a Windows console o Unix/Linux shell where a command is entered and the system responsds with an output in an interactive mode.
+
+
+16. What is the purpose of module.exports?
+The main purpose of module.exports is to achieve modular programming. Modular programming refers to separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
+
+
+17. What is a package.json file?
+In package.json we keep all details of the projects that hold various metadata relevant to the project. Linke description, dependencies, license, and apm packages. Without this file, our project will not work.
+
+
+18. Okay you are saying nodejs is a single-threaded than how node js is fast? Bcoz single-threaded only handle one request at a time.
+NodeJs used an event loop that handles the asynchronous task. The event loop makes our program nonblocking. We can handle multiple request at a time in parllel. That's the reason nodeJS is fast.
+
+
+19. When to use NodeJS and when not?
+We can build an application when our tast is like a chatbot, streaming, IOT based. And when we need dedicate time to the CPU then we shouldn't use NodeJS as we know NodeJS js single-threaded.
+
+
+20. What is the difference between NodeJS and PHP?
+    * NodeJS is a JavaScript runtime environement and PHP is used in the backend.
+    * Performance of NodeJS is faster than PHP.
+    * NodeJS is asynchronous and PHP is synchronous.
+    * PHP is a web-oriented, wide range of applications we can build using NodeJS.
+
+
+21. Explain callback hell?
+In callback hell, each callback function takes an argument and becomes a complex nested callback. Like pyramid structure.
+
+
+22. What is setTimeOut/clearTimeOut?
+We use it for delays in code execution.
+
+
+23. What is setInterval/clearInterval?
+Run code block multiple times.
+
+
+24. Does NodeJS provide debugger?
+Yes built nodejs debugger to debug node js App.
+
+
+25. Is it possible to access DOM in NodeJS?
+No.
+
+
+26. How can you generate random otp using crypto?
+crypto.random(1000, 9999). Every time we will get a different OTP.
+
+
+27. How can you generate random secret key using crypto?
+create.randomBytes(64).toStringS('hex');
+
+
+28. What you used for authentication purpose?
+JSON Web Toke(JWT).
+
+
+29. What is DTO in expressJS?
+DTO data tranform object whatever you want to send to client-side from DB just those data will be shown in the front end from the server.
+
+
+30. Will cookies send to the front end in every request?
+Yes. This is the special thing about cookies we get the cookie in every request from the server.
+
+
+31. What is middleware in express?
+Middleware plays an important role in any web application. Middlewares are the functions that work like a door between twor or more routes.
+
+
+32. What is  the purpose of next() in middleware?
+If everything is ok then the request will proceed to the route if not next() function will be not called.
+
+
+33. HTTP Status code mostly we used.
+    i. 400 - bad request (when we type wrong url)
+    ii. 401 - unauthorized (e.g wrong password)
+    iii. 403 - forbidden (access that page we can't access)
+    iv. 404 - not found (when page  dlelted from the server)
+    v. 500 - internal srver error
+    vi. 502 - bad gateway (internet get the invalid response from the other server)
+    vii. 503 - server unavailable
+    viii. 504 - gateway timeout
+    ix. 200 - ok (request successfully created)
+    x. 201 - created (new resources successfully created)
+
+
+34. What is expres js?
+    * Express js is a framework o NodeJS.
+    * Non-blocking servers hat can handle requests better.
+    * Handle request/response cycle.
+    * Rapid srver side programming
+    * Express acts as middleware
+
+
+35. ExpressJS features?
+    i. Follow MVC architecture
+    ii. Error handling middleware
+
+
+36. Types of middleware in express?
+    i. Application level middleware. Example, auth middleware
+    ii. Router level middleware.
+    iii. Error handling middleware.
+    iv. Third party middleware. Example, body-parser, cookie.
+
+
+37. What is helmet middleware in express js?
+Helmet is an express middleware, it has various HTTP response headers. The main purpose of helmet middleware is to secure the get and post requests in the NodeJS application.
+
+
+38. What is rest API's?
+Rest architecture is the most popular approch to building API.
+
+Rest API:
+    Representation state transfer, application programming interface.
+
+
+39. What is payload in rest API?
+Request data that is present in the body part.
+
+
+40. What is messaging in rest API?
+Sending requests to the server from the front end and server sending response to he front end is called a message.
+
+
+41. Rest API communicates via an HTTP request to perform crud operation within a resource.
+
+
+42. What is the main components of HTTP request?
+There are four main components a request is made up of.
+    i. The end point
+    ii. The HTTP method
+    iii. The headers
+    iv. The data (or body).
+
+
+43. What is payload?
+Payload refers to the data in the body of the HTTP request and/or response messages in GET or POST requests.
+
+For example, if you request a specific tweet from the Twitter API, the payload comprises the document containing the tweet text and any associated files for rendering the tweet on a page.
+
+Payload can also be included in the HTTP request with the POST method. If you want to post a tweet through Twitter's API, the tweet text that you send in your POST request is the payload.
+
+
+44. What is Promise, async, await, then?
+* Promise: Promise is an object that encapsulates our result in an asynchronous function.
+* Async: Async is a function that handles asynchronous operations.
+* Await: We used to wait for promise.
+* Then: We used to get the value of the result.
+
+
+45. What is caching in rest api?
+The process of storing server response is called caching.
+
+
+46. How to rest api work?
+Rest API communicates via an HTTP request to perform crud operation within a resource.
+
+
+47. What is the difference between Authentication vs Authorization?
+
+Authentication: Is the process of ascertaining that somebody really is who he to be.
+
+Authorization: Refers to rules that determine who is allowed to do what. Example, Sayed may be authorized to create and delte databases, while Fizz only authorized to read.
+
+Or in short:
+Authentication = login + password (who are you)
+Authorization = permissions (what you are allowed to do)
+
+
+48. What is Cross-Site Scripting (XSS)?
+Cross-Site Scripting (XSS) is an attack that occurs when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
+
+The page provided by the server when someone requests it is unaltered. Instead, an XSS attack exploits a weakness in a page that include a variable submitted in a request to show up in raw form in the response. The page is only reflecting back what was submitted in that request.
+
+
+49. How many types of API functions are in NodeJS?
+There are two types of API functions--
+    i. Synchronous also called blocking function and jobs.
+    ii. Asynchronous function called nonblocking function.
+
+
+50. What do you use to start script in development and production deployment?
+In the development process, we used the nodemon package and start the script "dev": "nodemon main-file.js" run => npm run dev. And in the production deployment process, we used "start": "node main-file.js".

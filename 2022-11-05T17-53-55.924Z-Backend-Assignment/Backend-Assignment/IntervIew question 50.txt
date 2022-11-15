@@ -1,0 +1,52 @@
+1)What Skills Should Back-End Developers Possess?
+2)Roles and Responsibilities of a Back-End Developer?
+3)What is your favorite programming language? And why?
+4)What do you understand by NoSQL databases? Explain.
+5)What is the difference between software architecture and software design?
+6)What is JavaScript, and why is it used?
+7)What is your approach to debugging?
+8)How would you find the most expensive queries in an application?
+9)What is the difference between an acceptance test and a functional test?
+10)Which sorting algorithm should you use and when? 
+11)What is the meaning of “high cohesion” and “loose coupling”?
+12)Why should you use microservices architecture?
+13)Explain the difference between cohesion and coupling?
+14)When is refactoring useful?
+15)What is object-oriented programming?
+16)What is a constructor?
+17)What are the different types of constructors?
+18)How to compare two objects in JavaScript?
+19) Is there anyway to force using strict mode in Node.js?
+ 20) Is there anyway to force using strict mode in Node.js?
+ 21)What's your greatest strength as a coder?
+22)Define the terms “stack” and “heap.” What’s a stack overflow?
+23)What are the seven layers in the OSI system model?
+24)What’s a reverse proxy?
+24)What's the difference between threads and processes?
+25)What steps would you take to use mysqldump to restore MySQL?
+26) If you have a limited amount of memory, how would you handle a large amount of data?
+27)Define and explain these nine server response error codes: 200, 201, 204, 301, 400, 401, 404, 409 and 500.
+28)What is Difficult About Writing Code? 
+29)What is your approach to debugging? 
+30)What are some CI/CD Practices? 
+31)How do you Build Scalability into a Software Program? 
+32)Why Would You Use Microservices Architecture? 
+33)What is your most challenging project? 
+34)What is JavaScript, and why is it used?
+35)What is Data Structure?
+36)What is server?
+37)What is algorithm?
+38)Why we should follow algorithm?
+39)What is REST API?
+40)What do you know about compiler?
+41)What is Interpreter ?
+42)Difference between Interpreter and Compiler?
+43)What is an Exception?
+44) Diffrence between Eror and Exception?
+45)What is CORS?
+46)What is Middleware ? 
+47) How to implement a middleware and why it is important to implement ?
+48)What is JSON ?
+49) How the web works?
+50)What is Hyper means? 
+ 

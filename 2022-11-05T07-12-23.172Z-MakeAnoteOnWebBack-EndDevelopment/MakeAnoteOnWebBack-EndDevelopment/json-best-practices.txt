@@ -1,0 +1,46 @@
+//JavaScript Object Notation (JSON) - Best Practices//
+
+- Always enclose the Key : Value pair within double quotes
+- Never use Hyphens in your Key fields
+- Bad Special Characters And Solution
+- Always create a Root element.
+
+//JavaScript Object Notation (JSON)//
+
+    1. JSON is a lightweight data-interchange format that is completely language independent.
+    2. It was derived from JavaScript, but many modern programming languages include code to generate and parse JSON-format data
+    3. The official Internet media type for JSON is application/json.
+    4. It was designed for human-readable data interchange.
+    5. The filename extension is .json.
+
+//Uses of JSON//
+
+    1.  It is used while writing JavaScript based applications that includes browser extensions and websites.
+    2.JSON format is used for serializing and transmitting structured data over network connection.
+    3.It is primarily used to transmit data between a server and web applications.
+    4.Web services and APIs use JSON format to provide public data.
+
+//Characteristics of JSON//
+
+    1. JSON is easy to read and write.
+    2. It is a lightweight text-based interchange format.
+    3. JSON is language independent.
+
+//JSON - Data Types//
+Number - Double- precision floating-point format in JavaScript
+String - Double-quoted Unicode with backslash escaping
+Boolean - True or False
+Array - An ordered sequence of values
+Value - It can be a string, a number, true or false, null etc
+Object - An unordered collection of key:value pairs
+Whitespace - Can be used between any pair of tokens
+null - Empty
+
+//Bad Special Characters & Solution//
+Backspace - \b
+Form feed - \f
+Newline - \n
+Carriage return - \r
+Tab - \t
+Double quote - \"
+Backslash - \\

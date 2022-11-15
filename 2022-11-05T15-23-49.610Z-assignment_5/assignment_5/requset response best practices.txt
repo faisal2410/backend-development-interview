@@ -1,0 +1,87 @@
+🌟 Request/Response Model :
+    HTTP and all extended protocols based on HTTP are based on a very simple communications model. Here’s how it works: a client, typically a web browser, sends a request for a resource to a server, and the server sends back a response corresponding to the resource (or a response with an error message if it can’t process the request for some reason). A resource can be a number of things, such as a simple HTML file returned verbatim to the browser or a program that generates the response dynamically.Web applications can’t easily provide the kind of immediate feedback typically found in standalone GUI applications such as word processors or traditional client/server applications. Every interaction between the client and the server requires a request/response exchange. Performing a request/response exchange when a user selects an item in a list box or fills out a form element is usually too taxing on the bandwidth available to most Internet users. In client-server architecture, client makes a request to the server, and server hosts / delivers and manages the response, and returns it to the client. In easier terms, client requests for resources (typing the URL in browser) the server, fetches resource from database and returns the response.HTTP methods are request methods used by clients to connect with the server.
+
+        ● The Web browser that provides the runtime environment for the Web client . 
+        ● The Web server that listens to the incoming requests from different clients and also has the responsibility of serving some static resources, such as HTML pages.
+        ● The application server with a Web container built into it.
+        ● The Web browser sends the client request to the Web server.
+        ● The Web server sorts out the requests, identifies the ones that have to be serviced by a business Web application, and passes them on to the Web container. The Web server itself services some other requests by delivering some static resources, such as HTML pages, to the client.
+        ● The Web container determines the Web component to invoke based on the deployment information and the input request. The Web component invoked may be a servlet, JSP, or a static resource.
+        ● The Web container passes objects that map to the Web client request and response streams for use by the invoked component. The request stream is used to get the parameters from the user, and the response stream is used to pass the formatted response back to the client.
+
+
+   👉🏻 * HTTP request methods are used for client to connect with the server *
+
+🌟 HTTP Request Header:
+    General header (contains information about the date and time client requested the request message).
+    Request/response header (contains URL/data we want to send and HTTP method we choose to send the data with, authentication(secret key), content type of the date we choose to send, content size).
+    Entity header (contains information about the html code (code length, programming language used)).
+
+🌟 Request HTTP Body :
+    Request HTTP Body contains information about HTML, CSS, JS that were sending to the server.
+
+
+🌟 Response HTTP header : 
+    general header (contains information about the date and time client requested the request message).
+    request/response header (contains URL/data we want to send and HTTP method we choose to send the data with, authentication(secret key), content type of the date it is returning, content size, what is the status of the API call (success or failure?), redirect URL ( if your redirecting to another webpage).
+    entity header (contains information about the html code (code length, programming language used)).
+
+🌟 Response HTTP body :
+    Response HTTP body contains the content we requested for (basically everything shown on the DOM exists in the HTTP body).
+
+
+🌟 REQUEST METHODS :  This is a list of some basic (most important) methods.
+    1. GET
+    2. PUT
+    3. POST
+    4. DELETE
+    5. PATCH
+    6. HEAD
+    7. CONNECT
+    8. TRACE
+
+
+🌟 Response Header :
+    1. provide proper http reponse status code.
+    2. provide proper content type , file type.
+    3. provide cache status if any.
+    4. authentication token should provide via response header.
+    5. Only String data is allowed for response header.
+    6. Provide content length if any .
+    7. provide response date and time .
+    8. use proper method for application.
+
+🌟 Response Body :
+    1. avoid providing response status code message via response body.
+    2. use json best practices for json response body.
+    3. for single result can use string boolean directly.
+    4. Provide proper json encode decode before writing  JSON body.
+
+🌟 Response Cookies :
+    1. A restful api may send just like  a regular web application thet serves html.
+    2. Avoid using cookies as it is violate stateless principles.
+    3. If required use cookie encryption decription and other policies.
+
+
+
+💥 Api request handling best practices:
+
+🌟request body :
+    1. Request body should be structured in json array / object pattern .
+    2. request body hold muliple / form data like images,audio,video etc .
+    3. Request body should not held any auth related information .
+    4. Request body should accociated with specific request data model.
+
+🌟 Request header :
+    1. Header should carry all security related information like token , auth etc.
+    2. Only string key pair value is allowed for header.
+    3. header should  provide user agent information of client application .
+    4. req header should associated with middleware controller , where necessary.
+
+
+
+
+
+
+
+============================= THE END ======================================

@@ -1,0 +1,36 @@
+REST API Security
+
+
+Output Validation..
+Output Header: 
+
+1.File,content type বলে দিতে হবে
+2. http response status code mainten করতে হবে।
+3.Authentication token  response header দিয়ে use করতে হবে
+4.content length বলে দিতে হবে
+5.date and time mainten করতে হবে
+
+
+
+Output Body: ​
+
+১।response status code, message  body তে দিব না
+
+
+Request Rate limit.......
+
+1। ১টি ip থেকে  প্রতি মিনিটে ৩০ টির বেশি client request পাঠাইতে পারবে না।
+
+
+CSRF/XSRF Protection
+
+third party malicious ineject না করতে পারে সেইজন্য   CSRF Protection use করতে হবে
+
+
+User Agent Protection ​
+
+১।  google indexing, social media sharing কে restic করে দিতে হবে
+২।identy hide থাকলে   রেস্তিচ করে দিতে হবে
+৩।usage history তে user agent এড করতে হবে
+
+Config.env  file এর মধ্যে দরকারি জিনিস (token,port) রাখতে হবে

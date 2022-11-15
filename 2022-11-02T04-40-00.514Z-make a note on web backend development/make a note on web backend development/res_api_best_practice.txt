@@ -1,0 +1,8 @@
+Best API practices:
+   Use JSON format for sending and receaving Data
+   User Nouns Instead of Verbs in Endpoints
+   Name collection with Plural Nouns
+   Use Status Codes in Error Handling
+   Use Nesting on Endpoints to show relationship
+   Use Filtering, Sorting, and Pagination to Retrive the Data Request
+   Use SSL for security

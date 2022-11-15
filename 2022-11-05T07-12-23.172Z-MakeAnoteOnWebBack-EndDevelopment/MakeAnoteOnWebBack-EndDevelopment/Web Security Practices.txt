@@ -1,0 +1,99 @@
+//Output Validation//
+Output Header: 
+    * Provide proper http response status code. 
+    * Provide proper content type, file type if any.
+    * Provide cache status if any. 
+    * Authentication token should provide via response header. 
+    * Only string data is allowed for response header. 
+    * Provide content length if any. 
+    * Provide response date and time. 
+    * Follow request-response model described before.
+
+Output Body: 
+    * Avoid providing response status, code, message via response body 
+    * Use JSON best practices for JSON response body.
+    * For single result, can use String, Boolean directly. 
+    * Provide proper JSON encode-decode before writing JSON Body. 
+    * Follow discussion on JSON described before. 
+
+
+//Request Rate limit- Throttling//
+
+We need to make sure our APIs are running as efficiently as possible. Otherwise, everyone using your database 
+will suffer from slow performance. Performance isn’t the only reason to limit API requests, either. API limiting, which also known 
+as rate is limiting, is an essential component of Internet security, as DoS attacks can tank a server with unlimited API requests.
+Rate limiting also helps make your API scalable. If your API blows up in popularity, there can be unexpected spikes in traffic, 
+causing severe lag time.
+
+
+//CSRF/XSRF Protection //
+Cross-site request forgery attacks (CSRF or XSRF for short) are used to send malicious requests from an authenticated user to a web application.
+Use request-response header to pass CSRF token 
+CSRF token should be unique for every session 
+For self API CSRF token works well. 
+
+//User Agent Protection// 
+User agent is a request header property, describe client identity like operating system, browser details, device details etc. Moreover every web crawler like Google crawler, Facebook crawler has specific user-agent name. 
+
+    * Using user agent we can prevent REST API from search engine indexing, social media sharing. 
+    * Can stop subspecies request from who is hiding his identity. 
+    * We can add user agent along with REST API usage history. 
+    * We can add device/OS usage restriction. 
+
+
+//User Agent//
+
+    Android web browser - Mozilla/5.0 (Linux; Android 6.0.1; RedMi Note 5 Build/RB3N5C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36
+
+    IOS web browser - Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Mobile/15E148 Safari/604.1
+
+    Windows - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+
+    Mac  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15
+
+    Google BOT  - Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+    Facebook BOT  - facebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)
+ 
+
+//API Key//
+    - This is the most straightforward method and the easiest way for auth
+    - With this method, the sender places a username:password/ ID / Keys into the request header. 
+    - The credentials are encoded and decode to ensure safe transmission. 
+    - This method does not require cookies, session IDs, login pages, and other such specialty solutions 
+
+
+//Bearer Authentication/ Auth 2.0 //
+Bearer authentication (also called token authentication) is an HTTP authentication scheme that involves security tokens called bearer tokens, passes through request-response header. In General JSON Web Tokens JWT used for this purposes. 
+
+//JWT (JSON WEB TOKEN):  //
+    * Compact and self-contained way for securely transmitting information between parties as a JSON object.
+    * Information can be verified and trusted because it is digitally signed.  
+
+USES: 
+    Authorization: Allowing the user to access routes, services, and resources
+    Information Exchange: Way of securely transmitting information between parties.
+
+
+//JSON WEB TOKEN STRUCTURE :  
+    1. Header
+    2. Payload
+    3. Signature
+
+//JSON WEB TOKEN HEADER :  
+    1. Type of the token 
+    2. Signing algorithm
+
+//JSON WEB TOKEN PAYLOAD:  
+    * Registered claims:  iss (issuer), exp (expiration time), sub (subject), aud (audience)
+    * Public claims: These can be defined at will by those using JWTs. 
+    * Private claims: These are the custom claims created to share information between parties.
+
+//JSON WEB TOKEN SIGNATURE:
+To create the signature part -
+    - Take the encoded header
+    - Take the encoded payload, a secret
+    - The algorithm specified in the header
+
+//JSON WEB TOKEN
+Putting all together

@@ -1,0 +1,51 @@
+q1. What is json
+q2. what is JSON objects?
+q3. Explain how to transform JSON text to a JavaScript object?
+q4. what is the rule for JSON syntax rules? Give an example of JSON object?
+q5. what is JSON-RPC and JSON Parser?
+q6. what are the data types supported by JSON?
+q7. how you can convert a string into a JSON Array?
+q8. what are the JSON files?
+q9. What is HTTP?
+q10. What are HTTP Request Messages?
+q11. What are HTTP Request Methods?
+q12. What is the Status Code?
+q13. What are Persistent Connections?
+q14. What is HTTP Message?
+q15. What is HTTP Response?
+q16. What is HTTP Security?
+q17. What are 200 OK response codes in HTTP?
+q18. What are 201 Created response codes in HTTP?
+q19. What is the mean of 300 Multiple Choices response codes in HTTP?
+
+q20. What is the mean of 401 Unauthorized response codes in HTTP?
+q21. What are 500 Internal Server Error response codes in HTTP?
+q22. Explain what is REST API?
+q23. Explain the architectural style for creating web api?
+q24. Mention what tools are required to test your web API?
+q25. Mention what are the HTTP methods supported by REST?
+q26. Mention whether you can use GET request instead of PUT to create a resource?
+q27. Mention some key characteristics of REST?
+q28. Mention what is the difference between PUT and POST?
+q29. Mention which markup language can be used in restful web api?
+q30. List out the tools or API for developing or testing web api?
+q31. What are some of the advantages of MongoDB?
+q32. What is a Document in MongoDB?
+q34. What is a Collection in MongoDB?
+q35. What are Databases in MongoDB?
+q36. What are some features of MongoDB?
+q37. How do you Update a Document?
+q38. How do you Delete a Document?
+q39. How to perform queries in MongoDB?
+q40. What are the data types in MongoDB?
+q41. How would you connect a MongoDB database to Node.js?
+q42.  Explain the concept of middleware in Node.js
+
+q43. Describe Node.js exit codes
+q44. What are the modules in Node.js?
+q45. What is callback hell?
+q46. What is a callback function in Node.js?
+q47. How do you create a simple Express.js application?
+q48. Explain callback in Node.js?
+q49. What are the advantages of using promises instead of callbacks?
+q50. Explain the difference between frontend and backend development?

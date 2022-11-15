@@ -1,0 +1,50 @@
+1. What is your favorite programming language? And why?
+2. What do you understand by NoSQL databases? Explain.
+3. What is the difference between software architecture and software design?
+4. What is JavaScript, and why is it used?
+5. What is your approach to debugging?
+6. How would you find the most expensive queries in an application?
+7. What is the difference between an acceptance test and a functional test?
+8. Which sorting algorithm should you use and when? 
+9. What is the meaning of “high cohesion” and “loose coupling”?
+10. Why should you use microservices architecture?
+11. Explain the difference between cohesion and coupling?
+12. When is refactoring useful?
+13. What is the object type?  
+14. What is let keyword in JavaScript?  
+15. What is the difference between == and ===?  
+16. What is strict mode?
+17. What does use strict do?  
+18. What is export default in JavaScript?
+19. Does JavaScript have a map function to iterate over an object properties?
+20. How would you prevent Callback Hell without using promises, async or generators?
+21.  Does JavaScript pass by references or pass by values?
+22. What npm is used for? 
+23. What is Callback?  
+24. What do you mean by Asynchronous API?  
+25. What is your experience with object-oriented programming (OOP)?
+26. Tell us about a time when you received criticism about your work and how you handled it. 
+27. If you have to deliver negative feedback to members of your development team, how would you do it?
+28. Tell me about your favorite development project to date and what it was like from start to finish.
+29. What is your experience with GoTo, and do you prefer structured programming?
+30. Tell me about the largest web application you have ever worked on? What coding were you responsible for?
+31. What's your preferred type of development environment?
+32. Which programming languages do you want to work with and why?
+33. How do you reuse information across service worker restarts?
+34. What is IndexedDB?
+35. What is web storage?
+36. What is a post message?
+37. What is a cookie?
+38. Why do you need a Cookie?
+39. What are the options in a cookie?
+40. How do you delete a cookie?
+41. What are the differences between cookie, local storage and session storage?
+42. What is the main difference between localStorage and sessionStorage?
+43. How do you access web storage?
+44. What are the methods available on session storage?
+45. What is a storage event and its event handler?
+46. Why do you need web storage?
+47. How do you check web storage browser support?
+48. How do you check web workers browser support?
+49. Give an example of a web worker?
+50. What are the restrictions of web workers on DOM?

@@ -1,0 +1,164 @@
+   <<<<< Rest Api Best Practice >>>>>
+
+  	1.Use HTTP Methods & API Routes.
+	2.Use HTTP Status Codes Correctly.
+	3.Use HTTP headers to Send Metadata.
+	4.Pick the right framework Node.js REST API.
+	5.Black-Box Test  Node.js REST APIs.
+	6.use Authentication and authoraijation for jwt token or barear token
+	7.Use Conditional Requests
+	8.use rate limiting & use rest api security packege.
+	9.Create API Documentation
+	10.Separate business logic from the router controllers
+	11. Create integration tests for  API routes.
+	
+
+
+<<<<<<<Best Practice http method >>>>
+
+       /// Get ///
+	1.GET requests remain in the browser history
+	2.get method req works in Browser , 
+	3.Can not use get method send data .
+        4.Can't use get method file syestem because it works browser .
+	5.Get req use to only request data 
+	6.GET is less secure compared to POST
+
+	/// Post ///
+	
+	1.post requset use in server operation .
+	2.POST is a little safer than GET because the parameters are not stored in browser 
+	  history or in web server logs.
+	3.POST requests have no restrictions on data length.
+	4.Data is not displayed in the URL of post req.
+	5. post request useds server operation .
+
+
+<<<<<<<< JSON Best Practice >>>>>>>
+
+
+	1.In the JSON data format, the keys must be enclosed in double quotes.
+	2.The key and value must be separated by a colon (:) symbol.
+	3.There can be multiple key-value pairs. Two key-value pairs must be separated by a comma (,) symbol.
+	4.No comments  are allowed in JSON data.
+	5.A collection of key-value pairs enclosed by a pair of curly braces
+        6.Json data Structure 
+	   const user = '{"name": "Arif", "age": "21", "city": "Sidpur"}';
+
+
+<<<<<<<<Requst Response Model Best Practice >>>>>>>>>>
+
+
+	1.use http client axios,
+	2.use applycation level claint,
+	3.always use claint side rendering, this is very first and user affisiant
+	4.Use postman to tools testing api , and create api documentation
+	5.use heder body and url parametar , 
+	6.use status code with api
+	7.back Button & Reload use post req .
+	8.mulpart form data use post req
+	9.use post request to submit mulpart form data 
+	10.manage rate limit request
+	11.protect your application dos attack and use security packages,
+	12. use every response is a combination of header body and cooky
+
+
+
+<<<<<<<<< web secutrity Best preactice >>>>>>>>>>
+
+ 	
+	1.Code injection
+	2.CSRF attack
+	3.Default cookie names
+	4.X-Powered-By header
+	5.Brute-force attacks
+	6.Dos attacks
+	7.Cross-Site Scripting attack
+	8. Keep an eye on logging and monitoring to avoid irregularities
+	9. Make use of flat Promise chains to avoid layers of nesting
+	10.Avoid blocking the event loop for neat performance
+	11. Make strong authentication policies
+	12.Remove unnecessary routes
+	13.Handle errors to prevent unauthorized attacks.
+	14.Send only necessary information to avoid data leakage
+	15.Limit request size to avoid DOS attacks
+	16.Set up Cookie flags for session management
+	17.Validate user inputs for restricting the XSS attacks.
+ 	18.Ensuring secure deserialization to prevent CSRF attacks
+	19. Execute access control on each request
+	20.Use appropriate security headers
+	21.Avoid using dangerous functions to maintain application stability
+	22.Use security linters and SAST for methodological testing
+	23.Run Node.js as a non-root user
+	24.Use strict mode
+	25. Helmet
+	26.dotEnv
+
+
+  <<<<<<<<<<< Backend development Question>>>>>>
+
+	
+1: What npm is used for?  
+2: Why does Node.js prefer Error-First Callback?  
+3: What is Callback Hell and what is the main cause of it?  Related To: JavaScript
+4: What is Callback?  
+5: What are the key features of Node.js?  
+6: Explain the difference between local and global npm packages installation   
+7: What do you mean by Asynchronous API?   
+8: What are the benefits of using Node.js?   
+9: Explain what Express.js is. 
+10: What is V8?  
+11: What is the difference between returning a callback and just calling a callback?  
+12: What is the file package.json?   
+13: Name some of the unique Express.js features.  
+14: Which skills and knowledge are essential for Express.js engineers?
+15: Which soft skills are essential for Express.js engineers? 
+16: Why we always require modules at the top of a file? Can we require modules inside of functions?   
+17: What is Stream Chaining in Node.js?  
+18: As an Express.js engineer, which skills are you looking to improve and how?
+19: How does concurrency work in Node.js?  
+20: What Are Buffer and why to use them in Node.js?  
+21: What is N-API in Node.js?   
+22: Are you familiar with differences between Node.js modules and ES6 modules?  
+23: What is the difference between setTimeout(fn,0) vs setImmediate(fn)?  
+24: Explain how you would allow CORS in Express.js. 
+25: How do you debug Node.js applications?  
+26: What's the Event Loop?  
+27: How to avoid Callback Hell in Node.js?   
+28: Explain how does Node.js work?  
+29: How does Node.js handle Child Threads?  
+30: What is the relationship between Node.js and V8?  
+31: Explain the concept of Domain in Node.js  
+32: What is stream and what are types of streams available in Node.js?  
+33: What is Event Loop in Node.js?  
+34: What is the preferred method of resolving unhandled exceptions in Node.js?   
+35: What is a Blocking Code in Node.js?  
+36: When should we use Node.js?   
+37: Which skills and knowledge are essential for Express.js engineers?
+38: What is difference between synchronous and asynchronous method of fs module?  
+39: Does Express.js support any template engines? 
+40: Provide your favourite reasons to use Node.js  
+41: Provide some of the reasons not to use Node.js  
+42: What exactly does module.exports do in Node.js, and what would a simple example be?  
+43: What is the difference between require(x) and ES6 import x in Node.js?  
+44: What is export default in JavaScript?  Related To: JavaScript
+45: Explain whether MVC frameworks other than Express.js support scaffolding.  
+46: Is an Event Emitter Synchronous or Asynchronous?  
+47: How do I run a Node.js app as a background service?  
+48: How is Express.js different from Node.js? 
+49: Why do engineers use Express.js?
+50: When would you use app.use() in Express.js? 
+51: Creating a middleware 
+52: Using the middleware and the variable to manage the error
+53: Using the middleware and the variable to manage the error
+54: Which code would you write to serve static files in Express.js? 
+55:How would you configure properties in Express.js? 
+56: How would you make an HTTP server with Express.js?  
+57: How would you install Express.js? 
+58: How would you handle errors for async code in Node.js?  
+59: Can Node.js work without V8?  
+60: What are async functions in Node? Provide some examples.  
+61: Explain how you would enable debugging for an Express.js application for Windows.
+62: How would you manage error handling using Express.js?
+
+

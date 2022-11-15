@@ -1,0 +1,29 @@
+--------------------Http methods Best Practices-----------
+
+#########  HTTP/HTTPS Request Response Communication
+----- In request/response communication mode.
+-----যেমন ধরুনঃঃ  একটি সফটওয়ার request send অন্য software এ ্-- এর respons হিসাবে যেকোন একটি প্রতিক্রিয়া করে 
+---প্রথম software modeul claint ভূমিকা পালন করে।
+---দ্বিতীয় software server এর  ভূমিকা পালান করে।।  একে client/ server  ইন্টারঅ্যাকশন বলে।
+
+### HTTP Client 
+        ----- Browser Level Client 
+        ------ Application Level Client  
+
+####  POSTMAN Http Client 
+---- postman  হল একটি HTTP client Application, অনুরোধ-প্রতিক্রিয়া যোগাযোগ পরীক্ষা করতে use  হয়। postman ব্যাপকভাবে API পরীক্ষা এবং ডকুমেন্টেশন তৈরির জন্য ব্যবহৃত হয়।
+---দ্রুত এবং সহজে পোস্টম্যানের মধ্যে সরাসরি REST, SOAP এবং GraphQL অনুরোধ পাঠান।
+
+### http Request
+---- HTTP request/respons যোগাযোগ শুরু করার প্রথম ধাপ। প্রতিটি request header,body and Request URL এর সংমিশ্রণ
+--- Request aria Standard daya পাঠাতে পারি 
+--- body (Simple String, JSON, Download, Redirect, XML ) Data পাঠাতে পারি।
+--- Header এ key: value আকারে ডাটা পাঠাতে পারি। 
+## Header যখন কোন data পাঠাব তা আবশ্যই key: value  আকারে পাঠাতে হবে ;
+## যখন আমার api Request এ ফলে কোন data change হয় তখন আমাদের Post Request use করব;
+## যখন body ও big Data/bynary/file নিয়ে কাজ করব তখন post Request use করতে হবে ; 
+## যখন কোণ dcument/ file/image/video/any file client to servar send/upload করব তখন আমাদের post Request  করতে হবে 
+##আমারা যখন Request body তে কোন pelot/Data পাঠাব সেতা আবশ্যই structured হতে হবে ;
+##Request body পাঠানো ডাটা json Arrary / Json Object pattrem আকারে পাঠাতে হবে 
+##Request body তে যখন কন ফাইল video/adiou/image/ পাঠাব তখন সেই ফাইল type হতে হবে multiple form Data;
+## Request body তে authentication information related  (--sesson/ API Key/ authentication Token--) কোন data পাঠানোন যাবে না ----এই data Header এ পাঠাতে হবে ;

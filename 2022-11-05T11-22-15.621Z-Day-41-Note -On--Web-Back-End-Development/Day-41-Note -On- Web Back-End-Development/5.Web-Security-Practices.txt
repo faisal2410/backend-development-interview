@@ -1,0 +1,139 @@
+******** Rest API Security Best Practices ********
+
+Security Practices May Varies From--
+    * Application to Application
+    * Environment to Environment
+    * Developer to Developer
+    * Use Case to Use Case
+
+
+What we have to know?
+    * The best practices
+    * Know about the security layers
+    * Security placement
+
+
+API Endpoint Security Layers:
+    * API Key Verification
+    * User Agent Verification
+    * CSRF (Cross-Site Request Forgery) Protection
+    * Rate Limiting
+    * HTTP Secure Headers
+    * Parameter Pollution
+    * Data Sanitization
+    * Authentication/Authorization
+
+
+Output Validation:
+    Output Header: 
+        * Provide proper http response status code. 
+        * Provide proper content type, file type if any.
+        * Provide cache status if any. 
+        * Authentication token should provide via response header. 
+        * Only string data is allowed for response header. 
+        * Provide content length if any. 
+        * Provide response date and time. 
+        * Follow request-response model described before.  
+ 
+    Output Body: 
+        * Avoid providing response status, code, message via response body 
+        * Use JSON best practices for JSON response body.
+        * For single result, can use String, Boolean directly. 
+        * Provide proper JSON encode-decode before writing JSON Body. 
+        * Follow discussion on JSON described before. 
+
+
+
+Throttling/Request Rate Limiting:
+API throttling is the process of limiting the number of API requests a user can make in a certain period. An application programming interface (API) functions as a gateway between a user and a software application.
+
+For example, when a user clicks the post button on social media, the button click triggers an API call. This API interacts with the web server of the social media application and performs the action of posting. This user could be a human or another software application.
+
+Rate Limiting Libraries:
+Language ---> Platform ---> Library Name ---> Library resource
+* JS ---> Node/ExpressJS ---> express-rate-limit ---> NPM
+* PHP ---> Laravel ---> Laravel Karnel Default ---> Packagist
+* C# ---> ASP.NET ---> WebApiThrottle, MvcThrottle ---> Nuget Package Manager
+
+
+
+CSRF/XSRF Protection:
+Cross-site request forgery attacks (CSRF or XSRF for short) are used to send malicious requests from an authenticated user to a web application.
+    * Use request-response header to pass CSRF token
+    * CSRF token should be unique for every session
+    * For self API CSRF token works well
+
+CSRF/XSRF Protection Libraries:
+Language ---> Platform ---> Library Name ---> Library resource
+* JS ---> Node/ExpressJS ---> npm i csrf ---> NPM
+* PHP ---> Laravel ---> Laravel Default ---> Packagist
+* C# ---> ASP.NET ---> AntiCSRF ---> Nuget Package Manager
+
+
+
+UserAgent Protection:
+User agent is a request header property, describe client identity like operating system, browser details, device details etc. Moreover every web crawler like Google crawler, Facebook crawler has specific user-agent name.
+
+    * Using user agent we can prevent REST API from search engine indexing, social media sharing. 
+    * Can stop subspecies request from who is hiding his identity. 
+    * We can add user agent along with REST API usage history. 
+    * We can add device/OS usage restriction. 
+
+
+
+API Key:
+    * This is the most straightforward method and the easiest way for auth
+    * With this method, the sender places a username:password/ ID / Keys into the request header. 
+    * The credentials are encoded and decode to ensure safe transmission. 
+    * This method does not require cookies, session IDs, login pages, and other such specialty solutions 
+
+
+
+Bearer Authentication/Auth 2.0
+Bearer authentication (also called token authentication) is an HTTP authentication scheme that involves security tokens called bearer tokens, passes through request-response header. In General JSON Web Tokens JWT used for this purposes.
+
+Bearer Authentication/Auth 2.0 Libraries:
+Language ---> Platform ---> Library Name ---> Library resource
+* JS ---> Node/ExpressJS ---> npm i jsonwebtoken ---> NPM
+* PHP ---> Laravel ---> firebase / php-jwt ---> GitHub
+* C# ---> ASP.NET ---> JwtBearer, jose-jwt ---> Nuget Package Manager
+
+
+JWT(JSON WEB TOKEN):
+    * Compact and self-contained way for securely transmitting information between parties as a JSON object.
+    * Information can be verified and trusted because it is digitally signed.
+
+Uses of JWT:
+    * Authorization: Allowing the user access routes, services, and resources.
+    * Information Exchange: Way of securely transmitting information between parties.
+
+Structure of JSON Web Token:
+    * Header
+    * Payload
+    * Signature
+
+    JWT Header:
+        * Type of the token
+        * Signing algorithm
+
+        {
+            "alg": "HS256",
+            "type": "JWT"
+        }
+
+    JWT Payload:
+        * Registered claims:  iss (issuer), exp (expiration time), sub (subject), aud (audience)
+        * Public claims: These can be defined at will by those using JWTs.
+        * Private claims: These are the custom claims created to share information between parties.
+
+        {
+            "sub": "1234543668",
+            "name": "Sayed",
+            "iat": "33524553456",
+            "exp": "14456657"
+        }
+
+    JWT Signature:
+        * Take the encoded header
+        * Take the encoded payload, a secret
+        * The algorithm specifield in the header

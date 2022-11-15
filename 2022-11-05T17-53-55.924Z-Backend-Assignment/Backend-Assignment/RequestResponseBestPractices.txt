@@ -1,0 +1,10 @@
+----------------------------------------------Request Response Best Practices----------------
+1) REST API Must Accept and Respond with JSON
+2)Go with Error Status Codes
+3)Don’t Use Verbs in URLs
+4)Use Plural Nouns to Name a Collection
+5)Well compiled documentation
+6)Return Error Details in the Response Body
+7)Use Resource Nesting
+8)Use SSL/TLS
+9)Data Filtering options

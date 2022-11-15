@@ -1,0 +1,56 @@
+🌟 Web Security :
+
+    Web security refers to protecting networks and computer systems from damage to or the theft of software, hardware, or data. It also includes protecting computer systems from misdirecting or disrupting the services they are designed to provide.Web attacks explode these days as security comes to the front of the stage.Node.js is proving to be an extremely popular platform these days primarily due to serving as the backend server for web applications. However, when it comes to the field of microservices, it becomes essential to consider Node.js security practices. Not all security considerations are serious, and there are some best practices for securing the Node.js application.
+    We have to know about the security layers. We have to know about the security placement. When we build a application,  We have to take care about security Beacause security Holds the valuation of a software. The three most common security threats are malware, phishing schemes, and stolen data.
+
+🌟 Security practices may varies :
+    1. May varies from application to application .
+    2. may varies from developer to developer.
+    3. may varies from environment to environment .
+    4. may varies from usecase to usecase.
+
+
+🌟 Web Security Practices   :: 
+
+    💥 1. Embrace linter security rules.
+    💥 2. Limit concurrent requests using a middle .
+    💥 3. Extract secrets from config files or use packages to encrypt them.
+    💥 4. Prevent query injection vulnerabilities with ORM/ODM libraries.
+    💥 5. Avoid DOS attacks by explicitly setting when a process should crash.
+    💥 6. Adjust the HTTP response headers for enhanced security.
+    💥 7. Constantly and automatically inspect for vulnerable dependencies.
+    💥 8. Avoid using the Node.js crypto library for handling passwords, use Bcrypt.
+    💥 9. Escape HTML, JS and CSS output.
+    💥 10. Validate incoming JSON schemas.
+    💥 11. Support blacklisting JWT tokens.
+    💥 12. Prevent brute-force attacks against authorization.
+    💥 13. Run Node.js as non-root user.
+    💥 14. Limit payload size using a reverse-proxy or a middleware.
+    💥 15. Avoid JavaScript eval statements.
+    💥 16. Prevent evil RegEx from overloading your single thread execution.
+    💥 17. Avoid module loading using a variable.
+    💥 18. Run unsafe code in a sandbox.
+    💥 19. Take extra care when working with child processes.
+    💥 20. Hide error details from clients.
+    💥 21. Configure 2FA for npm or Yarn.
+    💥 22. Modify session middleware settings.
+    💥 23. Avoid DOS attacks by explicitly setting when a process should crash.
+    💥 24. Prevent unsafe redirects.
+    💥 25. Avoid publishing secrets to the npm registry.
+    💥 26. Use cookies securely. Don’t use the default session cookie name.
+    💥 27. Ensure your dependencies are secure.
+ 
+
+
+🌟 Threats to Web Security :
+
+        ● SQL Injection
+        ● Cross-site Scripting
+        ● Remote File Inclusion
+        ● Password Breach
+        ● Data Breach
+        ● Code Injection
+
+
+
+========================================== THE END =================================

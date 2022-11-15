@@ -1,0 +1,37 @@
+-------------------------------------------Use the Right HTTP Methods for REST APIs-----------------
+
+Basically, for CRUD operations (Create, Retrieve, Update and Delete) you can use the HTTP methods as follows:
+
+- POST: create resource or search operation
+
+- GET: read resource operation
+
+- PUT: update resource operation
+
+- DELETE: remove resource operation
+
+- PATCH: partial update resource operation
+
+
+API end point with POST method:
+------------------------------
+Used mainly for Create resource operations, or Read operations in some certain cases:
+
+    =>Read resource if URL / query string exceeds maximum allowed characters. Maximum length of URL and query string is 2,048 characters.
+    =>Read resource if query parameters contain sensitive information
+
+API end point with GET method:
+-------------------------------
+Used primary for Read resource operations.
+
+API end point with PUT method:
+-------------------------------
+Used for Update resource operations.
+
+API end point with DELETE method:
+---------------------------------
+Used for Delete resource operations.
+
+API end point with PATCH method:
+----------------------------------
+Used for Partial update resource operations.

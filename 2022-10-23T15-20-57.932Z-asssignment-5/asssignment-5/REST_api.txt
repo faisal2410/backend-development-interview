@@ -1,0 +1,80 @@
+** REST API Design Best Practices **
+
+💥 Node.JS:
+        Nodejs is a runtime environment for JavaScript, it basically allows you to ruin everything with JavaScript anywhere. Express or Express.js is the most famous backend framework for Node.js. It allows you to build web applications and APIs. One of the most popular use-cases for Node.js is to write RESTful APIs using it. Still, while we help our customers to find issues in their applications with Trace, our Node.js monitoring tool we constantly experience that developers have a lot of problems with REST APIs.
+
+💥 REST : 
+        REST APIs are one of the most common kinds of web services available today. They allow various clients including browser apps to communicate with a server via the REST API. Therefore, it’s very important to design REST APIs properly so that we won’t run into problems down the road. We have to take into account security, performance, and ease of use for API consumers. .REST is an architectural style for building distributed systems based on hypermedia. REST is independent of any underlying protocol and is not necessarily tied to HTTP. However, most common REST API implementations use HTTP as the application protocol, and this guide focuses on designing REST APIs for HTTP.Even though this API is written in JavaScript and Express, the best practices are not limited to these tools. They can be applied to other programming languages or frameworks as well.
+
+💥Accept and respond with data in JSON format
+        When interacting with an API, you always send specific data with your request or you receive data with the response. There are many different data formats but JSON (Javascript Object Notation) is a standardized format.Because of its standardization, API's should accept and respond with data in JSON format.
+
+💥 Best Practices for Writing Node.js REST APIs: 
+        #1 – Use HTTP Methods & API Routes,
+        #2 – Use HTTP Status Codes Correctly,
+        #3 – Use HTTP headers to Send Metadata,
+        #4 – Pick the right framework for your Node.js REST API,
+        #5 – Black-Box Test your Node.js REST APIs,
+        #6 – Do JWT-Based, Stateless Authentication,
+        #7 – Use Conditional Requests,
+        #8 – Embrace Rate Limiting,
+        #9 – Create a Proper API Documentation,
+        #10 – Don’t Miss The Future of APIs.
+
+
+💥 #1 – Use HTTP Methods & API Routes:
+       ●  POST /user or PUT /user:/id to create a new user,
+       ●  GET /user to retrieve a list of users,
+       ●  GET /user/:id to retrieve a user,
+       ●  PATCH /user/:id to modify an existing user record,
+       ●  DELETE /user/:id to remove a user.
+
+
+💥 #2 – Use HTTP Status Codes Correctly:
+       ● 2xx ==> if everything was okay,
+       ● 3xx ==> if the resource was moved,
+       ● 4xx ==> if the request cannot be fulfilled because of a client error (like requesting a resource that does not exist),
+       ● 5xx ==> if something went wrong on the API side (like an exception happened).
+
+
+💥 The Six Principles / Constraints:
+        1. Client-Server
+        2. Stateless
+        3. Cacheable
+        4. Layered System
+        5. Code-on-Demand
+        6. Uniform Interface
+
+
+💥 REST’s essential best practice:
+
+        ● Keep it Simple and Fine-Grained.
+        ● Filtering & Ordering.
+        ● Versioning
+        ● Cache
+        ● Pagination
+        ● Resource-Naming
+        ● Monitoring
+        ● Security
+
+💥 REST Security :
+    
+    1. Authorization / Authentication: Authorization for services is no different than authorization for any application. 
+
+    2. CORS: Implementing CORS on a server is as simple as sending an additional HTTP header in the response, such as Access-Control-Allow-Origin, Access-Control-Allow-Credentials, etc.
+
+    3.  TLS: All authentication should use SSL. OAuth2 requires the authorization server and access token credentials to use TLS.
+
+    4. Idempotence: an operation that will produce the same results if executed once or multiple times. It may have a different meaning depending on the context in which it applies. In the case of methods or subroutine calls with side effects, for instance, it means that the modified state remains the same after the first call.
+
+    5. Input Validation: Validate all input on the server. Accept “known” good input and reject bad input, Protect against SQL and NoSQL injection, Restrict the message size to the exact length of the field, Services should only display generic error messages, and many more.
+
+    6. Rate limiting: is a strategy for limiting network traffic. It puts a cap on how often someone can repeat an action within a certain timeframe — for instance, trying to log in to an account.
+
+    7. Logging: Make sure you do not accidentally log any Personally identifiable information (PII).
+
+    8. Pluralization: The commonly-accepted practice is always to use plurals in node names to keep your API URIs consistent across all HTTP methods. The reasoning is that `customers` are a collection within the service suite and the ID (e.g., 33245) refers to one of those customers in the collection.
+
+
+
+========================================  THE END =========================================

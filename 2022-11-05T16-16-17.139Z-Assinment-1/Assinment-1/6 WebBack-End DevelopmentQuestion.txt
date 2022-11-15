@@ -1,0 +1,50 @@
+what is node.js?
+how node.js work?
+where can use node.js
+what are modeuls in node.js
+what do you undertand be the term l/o?
+what is mongoDb?
+what is express JS packags?
+how to create simple express application? 
+what is Schema?
+what is docker.
+what is API ?
+what is NPM?
+why is node.js being preferred over other back-End  technologies like PHP and JAVA ?
+anguler and nod.js এর মধ্যে পার্থক্য কি কি ? 
+কোন ডাটাবেজ সবছেয়ে বেশি ব্যবহার হয় node.js এর সাথে ?  
+fornt-End and back-End devloper er  মধ্যে পার্থক্য কি কি ? 
+ব্যাক-এন্ড ডেভেলপারদের কী কী দক্ষতা থাকা উচিত?
+একটি ব্যাক-এন্ড ডেভেলপারের ভূমিকা এবং দায়িত্ব কি কি ?
+mention a cauple of pupoler libraries use in node.js 
+what are the pros and cons in node.js?
+what is the command use the import external libraries?
+what does event-driven programing menn? 
+what is the event loop in the node.js ?
+what is an Event Emitter in node.js?
+what are the stream in node.js ?
+what are the two type API function in node.js?
+what is the packags.json file?
+how would you use a URL modeul in node.js? 
+How do you install update and delete a dependency ? 
+how to create a simple server in node.js that returns "hello world"?
+explian Asynchronous and non-blocking API in node.js 
+how do you inplement Async in node.js ? 
+what is the purpose of module.exports ?
+what is callback function in node.js ?
+what is repel in node.js ? 
+What is tha controll flow function ?
+How control flow control the function colls ?
+what is the diffarent between  frok() and  spanwn() methoda in node.js?
+what is the use buffer  class in node .js ? 
+what is the piping in node.js 
+what is the test piramid in node.js ? 
+Discribe the exit code of node.js ? 
+explain the concept of the middleware in node.js 
+what are the type of HTTP Request ? 
+how would you connect mongoDb Database no node.js ? 
+what is the use of NODE_ENV?
+what is callback hell? 
+what is the reactor pattern in node.js ? 
+what are some of flags read/write oparator in file?
+how will you open a file using node .js ? 

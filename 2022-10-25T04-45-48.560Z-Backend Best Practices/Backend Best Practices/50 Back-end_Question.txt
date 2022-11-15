@@ -1,0 +1,470 @@
+
+Source: https://www.fullstack.cafe/blog/backend-developer-interview-questions
+
+Back-End Developer Interview Questions (ANSWERED) To Focus On
+
+Backend developer focuses on databases, scripting, and the architecture of websites. Back-end developers work hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Follow along and check 45 most common back end development interview questions and answers to stay prepared for in 2022.
+
+
+
+Q1: What Is CAP Theorem?
+
+Answer:
+The CAP Theorem for distributed computing was published by Eric Brewer. This states that it is not possible for a distributed computer system to simultaneously provide all three of the following guarantees:
+
+1. Consistency (all nodes see the same data even at the same time with concurrent updates )
+2. Availability (a guarantee that every request receives a response about whether it was successful or failed)
+3. Partition tolerance (the system continues to operate despite arbitrary message loss or failure of part of the system)
+
+The CAP acronym corresponds to these three guarantees. This theorem has created the base for modern distributed computing approaches. Worlds most high volume traffic companies (e.g. Amazon, Google, Facebook) use this as basis for deciding their application architecture. It's important to understand that only two of these three conditions can be guaranteed to be met by a system.
+
+
+Q2: What REST stands for?
+
+Answer:
+REST stands for REpresentational State Transfer. REST is web standards based architecture and uses HTTP Protocol for data communication. It revolves around resource where every component is a resource and a resource is accessed by a common interface using HTTP standard methods. REST was first introduced by Roy Fielding in 2000.
+
+In REST architecture, a REST Server simply provides access to resources and REST client accesses and presents the resources. Here each resource is identified by URIs/ global IDs. REST uses various representations to represent a resource like text, JSON and XML. Now a days JSON is the most popular format being used in web services.
+
+
+Q3: What are NoSQL databases? What are the different types of NoSQL databases?
+
+Answer:
+A NoSQL database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases (like SQL, Oracle, etc.).
+
+Types of NoSQL databases:
+
+. Document Oriented
+. Key Value
+. Graph
+. Column Oriented
+
+
+Q4: What do you understand by NoSQL databases? Explain.
+
+Answer:
+At the present time, the internet is loaded with big data, big users, big complexity etc. and also becoming more complex day by day. NoSQL is answer of all these problems; It is not a traditional database management system, not even a relational database management system (RDBMS). NoSQL stands for “Not Only SQL”. NoSQL is a type of database that can handle and sort all type of unstructured, messy and complicated data. It is just a new way to think about the database.
+
+
+Q5: What is SQL injection?
+
+Answer:
+Injection attacks stem from a lack of strict separation between program instructions (i.e., code) and user-provided (or external) input. This allows an attacker to inject malicious code into a data snippet.
+
+SQL injection is one of the most common types of injection attack. To carry it out, an attacker provides malicious SQL statements through the application.
+
+How to prevent:
+
+. Prepared statements with parameterized queries
+. Stored procedures
+. Input validation - blacklist validation and whitelist validation
+. Principle of least privilege - Application accounts shouldn’t assign DBA or admin type access onto the database server. This ensures that if an application is compromised, an attacker won’t have the rights to the database through the compromised application.
+
+
+Q6: What is meant by Continuous Integration?
+
+Answer:
+Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
+
+Q7: How to mitigate the SQL Injection risks?
+
+Answer:
+To mitigate SQL injection:
+
+. Prepared Statements with Parameterized Queries: Always ensure that your SQL interpreter always    able to differentiate between code and data. Never use dynamic queries which fail to find the difference between code and data. Instead, use static SQL query and then pass in the external input as a parameter to query.  Use of Prepared Statements (with Parameterized Queries) force developer to first define all the SQL code, and then pass in each parameter to the query later.
+. Use of Stored Procedures: Stored Procedure is like a function in C where database administrator call it whenever he/she need it. It is not completely mitigated SQL injection but definitely helps in reducing risks of SQL injection by avoiding dynamic SQL generation inside.
+. White List Input Validation: Always use white list input validation and allow only preapproved input by the developer. Never use blacklist approach as it is less secure than whitelist approach.
+. Escaping All User Supplied Input
+. Enforcing Least Privilege
+
+Q8: Name some performance testing steps
+
+Answer:
+Some of the performance testing steps are:
+
+. Identify the testing environment
+. Identify performance metrics
+. Plan and design performance tests
+. Configure the test environment
+. Implement your test design
+. Execute tests
+. Analyze, report, retest
+
+Q9: Name the difference between Acceptance Test and Functional Test
+
+Answer:
+. Functional testing: This is a verification activity; did we build a correctly working product? Does the software meet the business requirements? A functional test verifies that the product actually works as you (the developer) think it does.
+
+. Acceptance testing: This is a validation activity; did we build the right thing? Is this what the customer really needs? Acceptance tests verify the product actually solves the problem it was made to solve. This can best be done by the user (customer), for instance performing his/her tasks that the software assists with.
+
+
+Q10: What are the advantages of Web Services?
+
+Answer:
+Some of the advantages of web services are:
+
+. Interoperability: Web services are accessible over network and runs on HTTP/SOAP protocol and uses XML/JSON to transport data, hence it can be developed in any programming language. Web service can be written in java programming and client can be PHP and vice versa.
+. Reusability: One web service can be used by many client applications at the same time.
+. Loose Coupling: Web services client code is totally independent with server code, so we have achieved loose coupling in our application.
+. Easy to deploy and integrate, just like web applications.
+. Multiple service versions can be running at same time.
+
+
+Q12: What does Containerization mean?
+
+Answer:
+Containerisation is a type of virtualization strategy that emerged as an alternative to traditional hypervisor-based virtualization.
+
+In containerization, the operating system is shared by the different containers rather than cloned for each virtual machine. For example Docker provides a container virtualization platform that serves as a good alternative to hypervisor-based arrangements.
+
+
+Q13: Name some Performance Testing best practices?
+
+Answer:
+. Test as early as possible in development.
+. Conduct multiple performance tests to ensure consistent findings and determine metrics averages.
+. Test the individual software units separately as well as together
+. Baseline measurements provide a starting point for determining success or failure
+. Performance tests are best conducted in test environments that are as close to the production systems as possible
+. Isolate the performance test environment from the environment used for quality assurance testing
+. Keep the test environment as consistent as possible
+. Calculating averages will deliver actionable metrics. There is value in tracking outliers also. Those extreme measurements could reveal possible failures.
+
+Q14: What Do You Mean By High Availability (HA)?
+
+Answer:
+Availability means the ability of the application user to access the system, If a user cannot access the application, it is assumed unavailable. High Availability means the application will be available, without interruption. Using redundant server nodes with clustering is a common way to achieve higher level of availability in web applications.
+
+Availability is commonly expressed as a percentage of uptime in a given year.
+
+Q15: What Is ACID Property Of A System?
+
+Answer:
+ACID is a acronym which is commonly used to define the properties of a relational database system, it stand for following terms
+
+. Atomicity - This property guarantees that if one part of the transaction fails, the entire transaction will fail, and the database state will be left unchanged.
+. Consistency - This property ensures that any transaction will bring the database from one valid state to another.
+. Isolation - This property ensures that the concurrent execution of transactions results in a system state that would be obtained if transactions were executed serially.
+. Durable - means that once a transaction has been committed, it will remain so, even in the event of power loss.
+
+
+Q16: What are disadvantages of REST web services?
+
+Answer:
+Some of the disadvantages of REST are:
+
+. Since there is no contract defined between service and client, it has to be communicated through other means such as documentation or emails.
+. Since it works on HTTP, there can’t be asynchronous calls.
+. Sessions can’t be maintained.
+
+
+Q17: What are the DRY and DIE principles?
+
+Answer:
+In software engineering, Don't Repeat Yourself (DRY) or Duplication is Evil (DIE) is a principle of software development.
+
+Q18: What are the difference between Clustered and a Non-clustered index?
+
+Answer:
+. With a Clustered index the rows are stored physically on the disk in the same order as the index. Therefore, there can be only one clustered index. A clustered index means you are telling the database to store close values actually close to one another on the disk.
+. With a Non Clustered index there is a second list that has pointers to the physical rows. You can have many non clustered indices, although each new index will increase the time it takes to write new records.
+. It is generally faster to read from a clustered index if you want to get back all the columns. You do not have to go first to the index and then to the table.
+. Writing to a table with a clustered index can be slower, if there is a need to rearrange the data.
+
+Q19: What are the differences between Continuous Integration, Continuous Delivery, and Continuous Deployment?
+
+Answer:
+. Developers practicing continuous integration merge their changes back to the main branch as often as possible. By doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.
+. Continuous delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button.
+. Continuous deployment goes one step further than continuous delivery. With this practice, every change that passes all stages of your production pipeline is released to your customers. There's no human intervention, and only a failed test will prevent a new change to be deployed to production.
+
+
+Q20: What is the difference between Monolithic, SOA and Microservices Architecture?
+
+Answer:
+. Monolithic Architecture is similar to a big container wherein all the software components of an application are assembled together and tightly packaged.
+. A Service-Oriented Architecture is a collection of services which communicate with each other. The communication can involve either simple data passing or it could involve two or more services coordinating some activity.
+. Microservice Architecture is an architectural style that structures an application as a collection of small autonomous services, modeled around a business domain.
+
+
+Q21: Explain what is the API Gateway pattern?
+
+Answer:
+An API Gateway is a server that is the single entry point into the system. It is similar to the Facade pattern from object‑oriented design. The API Gateway encapsulates the internal system architecture and provides an API that is tailored to each client. It might have other responsibilities such as authentication, monitoring, load balancing, caching, request shaping and management, and static response handling.
+
+A major benefit of using an API Gateway is that it encapsulates the internal structure of the application. Rather than having to invoke specific services, clients simply talk to the gateway.
+
+
+Q22: How does SSL/TLS work ?
+
+Answer:
+SSL (and its successor, TLS) is a protocol that operates directly on top of TCP. This way, protocols on higher layers (such as HTTP) can be left unchanged while still providing a secure connection. Underneath the SSL layer, HTTP is identical to HTTPS. When using SSL/TLS correctly, all an attacker can see on the cable is which IP and port you are connected to, roughly how much data you are sending, and what encryption and compression is used. He can also terminate the connection, but both sides will know that the connection has been interrupted by a third party.
+
+1. After building a TCP connection, the SSL handshake is started by the client that sends a number of specifications:
+. which version of SSL/TLS it is running,
+. what ciphersuites it wants to use, and
+. what compression methods it wants to use.
+
+2. The server checks what the highest SSL/TLS version is that is supported by them both, picks a ciphersuite from one of the client's options (if it supports one), and optionally picks a compression method.
+3. After this the basic setup is done, the server sends its certificate. This certificate must be trusted by either the client itself or a party that the client trusts. Having verified the certificate and being certain this server really is who he claims to be (and not a man in the middle), a key is exchanged. The client tells the server that from now on, all communication will be encrypted, and sends an encrypted and authenticated message to the server.
+4. The server verifies that the MAC (used for authentication) is correct, and that the message can be correctly decrypted. It then returns a message, which the client verifies as well.
+5. The handshake is now finished, and the two hosts can communicate securely.
+
+
+Q23: What do you understand by Distributed Transaction?
+
+Answer:
+Distributed Transaction is any situation where a single event results in the mutation of two or more separate sources of data which cannot be committed atomically. In the world of microservices, it becomes even more complex as each service is a unit of work and most of the time multiple services have to work together to make a business successful.
+
+
+Q24: What is Spike Testing?
+
+Answer:
+Spike testing is a type of stress testing that evaluates software performance when workloads are substantially increased quickly and repeatedly. The workload is beyond normal expectations for short amounts of time.
+
+Q25: When to use Redis or MongoDB?
+
+Answer:
+. Use MongoDB if you don't know yet how you're going to query your data or what schema to stick with. MongoDB is suited for Hackathons, startups or every time you don't know how you'll query the data you inserted. MongoDB does not make any assumptions on your underlying schema. While MongoDB is schemaless and non-relational, this does not mean that there is no schema at all. It simply means that your schema needs to be defined in your app (e.g. using Mongoose). Besides that, MongoDB is great for prototyping or trying things out. Its performance is not that great and can't be compared to Redis.
+
+. Use Redis in order to speed up your existing application. It is very uncommon to use Redis as a standalone database system (some people prefer referring to it as a "key-value"-store).
+
+Q26: Why layering your application is important? Provide some bad layering example.
+
+Answer:
+Each component should contain 'layers' - a dedicated object for the web, logic and data access code. This not only draws a clean separation of concerns but also significantly eases mocking and testing the system.
+
+Though this is a very common pattern, API developers tend to mix layers by passing the web layer objects (for example Express req, res) to business logic and data layers - this makes your application dependant on and accessible by Express only. App that mixes web objects with other layers can not be accessed by testing code, CRON jobs and other non-Express callers
+
+
+Q27: Differentiate between software architecture and software design? 
+
+Answer: 
+Software architecture refers to the program structure. As such, it can be understood as the bare skeleton of a program. Software design refers to the actual implementation of the code for the software requirements. So, software architecture can be considered as the program blueprint and software design can be considered as the process of how to build the program. As far as development is concerned, software design gets into the details. Both software architecture and software design are two separate processes that work together to form an integrated development process.
+
+
+Q28: Talk about continuous integration and continuous delivery?
+
+Answer: 
+Continuous integration and continuous delivery are two interconnected software engineering processes. Continuous integration is a process that takes place in an ongoing manner to ensure that the program is built and tested regularly. Continuous delivery, on the other hand, is the ongoing development process that takes place in the latter part of the program lifecycle just before the production. These two processes form a cohesive automated process that keeps the work on track and increases production speed by getting rid of the inconsistencies between the development and operations teams.
+
+
+Q29: How can you build scalability into a software program?
+
+Answer: 
+Scalability is an important aspect to be considered for enhancing productivity, especially concerning higher user demands and adaptation of functions and elements to higher amounts of user data. To determine the lifetime value of a software program, one must check its scalability. Lack of scalability warrants the need for rewriting the application with a new tech stack that adapts to the growth in audience. The scalability of a program can increase with features like cache, states, API, sort, and asynchronous programming. Moreover, tools like databases and frameworks have greater scalability than some others.
+
+
+Q30: Why is Microservices architecture used?
+
+Answer: 
+Microservices architecture is characterized by integrating several small but independently deployable services into one application. It makes the operation more versatile as different programming languages can be used for writing individual services. Thus, different languages can be leveraged for different services. Maintenance is also easier as, even though the services are integrated, they are loosely connected. The microservices architecture model works well with and is preferred by larger teams, however, it may not be completely free of challenges like debugging.
+
+
+Q31: What are NoSQL databases? Mention different types of NoSQL databases.
+
+Answer: 
+With the increase in big data, the internet has become a complex place. NoSQL databases help solve this problem. The NoSQL databases are neither traditional nor relational database management systems. NoSQL stands for ‘Not Only SQL’. With the growing amounts of data, a large percentage, close to 85%, is unstructured, messy, and complicated. NoSQL database handles and sorts such data. Thus, NoSQL offers a storage and retrieval mechanism for data that is modeled using other means and not the tabular relations used in RDBMS.
+
+Types of NoSQL databases include:
+
+. Graph
+. Key-Value
+. Document Oriented
+. Column Oriented
+
+
+Q32: Explain SQL injection.
+
+Answer: 
+An SQL injection can destroy the database by injecting malicious code or hack your database by injecting a hacking code. This occurs because there is little separation between the program code and the user input. SQL injection is a common type of injection attack on databases.
+
+An injection attack can be prevented in the following ways:
+
+. Prepare statements with queries that have defined parameters
+. Have pre-defined and stored procedures
+. Have a validation process for the input whereby you can blacklist or whitelist the input
+. Use the principle of least privilege, i.e. do not provide premium administrator type access to the public database server. So, even if the hacker is able to hack into the application, it would not compromise the integrity of the database as they wouldn’t be able to access it.
+
+
+
+Q33: Differentiate between acceptance and functional tests.
+
+Answer: 
+The differences are as follows:
+
+Functional testing: Functional testing is done to verify whether the product, especially the application, is working as required or not. It ascertains whether the created software meets the business needs.
+
+Acceptance testing: Acceptance testing is done to validate whether or not you built the right product. It validates that the product meets the customer’s needs. Acceptance tests ascertain that the user (customer) is actually benefiting from the product and is using it for the purpose it was meant for.
+
+Q34: Mention some performance testing steps.
+
+Answer: 
+Below are some performance testing steps:
+
+. Determine the environment for testing
+. Finalize what performance metrics to use
+. Create a plan and design for the performance test
+. Configure the environment for the test
+. Implement the design for the test
+. Execute the performance tests
+. Conduct test analysis, create test report, and advise retest for underperforming applications
+
+
+Q35: Mention some advantages of Web Services.
+
+Answer: 
+Web Services have the following advantages:
+
+. Interoperability: Web services can be accessed over the network and run using HTTP/SOAP protocols. For transporting data, web services use XML/JSON, thus, they can be rendered using different programming languages. For example, a web service that is written in Java is accessible over the network, runs on HTTP/SOAP protocol, and uses XML/JSON to transport data, hence it can be developed in any programming language. Web service can be written in java programming with PHP as the client and vice versa.
+. Reusability: Many client applications can use the same web service at the same time.
+. Loose Coupling: Web services client code does not depend on server code, thus, loose coupling is possible in the application.
+. It is easy to deploy and integrate, exactly like web applications.
+. Several versions of the service can run at the same time.
+
+
+Source: https://talent500.co/blog/interview-questions-and-answers-for-backend-developer/
+
+Q36: How would you manage Web Services API versioning?
+
+Answer: 
+Versioning is a critical part of API design, as it gives developers the ability to improve their API without stopping the clientʼs applications whenever new updates are rolled out. The three types of API versioning are:
+
+. URL Versioning or Route Versioning: This solution uses URI routing to point to a specific version of the API.
+. Versioning using a custom header: REST APIs are versioned by providing custom headers with the version number included as an attribute.
+. Query String Parameter: Considered to be the worst method, the version number is included as a query parameter.
+
+
+
+Q37: How would you find the most expensive queries in an application?
+
+Answer: 
+Expensive queries are database queries that execute very slowly or utilize large amounts of CPU or memory resources. These queries are the most common cause of performance issues in an application.
+SQL Activity Monitor is an easy and rich UI tool available in the SQL Server Management Studio. You can also use SQL Dynamic Management View (DMV) to view the most expensive queries.
+
+Q38:  When would you apply asynchronous communication between two systems?
+
+Answer: 
+In asynchronous communications, the client sends a request to the server (typically requiring lengthy processing), while receiving a delivery acknowledgment immediately.
+After the client receives the acknowledgment, it carries on with other tasks and will be notified eventually when the server finishes processing the request. The main benefit of asynchronous communications is improved performance.
+Asynchronous communications can be applied in situations where the response is not required immediately, and the current process can continue without the response. Real-world examples can include email, Slack, and other messaging platforms.
+
+
+Q39: In what situation would you choose RDBMS and where would you choose NoSQL?
+
+Answer: 
+An RDBMS is used when you need ACID (Atomicity, Consistency, Isolation, Durability) compliance to reduce anomalies and protect data integrity and when the data is structured and unchanging.
+On the other hand, NoSQL is recommended for high volume environments, cloud computing & storage, and when using unstructured data. Examples of NoSQL databases are MongoDB, Cassandra, HBase, and CouchDB.
+
+
+Q40: What is an MVC framework?
+
+Answer: 
+A Model-View-Controller is a software design pattern that separates an application into three logical interconnected components – the model, the view, and the controller. It is used to organize the code into simple organized components. MVC helps in letting your code interact with another developerʼs code, based on their functions.
+
+
+Q41: Which sorting algorithm to use and when?
+
+Answer: 
+. Quick Sort: is one of the most efficient sorting algorithms. It is based on the splitting of an array or list into smaller ones and swapping values based on the comparison with the ‘pivot’ element selected. It is more effective for data that can fit in memory. Otherwise merge sort is preferred.
+. Bubble Sort: The simplest but most inefficient sorting algorithm, it repeatedly cycles through a list, compares adjacent values, and swaps them if they are in the wrong order. It is mostly used when array is small or if large data which is nearly sorted.
+. Selection Sort: It is a fast and simple comparison-based sorting algorithm. It sorts by finding the minimum element repeatedly in an array. It is mostly used when an array is small as its time complexity makes it inefficient for larger arrays.
+. Merge Sort: One of the most efficient algorithms, it uses the principle of divide and conquer. It iteratively breaks down lists into sub-lists consisting of single elements and then merges these elements as per the requirements. Widely used in case of linked list or where the known data is similar.
+
+
+Q42: What are the qualities any good backend developer must possess?
+
+Answer: 
+This is a great question with which to impress the interviewer, as you can tell them about your competencies and understanding of the position. However, many candidates make the mistake of only talking about a couple of their strengths. The ideal answer should include at least some of the following points:
+
+. In-depth knowledge of server programming languages like Python, Ruby, Java, Perl
+. Great acquaintance with NoSQL and RDBMS
+. Good understanding of front-end technologies (easy to work with frontend developers)
+. Basic understanding of cloud deployments
+. Ability to develop business logic within any app
+. Ability to easily create functional APIs
+. Design of service architecture
+. Ability to optimize web applications
+
+Q43: What do you find hardest about coding?
+
+Answer: 
+This question is designed for the interviewer to find out about your weaknesses or technical deficiencies. It is best to give an honest answer (without beating yourself up too much) about a specific area that might not be your strong point. What is more important is to let the interviewer know that you are improving yourself by learning, reading, or researching to upgrade your technical skills.
+
+Backend development is an immense topic, and the above list of interview questions is only the tip of the iceberg. Use this list as a reference, after doing your research on the basic questions asked in an interview for backend developers.
+
+Source: https://code.coursesity.com/nodejs-interview-questions
+
+Q44: Why are some advantages of Node.js?
+
+Answer: 
+Node.js simplifies the development of scalable network programs. The following are some of its advantages:
+
+. Generally, it is fast
+. Rarely blocks
+. Offers a unified programming language and data type
+. Everything is asynchronous
+. Provides great concurrency
+
+Q45: Explain how Node.js works?
+
+Answer: 
+A web server using Node.js typically has a workflow, which can be explained with the following points:
+
+. To interact with the web application, clients send requests to the webserver. Requests can be non-blocking or blocking:
+. Asking for data
+. Deleting data
+. Updating data
+. Node.js retrieves the incoming requests and adds them to the Event Queue.
+. The requests are then passed through the Event Loop one by one. It determines if the requests are simple enough not to require any external resources.
+. The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and delivers the responses to the corresponding clients.
+
+
+Q46: What are the advantages of using promises instead of callbacks?
+
+Answer: 
+When you use promise, you get an object to decide what action needs to be taken after completing the async task. As a result, the code is more manageable and callback hell is avoided.
+
+Q47: How many types of API functions are there in Node.js?
+
+Answer: 
+There are two types of API functions in Node.js:
+
+1. Asynchronous, non-blocking functions- Mainly I/O operations that can be fork out of the main loop.
+
+2. Synchronous, blocking functions- Primarily operations that affect the process running in the main loop.
+
+
+Q47: What is middleware?
+
+Answer: 
+Middleware sits between your request and business logic. It mainly captures logs and enables rate limits, routing, authentication, and anything else that does not belong to business logic. Furthermore, third-party middleware is available, such as body-parser, and you can write your middleware for a specific use case.
+
+
+Q48: What is NPM?
+
+Answer: 
+. NPM stands for Node Package Manager, which is responsible for managing all the packages and modules for Node.js. There are two main functions of Node Package Manager:
+
+. Provides online repositories for node.js packages/modules, searchable on search.nodejs.org.
+Manages Node.js versions and dependencies and also provides command-line utility to install Node.js packages.
+
+
+Q49: What are some of the most commonly used libraries in Node.js?
+
+Answer: 
+In Node.js, there are two commonly used libraries:
+
+. ExpressJS - Express is a flexible Node.js web application framework that offers a wide variety of features for developing mobile and web applications.
+
+. Mongoose - Mongoose is also a Node.js web application framework that allows you to connect an application to a database.
+
+
+Q50:  What is the package.json file?
+
+Answer: 
+Package.json is the heart of a Node.js system. The file contains the metadata for a particular project. Normally, package.json is found in the root directory of a Node application or module.
+
+This is what a package.json file looks like immediately after you create a Node.js project using the command: npm init
+
+When you create a Node.js project, you can modify the parameters.

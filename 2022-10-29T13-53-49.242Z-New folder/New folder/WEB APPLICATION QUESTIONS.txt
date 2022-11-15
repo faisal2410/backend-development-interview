@@ -1,0 +1,51 @@
+			50 INTERVIEW QUESTION FOR WEB APPLICATIO BACKEND DEVELPMETN
+1.Please descibe the basic diffrence between front end and backend development?
+2. What is aggrigation in mongodb?
+3.what is replication in mongodb?
+4.How does react work?
+5.How to use props in react?
+6.What do you mean by Asynchronous Api?
+7.What is CallBack hell?
+8.What is Reconciliation?
+9.Does MongoDB support Forign Key Constraints?
+10.How can u achieve transaction and locking MONGODB?
+11.How does NODE JS handle Child Threats?
+12.How can you avoid CALL BACK HELL in node js?
+13.If node.js is single-threaded then how does it handle concurrency?
+14.What are pure components?
+15.What are React hook?
+16.What is routing?
+17.What is JSX?
+18.What is sharding in mongoDB?
+19.What is steam and what are the types of steam available in NODE JS?
+20.WHAT is prop driling?
+21.What are the features of Event Loop?
+22.What is the diffrence betweeen SOAP AND REST?
+23.What is the use of namespace in webDevelopment?
+24.What are the newly indtroduce inputs in HTML5?
+25.What are the From element that support Media content in HTML5?
+26.What is SVG and Why it is USED?
+27.What is the use of Canvas in HTML?
+28.What is the diffrece between CANVAS and SVG?
+29.What is the Use of Cors?
+30.What is the between Local Storage and Session Storage Object?
+31.What are some of new Features that introduced in CSS3?
+32.What is responsive web design in HTML AND CSS?
+33.What are the some of the of CSS that are used?
+34.What is the use of Selectors in CSS?
+35.What is the Use of Gropuing in CS3?
+36? What is the use of a classs selector in css?
+37.What are Key Feture of MongoBD?
+38.When should we embed one document with another in Mongodb?
+39.What is Sharding in MongoDB?
+40.What are Indexes in MongoDB?
+41.What is Bson in MongoDB?
+42.What is Replica Set?
+43.What is Replication in MongoDB?
+44.What is the diffrence between replicaOne() and updateOne() in MongoDB?
+45.Exaplain the structure of objectid() in MongoDB?
+46.When to use MongoDB vs other documetn oriented database system?
+47?Should i normailze my DATA before sorting in mongodb?
+48.when to use COUCHDB  OVER mongodb and vice versa?
+49.How can u achive transaction in mongoDB?
+50.WHAT IS COVERD QUERY IN MONGODB?

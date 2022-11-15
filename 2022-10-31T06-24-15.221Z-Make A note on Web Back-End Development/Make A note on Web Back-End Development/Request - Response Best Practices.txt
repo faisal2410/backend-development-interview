@@ -1,0 +1,21 @@
+1. Accept and respond with JSON
+2. Use nouns instead of verbs in endpoint paths
+3. Use logical nesting on endpoints
+4. Handle errors gracefully and return standard error codes
+5. Allow filtering, sorting, and pagination
+6. Maintain good security practices
+7. Cache data to improve performance
+8. Versioning  APIs
+9. GO WITH ERROR STATUS CODES
+10. DON’T USE VERBS IN URLS
+11. USE PLURAL NOUNS TO NAME A COLLECTION
+12. WELL COMPILED DOCUMENTATION
+13. RETURN ERROR DETAILS IN THE RESPONSE BODY
+14. USE RESOURCE NESTING
+15. USE SSL/TLS
+16. Use Filtering, Sorting, and Pagination to Retrieve the Data Requested
+17. Use sub-resource for relationships
+18. Use HTTP status codes in responses
+19. Error object with some helpful info
+20. Use HATEOAS for better API navigation
+21. Allow overriding HTTP method

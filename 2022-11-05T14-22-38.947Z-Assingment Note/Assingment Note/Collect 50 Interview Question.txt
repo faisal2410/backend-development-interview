@@ -1,0 +1,55 @@
+50 Interview Question note:
+
+1.What is your favorite programming language? And why?
+2.What do you understand by NoSQL databases? Explain.
+3.What is the difference between software architecture and software design?
+4.What is JavaScript, and why is it used?
+5.What is your approach to debugging?
+6.How would you find the most expensive queries in an application?
+7.What is the difference between an acceptance test and a functional test?
+8.Which sorting algorithm should you use and when? 
+9.What is the meaning of “high cohesion” and “loose coupling”?
+10.Why should you use microservices architecture?
+11.Explain the difference between cohesion and coupling?
+12.When is refactoring useful?
+
+13.What is your experience with object-oriented programming (OOP)?
+14.Tell us about a time when you received criticism about your work and how you handled    it. 
+15.If you have to deliver negative feedback to members of your development team, how    would you do it?
+16.Tell me about your favorite development project to date and what it was like from    start to finish.
+17.What is your experience with GoTo, and do you prefer structured programming?
+18.Tell me about the largest web application you have ever worked on? What coding were    you responsible for?
+19.What's your preferred type of development environment?
+20.Which programming languages do you want to work with and why?
+
+21.What do you think contributes to a successful project?
+22.How do you keep up with the latest technologies and trends?
+23.Tell me about a time when you had to work with someone difficult? How did you handle    it?
+24.What is the most difficult change you’ve encountered in your career?
+25.How do you handle situations where there is a lot of tension between you and a    colleague?
+
+26.How would you explain the difference between design and architecture?
+27.Define the terms “stack” and “heap.” What’s a stack overflow?
+28.When is refactoring useful?
+29.What do the terms “high cohesion” and “loose coupling” mean?
+30.What are the pros and cons of holding domain logic in stored procedures?
+31.What do you think makes object-oriented design the preferred approach?
+32.What do you find lacking in your favorite development language? How do you cope with 33.those gaps?
+34.What do classes and closures have in common?
+35.When are anonymous functions useful?
+
+36.How did you get into coding?
+37.What's your greatest strength as a coder?
+38.If you were in charge of a tech company, how would you manage its developers?
+39.Tell me about a time when someone criticized your work and explain how you    responded.
+40.How do you deliver negative feedback to members of your development team?
+41.Have you ever worked on a team project where you felt you were doing most of the 42.work? How did you manage that?
+43.Tell me about the coding accomplishment you’re most proud of?
+44.What's the most challenging decision you've faced in your career?
+45.What’s your experience with object-oriented programming (OOP)?
+46.What’s your favorite programming language, and why?
+47.What’s your experience with GoTo, and do you prefer structured programming?
+
+48.Where do you see yourself professionally in five years?
+49.What words would your coworkers use to describe you?
+50.What do you find most satisfying about this type of work?

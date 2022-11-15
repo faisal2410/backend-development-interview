@@ -1,0 +1,13 @@
+------------------------------------Web security best practices -------------------------------
+1)Maintain Security During Web App Development
+2)Be Paranoid: Require Injection & Input Validation (User Input Is Not Your Friend)
+3)Encrypt your data
+4)Use Exception Management
+5)Apply Authentication, Role Management & Access Control
+6)Don't Forget Hosting/Service-Focused Measures
+7)Avoid Security Misconfigurations
+8)Implement HTTPS (and Redirect All HTTP Traffic to HTTPS)
+9)Include Auditing & Logging
+10)Use Rigorous Quality Assurance and Testing
+11)Use Custom middleware to implement own security.
+12)Be Proactive to Keep Up With the Bad Guys

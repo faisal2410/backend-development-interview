@@ -1,0 +1,142 @@
+******** JSON Best Practices ********
+
+What is JSON?
+
+* JSON describes JavaScript Object Notation.
+
+* JSON is a data interchange format that is easy to parse and generate. 
+
+* JSON is an extension of the syntax used to describe object data in JavaScript. 
+
+* Yet, it’s not restricted to use with JavaScript. It has a text format that uses object and array structures for the portable representation of data. 
+
+* All modern programming languages support these data structures, making JSON completely language independent.
+
+* The official Internet media type for JSON is application/json.
+
+* The file extension is .json.
+
+* It was designed for human-readable data interchange. That's why it’s not secure data interchange format.
+
+* We encrypt and decrypt the JSON for data security.
+
+
+
+Uses of JSON:
+* It is used while JavaScript based applications that includes browser extensions and websites.
+
+* JSON format is used for serializing and transmitting structured data over network connection.
+
+* It is primarily used to transmit data between a server and web applications.
+
+* Web services and APIs use JSON format to provide public data.
+
+
+
+Characteristics of JSON:
+* JSON is easy to read and write.
+* It is a lightweight text-based interchange format.
+* JSON is language independent.
+
+
+
+JSON Structure:
+{ 
+    "name":"Katherine Johnson", 
+    "age":101,
+    "orbital_mechanics": ["trajectories","launch windows","emergency return paths"], 
+    "mathmatician": true, 
+    "last_location": null 
+}
+
+
+
+JSON Data Types:
+* string – Literal text that’s enclosed in quotes.
+* number – Positive or negative integers or floating point numbers.
+* object – A key, value pair enclosed in curly braces
+* array – A collection of one or more JSON objects.
+* boolean – A value of either true or false with no quotes.
+* whitespace - Can be used between any pair of tokens.
+* null – Indicates the absence of data for a key value pair, represented as “null” with no quotes.
+
+
+
+JSON Bad Special Characers & Solution:
+The following characters are reserved characters and can not be used in JSON and must be properly escaped to be used in strings.
+
+* Backspace to be replaced with \b
+* Form feed to be replaced with \f
+* Newline to be replaced with \n
+* Carriage return to be replaced with \r
+* Tab to be replaced with \t
+* Double quote to be replaced with \"
+* Backslash to be replaced with \\
+
+JSONObject.escape() method can be used to escape such reserved keywords in a JSON String.
+
+    Code Example:
+        import org.json.simple.JSONObject;
+
+        public class JsonDemo {
+        public static void main(String[] args) {
+            JSONObject jsonObject = new JSONObject();
+            String text = "Text with special character /\"\'\b\f\t\r\n.";
+            System.out.println(text);
+            System.out.println("After escaping.");
+            text = jsonObject.escape(text);
+            System.out.println(text);
+        }
+        }
+
+    Output:
+        Text with special character /"'
+        .
+        After escaping.
+        Text with special chara
+
+    * Use JSON Lint to format and valid JSON Data List
+
+
+Always enclose the Key: Value pair within double quotes:
+    * {'id': '1', 'name': Sayed} is not right
+    * {"id": 1, "name": "Sayed"} is okay
+    * {"id": "1", "name": "Sayed"} is the best
+
+
+Never use Hyphens in Key Fields:
+    * {"first-name": "Abu", "last-name": "Sayed"} is not right.
+    * {"first_name": "Abu", "last_name": "Sayed"} is okay.
+    * {"firstname": "Abu", "lastname": "Sayed"} is okay.
+    * {"firstName": "Abu", "lastName": "Sayed"} is the best. Using camel case is the best practice.
+
+
+
+Always create a root element:
+
+    JSON with root element---
+    {
+        "phone":[
+            {
+                "type":"home",
+                "phoneNo": "01558 585858"
+            },
+            {
+                "type":"work",
+                "phoneNo": "01558 835966"
+            }
+        ]
+    }
+
+    JSON without root element---
+    [
+        {
+            "type":"home",
+            "phoneNo": "01558 585858"
+        },
+        {
+            "type":"work",
+            "phoneNo": "01558 835966"
+        }
+    ]
+

@@ -1,0 +1,22 @@
+API Response Best Practices.
+
+Response Header:
+
+1.header এ সবসময় status code mainten করতে হবে
+2.  file ,content type  উল্লেখ করতে হবে ।
+3.Cache issue  থাকলে উল্লেখ করতে হবে।
+4.Authentication /authorization থাকলে  Response header এর মাধ্যমে use করতে হবে।
+5.response header এ কোন property দিলে string হতে হবে।
+key:value string আকারে দিতে হবে
+
+6.content length ব্ল্র দিতে হবে
+
+
+
+Response Body: 
+
+1.bodystatus,message তে status code নিয়ে আসা যাবে না।
+
+Response cookie
+cookie encryption,deycription kore use korte hobe.
+

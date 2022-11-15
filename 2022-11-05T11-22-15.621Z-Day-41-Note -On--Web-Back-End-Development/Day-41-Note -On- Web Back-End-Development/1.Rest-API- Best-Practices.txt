@@ -1,0 +1,122 @@
+********* Rest API Best Practices *********
+
+01) Use HTTP Methodes & API Routes:
+For creating, updating, retrieving or deleting data from database we use HTTP methods. There are many types of HTTP methods.....
+	
+	i. POST- To add/create
+	ii. GET- To retrieve/read
+	iii. PUT- To update/replace
+	iv. PATCH- To update/modify____mainly simple update/modify
+	v. DELETE- To delete data
+
+Among these methods, POST and GATE methods are the most commonly used.
+
+
+02) REST API MUST ACCEPT AND RESPOND WITH JSON:
+It is a common practice that APIs should accept JSON requests as the payload and also send responses back. JSON is a open and standardized format for data transfer. It is derived from JavaScript in a way to encode and decode JSON via the Fetch API or another HTTP client. Moreover, server-side technologies have libraries that can decode JSON without any hassle.
+
+Let’s have a look at an example of API where JSON accepts payloads. A screenshot from Postman to send JSON to our API.
+
+
+03) Use HTTP Status Codes Correctly:
+If something goes wrong while serving a request, you must set the correct status code for that in the response. There are many types of status code. Such 100, 200, 201,
+
+	Information Status Codes
+		* 100 --- Continue
+		* 101 --- Switching Protoclos
+		* 102 --- Processing Request
+		* 100 --- Continue
+
+	Successful Status Codes
+		* 200 --- OK
+		* 201 --- Created
+		* 202 --- Accepted
+		* 203 --- Non Authoritative Information
+		* 202 --- No Content
+
+	Redirection Status Codes
+		* 300 --- Multiple Choices
+		* 301 --- Moved Permanently
+		* 302 --- Found
+		* 303 --- See Other
+		* 304 --- Not Modified
+		* 305 --- Use Proxy
+		* 306 --- Unused
+		* 307 --- Temporary Redirect
+		* 308 --- Permanent Redirect
+
+	Error Status Codes
+		* 400 --- Bad Request
+		* 401 --- Unauthorized
+		* 402 --- Payment Required
+		* 403 --- Forbidden
+		* 404 --- Not Found
+		* 405 --- Method Not Allowed
+		* 406 --- Not Acceptable
+		* 407 --- Proxy Authentication Required
+		* 408 --- Request Timeout
+		* 413 --- Pyload Too Large
+		* 414 --- URI Too Large
+		* 415 --- Unsupported Media Type
+
+	Server Error Status Codes
+		* 500 --- Internal Server Error
+		* 501 --- Not Implemented
+		* 502 --- Bad Gateway
+		* 503 --- Service Unavailable
+		* 504 --- Gateway Timeout
+		* 505 --- HTTP Version Not Supported
+		* 508 --- Loop Detected
+		* 511 --- Network Authentication Required
+
+
+04) Use HTTP Headers to Send Metadata:
+To attach metadata about the payload you are about to send, use HTTP headers. Headers like this can be information on:
+
+	* Pagination
+	* Rate Limiting
+	* Authentication
+
+
+05) Do JWT-Based, Stateless Authentication:
+As our REST APIs must be Stateless, so does our authentication layer. For this, JWT (JSON Web Token) will be the best choice for us.
+
+	JWT consists of three parts
+		i. Header, containing the type of the token and the hashing algorithm
+		ii. Payload, containing the claims
+		iii. Signature (JWT does not encrypt the payload, just signs it!)
+
+Adding JWT-based authentication to your application is very straightforward
+
+
+06) Use Conditional Requests:
+Conditional requests are HTTP requests which are executed differently depending on specific HTTP headers. You can think of these headers as preconditions: if they are met, the requests will be executed in a different way.
+
+These headers try to check whether a version of a resource stored on the server matches a given version of the same resource. Because of this reason, these headers can be:
+	* The timestamp of the last modification,
+	* An entity tag, which differs for each version.
+
+These headers are:
+	* Last-Modified (to indicate when the resource was last modified)
+	* Etag (to indicate the entity tag)
+	* If-Modified-Since (used with the Last-Modified header)
+	* If-None-Match (used with the Etag header)
+
+
+07) Embrace Rate Limiting
+Rate limiting is used to control how many requests a given consumer can send to the API.
+
+To tell your API users how many requests they have left, set the following headers:
+
+	* X-Rate-Limit-Limit: the number of requests allowed in a given time interval
+	* X-Rate-Limit-Remaining, the number of requests remaining in the same interval
+	* X-Rate-Limit-Reset, the time when the rate limit will be reset
+
+
+
+08) API Testing:
+To test an API it's working properly or not, we can use Postman.
+
+
+09) create a Proper API Documentation
+We write APIs so others can use them, benefit from them. Providing an API documentation for our Node.js REST APIs are crucial

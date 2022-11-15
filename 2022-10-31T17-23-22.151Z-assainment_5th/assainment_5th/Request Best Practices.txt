@@ -1,0 +1,14 @@
+ Request Best Practices
+
+When use GET(): 
+
+ছোট ডাটা এর সময় use করব
+data change করার সময় GET use করব না
+select করার সময়  GET use করব
+request url & header use করব
+
+When use POST(): 
+action  এর সময় যদি data change হই তাহলেPOST  use করব 
+
+documents , images , video client সাইট এ  upload করার সময় POST use করব
+ 

@@ -1,0 +1,52 @@
+1. What Is CAP Theorem?
+2. What REST stands for?
+3. What are NoSQL databases? What are the different types of NoSQL databases?
+4. What do you understand by NoSQL databases? Explain.
+5. What is SQL injection?
+6. What is meant by Continuous Integration?
+7. How to mitigate the SQL Injection risks?
+8. Name some performance testing steps
+9. Name the difference between Acceptance Test and Functional Test
+10. What are some advantages of using JavaScript?
+11. What are the advantages of Web Services?
+12. Why Would You Opt For Microservices Architecture?
+13. Name some Performance Testing best practices
+12. What Do You Mean By High Availability (HA)?
+13. What Is ACID Property Of A System?
+14. What Is Sticky Session Load Balancing? What Do You Mean By "Session Affinity"?
+15. What are disadvantages of REST web services?
+16. What are the DRY and DIE principles?
+17. What are the difference between Clustered and a Non-clustered index?
+18. What is the difference between Monolithic, SOA and Microservices Architecture?
+19. What is the difference between JOIN and UNION?
+20. What is the difference between WHERE clause and HAVING clause?
+21. Explain what is the API Gateway pattern
+22. How does SSL/TLS work ?
+23. How does B-trees Index work?
+24. What do you understand by Distributed Transaction?
+25. What is GOD class and why should we avoid it?
+26. What is Spike Testing?
+27. What is BASE property of a system?
+28. What's the difference between Faking, Mocking, and Stubbing?
+29. What's the difference between principles YAGNI and KISS?
+30. When to use Redis or MongoDB?
+31. Why layering your application is important? Provide some bad layering example.
+32. Are you familiar with The Twelve-Factor App principles?
+33. How would you implement SSO for Microservice Architecture?
+34. Name some best practices for better RESTful API design
+35. What is object-oriented programming?
+36. What is a constructor?
+37. What are the different types of constructors?
+38. What is serialization?
+39. What is the difference between finally, final, and finalize?
+40. Explain the architectural style used to create the web API.
+41. What is the difference between an acceptance test and a functional test?
+42. What does REST stand for and what is a RESTful API?
+43. What is a reverse proxy?
+44. What are the stages of performance testing?
+45. What is the difference between the high-level comparison SQL and MongoDB databases?
+46. How do you understand the term Containerization?
+47. Please tell me what were the reasons that you chose the Microservices architecture?
+48. What are some best practices that are used for performance testing?
+49. If Node.js is single-threaded then how does it handle concurrency?
+50. Give examples of the mitigation tactics you’d use for various types of API attacks.

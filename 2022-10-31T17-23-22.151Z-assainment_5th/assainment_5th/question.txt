@@ -1,0 +1,186 @@
+1.What is a first class function..?
+
+In Javascript, functions are first class objects. First-class functions means when functions in that language are treated like any other variable.
+
+For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. For example, in the below example, handler functions assigned to a listener
+
+const handler = () => console.log("This is a click handler function");
+document.addEventListener("click", handler);
+ 
+2. What is a first order function..?
+First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+
+const firstOrder = () => console.log("I am a first order function!");
+
+
+3.What is a higher order function..?
+Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
+
+const firstOrderFunc = () =>
+  console.log("Hello, I am a First order function");
+const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
+higherOrder(firstOrderFunc);
+
+
+4. What is the purpose of the let keyword.?
+The let statement declares a block scope local variable. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the var keyword used to define a variable globally, or locally to an entire function regardless of block scope.
+
+Let's take an example to demonstrate the usage,
+
+let counter = 30;
+if (counter === 30) {
+  let counter = 31;
+  console.log(counter); // 31
+}
+console.log(counter); // 30 (because the variable in if block won't exist here)
+
+
+5.What is the difference between let and var..??
+
+
+var
+1.It is been available from the beginning of JavaScript
+2.It has function scope.
+3.Variables will be hoisted.
+
+let
+1.Introduced as part of ES6
+2.It has block scope
+3.Hoisted but not initialized
+
+
+
+
+6 .What is the reason to choose the name let as a keyword..??
+ANS:  let is a mathematical statement that was adopted by early    programming languages like Scheme and Basic. It has been   borrowed   from dozens of other languages that use let already as   a    traditional keyword as close to var as possible.
+
+
+7..How do you redeclare variables in switch block without an error..?
+ANS:  If you try to redeclare variables in a switch block then it       will   cause errors because there is only one block. For      example, the   below code block throws a syntax error as    below,
+
+
+8.What is Hoisting..??
+ANS :Hoisting is a JavaScript mechanism where variables,  declarations and    classes are moved to the top of their scope before code execution.    Remember that JavaScript only hoists declarations, not initialisation.    Let's take a simple example of variable hoisting,
+{
+  console.log(message); //output : undefined
+  var message = "The variable Has been hoisted"; }
+
+
+9.What are classes in ES6..??
+
+ANS: In ES6, Javascript classes are primarily syntactic sugar over      JavaScript’s existing prototype-based inheritance. For example, the        prototype based inheritance written in function expression as below,
+
+{
+
+function Bike(model, color) {
+  this.model = model;
+  this.color = color;
+}
+
+Bike.prototype.getDetails = function () {
+  return this.model + " bike has" + this.color + " color";
+};
+}
+
+10.What are modules..??
+
+ANS:    Modules refer to small units of independent, reusable code and also act as the foundation of many         JavaScript design patterns. Most of the JavaScript modules export an object literal, a function, or    a     constructor.
+
+
+11.Why do you need modules..?
+ANS:
+Below are the list of benefits using modules in javascript ecosystem
+
+Maintainability
+Reusability
+Namespacing
+
+
+12.What is scope in javascript..?
+
+ANS:
+Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
+
+13.Why do you need a promise.?
+
+ANS:
+Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+
+
+14.What is a callback function.?
+ANS:
+A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action. Let's take a simple example of how to use callback function
+
+function callbackFunction(name) {
+  console.log("Hello " + name);
+}
+
+function outerFunction(callback) {
+  let name = prompt("Please enter your name.");
+  callback(name);
+}
+
+outerFunction(callbackFunction);
+
+
+15.Why do we need callbacks.?
+ANS:
+The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events. Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
+
+function firstFunction() {
+  // Simulate a code delay
+  setTimeout(function () {
+    console.log("First function called");
+  }, 1000);
+}
+function secondFunction() {
+  console.log("Second function called");
+}
+firstFunction();
+secondFunction();
+
+Output;
+// Second function called
+// First function called
+
+16.What is callback in callback..?
+ANS:
+
+You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+
+loadScript("/script1.js", function (script) {
+  console.log("first script is loaded");
+
+  loadScript("/script2.js", function (script) {
+    console.log("second script is loaded");
+
+    loadScript("/script3.js", function (script) {
+      console.log("third script is loaded");
+      // after all scripts are loaded
+    });
+  });
+});
+
+
+18.What is a strict mode in javascript..?
+
+ANS:
+Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression "use strict"; instructs the browser to use the javascript code in the Strict mode.
+
+
+19.How do you declare strict mode..?
+ANS:
+
+The strict mode is declared by adding "use strict"; to the beginning of a script or a function. If declared at the beginning of a script, it has global scope.
+
+"use strict";
+x = 3.14; // This will cause an error because x is not declared.
+
+20.What is null value..??
+ANS:
+The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
+
+var user = null;
+console.log(typeof user); //object
+
+

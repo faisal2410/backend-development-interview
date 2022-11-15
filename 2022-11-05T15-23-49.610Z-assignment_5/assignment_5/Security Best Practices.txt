@@ -1,0 +1,230 @@
+Some Security middleware for secure a application these are given below:
+
+//Security Middleware Import
+const rateLimit= require('express-rate-limit')
+const helmet=require('helmet')
+const mongoSanitize=require('express-mongo-sanitize')
+const xss=require('xss-clean')
+const hpp=require('hpp')
+const cors=require('cors')
+const mongoose= require('mongoose');
+
+//Security Middleware Implement
+app.use(cors())
+app.use(helmet())
+app.use(mongoSanitize())
+app.use(xss())
+app.use(hpp())
+
+Top security risks are given below
+
+⭐1. Code injection
+
+Writing a secure code for an application is a developer’s primary responsibility. 
+However, when using open-source packages, you can’t entirely guarantee your codebase’s security. 
+Code injection refers to any attack where the attacker injects the code into the system and forces the application routine to execute it. 
+The attacker explores the poorly handled and untrusted data to gain insights into your codebase.
+A  common reason for this security risk is improper input and output data validation. 
+SQL injection is a recurring code injection attack most people encounter during software development. Here, 
+the attacker uses the malicious SQL code to manipulate the backend database and gain access to sensitive information which is not generally visible.
+
+⭐2. Cross-site request forgery (CSRF) attack
+
+Cross-Site Request Forgery (CSRF) is a common Node.js security vulnerability you should not ignore. 
+CSRF attack forces the authenticated users to submit a request to a web application against which they are already authenticated. 
+It allows attackers to access sensitive data and comprise the privacy and integrity of web applications.
+The primary aim of CSRF attackers is to change the state of the application by using social engineering techniques like sending a message or an email to the users. 
+CSRF attacks can cause significant damage to Node.js apps as it forces users to change their email addresses and transfer funds. 
+For admin-level users, CSRF attacks can also compromise the entire web application security and must be mitigated.
+
+⭐3. Default cookie names
+
+Cookies help websites or web applications to identify a particular user since any user action on the web application gets stored as a cookie in the underlying infrastructure. 
+Shopping carts in eCommerce websites are the most common examples of cookies. 
+The cookies will remember the items you select on the website, and when you move to the checkout page, the shopping cart will display those items.
+However, the problem with Node.js development arises when the developer opts for the default cookie names instead of customizing them as per the need. 
+Since attackers are aware of the default cookie name, they are likely to attack and access the user input under the rich ecosystem effortlessly based on this information.
+
+⭐4. X-Powered-By header
+
+X-Powered-By header is a common non-standard HTTP response header used by many scripting languages as a default option. 
+With the help of server and configuration management techniques, you can either enable or disable this header. 
+However, developers may fail to disable the X-Powered-By header, and that gives attackers access to some vital information. 
+This header reveals the technology used in app development and permits attackers to exploit various security vulnerabilities associated with that particular technology.
+
+⭐5. Brute-force attacks
+
+Brute force attacks are among the most recurrent attacks or risks you will find in any Node.js security checklist. 
+The attackers generate random passwords and try implementing them on login endpoints of web applications to access critical information. 
+Brute forcing is all about making millions of combinations until you find the correct password for the web application. 
+To prevent brute-force attacks, you will need to strengthen your authentication mechanism for Node.js applications. 
+Additionally, you can also limit the number of login attempts from one IP to deal with such risky situations and utilize bcrypt.js to safeguard the passwords stored in the database.
+
+⭐6. Distributed Denial of Service (DDoS) attacks
+
+A Distributed Denial of Service (DDoS) attack attempts to disrupt the regular traffic of a server, service, or network by overwhelming it
+ or loading the production environment with a flood of internet traffic that may involve malicious JavaScript code. 
+ The Node.js version 4.0.0 and 4.1.1 have given rise to DDoS attacks as they allow attackers to exploit the bug in the HTTP handling.
+Limiting these attacks is extremely essential for ensuring the smooth performance of your Node.js applications as they can crash your servers, networks, or services and damage your rich ecosystem.
+ Limiting the number of requests can significantly help in mitigating them.
+
+⭐7. Cross-Site Scripting (XSS) attack
+Cross-site scripting attacks are vital threats you need to deal with while working on Node.js web application development. 
+Cross-Site Scripting (XSS) enables attackers to inject client-side scripting involving tweaked JavaScript code to the web app caused by missing input validation of hostnames returned by Domain Name Servers.
+An attacker can use XSS to send a malicious script to the end-user, and the end-users browsers have no way to identify the trustworthiness of the codebase. 
+As a result, they execute it by default, and attackers can access any cookies, session tokens, or other sensitive information. 
+These scripts can also rewrite the content of any HTML page, making  XSS quite fatal.
+
+With sufficient knowledge of Node.js risks, let’s decode its best practices to help you prevent such situations.
+
+⭐Application security⭐
+
+⭐1. Keep an eye on logging and monitoring to avoid irregularities
+
+Recommended modules to use for logging and monitoring activities:
+
+Node.js internal modules like Winston, Bunyan, and Pinto allow streaming. These can be used to handle uncaught exceptions and querying logs.
+The logs could also be used for feeding Intrusion Detection or Intrusion Prevention System (IP/IPS).
+Modules like toobusy-js can be used for monitoring the event loop.
+Monitoring modules also keep track of response time when the server gets busy or CPU consumption rises.
+
+⭐2. Make use of flat Promise chains to avoid layers of nesting
+
+⭐3. Avoid blocking the event loop for neat performance
+
+What can be done to avoid blocking the event loop?
+
+Node.js gives developers the option to assign callbacks to IO-blocked events, allowing the callback to run asynchronously.
+Operations relying on one another can be written in a single non-blocking function.
+Employing the below-mentioned command function that doesn’t block the event loop
+
+
+⭐4. Managing uncaught exception to avoid security loopholes
+
+The EventEmitter object emits the uncaughtException to the main event loop. 
+It is advisable to bind up the uncaughtException to the event and clear unallocated resources like handlers and file descriptors.
+Even the use of EventEmitter leaves a possibility of errors being left within the event chain, causing the application to crash unexpectedly. 
+To avoid this, show a customized error message on display for the users instead of giving away the exact error.
+
+⭐5. Make strong authentication policies
+
+Execute “multi-factor authentication” or “two-factor authentication” on your application login to get rid of weak passwords.
+Consider using ready-to-use authentication solutions like OAuth, Firebase Auth, or Okta.
+Use Scrypt or Bcrypt libraries instead of utilizing Node.js in-built crypto library.
+Work on ensuring high-quality session handling policies.
+Restrict failed login attempts and never tell the user whether the username or password is incorrect.
+Always prefer solutions that follow security standards and have necessary certifications.
+
+
+⭐6. Remove unnecessary routes
+
+⭐Data security⭐
+
+⭐7. Handle errors to prevent unauthorized attacks
+
+While express routes are known for handling errors, it can even crash the app if an error is unhandled within an asynchronous callback.
+An Error object can be added in the first argument to an asynchronous call to ensure that errors are handled within the callback.
+Wrap express routes with a catch clause to avoid displaying or leaking sensitive information.
+Components like a load balancer, cloud firewall, or Ngnix can be used to limit DOS attacks.
+
+⭐8. Send only necessary information to avoid data leakage
+
+Constantly evaluate the risk of using third-party services before implementing them. Ensure the services follow security compliances like HIPAA, PCI-DSS, or GDPR.
+Keep a keen eye on network security and track network access regularly.
+Identify the most sensitive data and enforce the strictest possible security measures.
+Use various encryption techniques to encrypt all the essential data.
+
+
+⭐Server security⭐
+
+⭐9. Limit request size to avoid DOS attacks
+We took this seriously, and this is how we avoided DOS attacks:
+Limiting the request size by utilizing raw-body, external tools like firewall and ELB.
+Configuring express body-parser to accept small-size payloads.
+Requesting size limits for specific content types using express middleware and validate the data against the content type stated in the request headers.
+
+⭐10. Set up Cookie flags for session management
+
+Set up cookie flags like httpOnly, Secure, or SameSite.
+httpOnly flag can be used as a measure against XSS attacks.
+The ‘Secure’ flag ensures that cookies are sent only if the communication is over HTTP.
+SameSite flag secures the session from CSRF attacks.
+
+⭐11. Validate user inputs for restricting the XSS attacks
+
+Make use of output encoding methods or tools such as XSS-filters or Validatorjs.
+Always try to escape the rendering of dynamic content.
+Implement the content-security policies in your browser.
+Make use of the HTML sanitization and generic libraries.
+Set the HttpOnly flag in your codebase.
+Scan and monitor your web applications regularly.
+
+⭐12. Ensuring secure deserialization to prevent CSRF attacks
+
+Make use of anti-CSRF tokens in your Node.js applications.
+Try using the SameSite flag in the session cookies.
+Consider implementing user interaction-based protection on sensitive operations.
+Try to use custom request headers throughout the Node.js application.
+For stateful software, use the token synchronization pattern.
+For stateless software, use double submits cookies.
+
+⭐13. Execute access control on each request
+
+Manually test the app modules that require specific user permissions.
+Set up log access controlling and API rate restricting on the server.
+Take the assistance of middlewares to implement access control rules.
+Consider using role-based or attribute-based access control.
+
+⭐14. Use appropriate security headers
+
+Security headers are a routine utilized by web applications to configure security defenses in web browsers. 
+They help website owners to protect their websites from generalized web security vulnerabilities. 
+There are many standard HTTP security headers that help you prevent Node.js web applications from vicious attacks. 
+
+Let’s understand a few of them in detail:
+
+Strict-Transport-Security: With the help of HTTP Strict Transport Security (HSTS), you can force the browser to access the application only via HTTPS connections.
+X-XSS-Protection: It gives security against XSS attacks. You should set the header to 0 for enabling this protection.
+X-Content-Type-Options: This header tells browsers not to change the MIME types mentioned in the ‘Content-Type’ header.
+X-Frame-Options: The header determines whether you should load the web page through <iframe> or <frame> element and saves it from Clickjacking attacks.
+Content-Security-Policy: It helps prevent the XSS and Clickjacking attacks by allowing access to the content you decide by adding to the list.
+Cache-Control: This header prevents browsers from caching the responses. You should implement this header for web pages that contains sensitive information.
+X-Download-Options:  The header prevents Internet Explorer from downloading files in the site’s content.
+Public-Key-Pins: This header increases the security of HTTPS. With the help of this header, you can associate a cryptographic public key with a particular server. If the server doesn’t use this key, the browser will consider responses illegal.
+
+⭐15. Make sure that packages are up to date
+
+Be aware of the third-party applications used in the Node.js framework.
+Keep a tab on the security issues and developments from known bulletins.
+Make use of scanners like retire.js for scanning security vulnerabilities in the JavaScript runtime built library.
+Use npm audit which warns you about all the vulnerable packages.
+
+
+⭐16. Avoid using dangerous functions to maintain application stability
+
+⭐17. Use security linters and SAST for methodological testing
+
+The Static Analysis Security Testing can be utilized for the development and component testing process.
+SAST accelerates the development process and reduces the costs of modifying or updating applications in case of any issues in the future.
+Lint tools can automatically test code source code, identify faults, and alert the developer of the potential vulnerability within the app.
+Examples of JS linting tools used within Node.js include ESLint, JSHint, and TSLint.
+
+⭐18. Make fluid build pipelines to strengthen system security
+
+Keep every environment (development, staging, and production) equal with credentials and access levels.
+You should have customized package settings instead of using the default setting.
+Always change the default user password as it can cause brute force attacks.
+Establish complete control over the webserver and application security.
+
+⭐19. Run Node.js as a non-root user
+⭐20. Use strict mode
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+http method best practices
+
+1. REST api must accept and respond with JSON
+2. Go with Error Status Codes
+3. Dont't use Verbs in URLs
+4. Use Plural nouns to name a collection
+5. Well compile documentation
+6.Return Error Details in Response Body
+7.Use security

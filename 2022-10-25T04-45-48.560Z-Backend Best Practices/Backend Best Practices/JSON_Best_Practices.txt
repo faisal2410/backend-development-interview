@@ -1,0 +1,171 @@
+
+*****   JSON Best practices   *****
+
+Source: https://rapidapi.com/blog/json-tutorial-introduction-and-beginners-guide-to-json/?utm_source=google&utm_medium=cpc&utm_campaign=DSA&gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH5Aq0OJvZPkxQi9wkK0Kz_H7Zye2A-jGdIsauxWpJlbv0jeXTdO9XgaAu6hEALw_wcB
+
+JavaScript Object Notation or simply JSON is a standard text-based data interchange format used to exchange data across various platforms. Douglas Crockford first specified it with the official website launched in 2002. Although JSON, as the name suggests, is a subset of JavaScript, it is free of any programming language used. What matters most about JSON is the notation aspect that represents data as elements or numbers.
+
+ JSON‘s popularity as a data interchange format grew due to its compatibility with many systems in data transfer and lightweight nature. JSON’s simplicity and performance over the Extensible Markup Language (XML) became traction to many users today.
+
+
+*****   Features of JSON   *****
+
+***** JSON is Lightweight  *****
+The JSON format is object-oriented, which implies that it can be used directly without parsing, making it lightweight. The JSON format is better in its representation of arbitrary data trees. This feature is attributed to the fact that JSON is undoubtedly not a document markup language that requires tags for processing instructions, comments, or attributes in data representation.
+
+
+*****  Performance  *****
+Data model library implementation in JSON is lightweight, making rendering, parsing and processing of JSON faster. JSON does not support namespaces and attributes, hence fewer data constraints and faster speeds during data processing.
+
+*****  Flexibility  *****
+JSON is independent of any programming language, giving developers the autonomy to select their language of preference. Due to this aspect, convectional popular languages in the C-family such as JavaScript, Python, Java, C# and many others can be used. Programmers do not need to reinvent codes or use third-party software due to its wide range of reusable software and easy integration with numerous languages.
+
+*****  Easy to Read and Write  *****
+JSON has a comfortable and standard structure that makes it easy to comprehend and create. JSON is data-oriented, drastically reducing the need for namespaces and attributes in writing code. Machines and humans find it easily readable.
+
+***** Open Source  *****
+ JSON is a free library tool with lots of resources available for studying and downloads. It allows for a free platform for developer to develop new applications from the codes that already exist.
+
+***** How it Works  *****
+Works by transferring data from client to server and vice versa. It works by formatting messages. It contains objects that are defined with images or texts. In JSON, the user sends a request from an application, the JavaScript in the browser requests the programming language running the server. 
+
+The programming language retrieves the needed data, encodes it into a JSON string, and dispatches it to the browser. JavaScript then decided the string, and it displays the sent data as information to the user. It is possible to send data from a browser to a server with an adequately encoded JSON string.
+
+*****  Benefits of JSON  *****
+Speed – JSON enables for quick and asynchronous data loading, making it popular and convenient, especially in social media sites such as Twitter and Flickr.
+
+Scalability – JSON independence allows the integration of many programming languages, thereby supporting numerous backend frameworks and technologies. The allowance of multiple languages, usability, and fast data transitions from the web to the server has aided its popularity in many browsers.
+
+Serialization – JSON allows conversion of an object into byte streams for easy transfer, storage and retrieval when needed.
+
+Readability – The JSON tutorial has plain text format allowing fast encoding, decoding and mapping irrespective of the programming language in use.
+
+*****  Use Case and Application of JSON  *****
+ • JSON enables users to share data across web applications and servers.
+
+ • It is also used in applications that use JavaScript. Such applications include websites a d browser extensions.
+
+ • JSON integrates well with other modern programming languages and can be used to improve scalability.
+
+ • JSON can be used in Restful APIs and other web services to retrieve and store public data.
+
+ • Data needs to be stored in a format that allows it to be reconstructed in the future. The JSON format allows transmission and serialization of structured data.
+
+ • With JSON, there is no need to refresh a page during asynchronous data calls.
+
+
+*****  JSON Tools  ****
+ i. JSON Editor Online
+ This tool is excellent for editing and formatting JSON. It allows for the viewing of data by displaying it against the code editor. Using this tool allows for the validation of a JSON file, save and also share it.
+
+ It is a web-based tool making it accessible to beginners who are new to JSON data.
+
+ ii. JSON to XML Converter
+ JSON and XML are similar in a way. However, some programs support a single format. In that case, this tool comes in handy and helps convert JSON to XML.
+
+ iii. JSONLint
+ When using other programming languages alongside JSON, there may be an occurrence of error if the data is not formatted correctly. As such, JSON data should be validated. JSONlint is a data interchange format that allows a developer to directly type a URL or copy and paste it in the validator tool. It is lightweight and is used to validate JSON codes.
+
+ iv. JSON Minifier Tool
+ A reduced file size makes the browser load fast. The minified tool compresses and formats JSON by removing indentation, spaces and newlines that are not necessary. This way, the code takes very little space, and the data can be downloaded as a file and saved as a link.
+
+ v. JSON Formatter
+ The output format of JSON data may not be readable. As the name suggests, JSON formatter allows for data formatting to eliminate errors and make it simple to read.
+
+
+*****  JSON Code Best Practice  *****
+Source: https://medium.com/analytics-vidhya/json-best-practices-d8270f6b8e17
+
+*****  Enclose within DOUBLE Quotes  *****
+Always enclose the Key : Value pair within double quotes. It may be convenient (not sure how) to generate with Single quotes, but JSON parser don’t like to parse JSON objects with single quotes.
+
+For numerical Values, quotes are optional but is a good practice to enclose them in double quote.
+
+** Example Code **
+
+{'id': '1','name':File} is not right ✘
+{"id": 1,"name":"File"} is okay  ✓
+{"id": "1","name":"File"} is the best  ✓
+
+
+** No Hyphens please **
+
+Never Never Never use Hyphens in your Key fields. It breaks python, scala parser and developers have to escape it to use those fields.
+
+Instead of Hyphens use underscores (_). But using alllower case or camel Case is the best. See samples below.
+
+** Example Code **
+
+{"first-name":"Rachel","last-name":"Green"}  is not right. ✘
+{"first_name":"Rachel","last_name":"Green"} is okay ✓
+{"firstname":"Rachel","lastname":"Green"} is okay ✓
+{"firstName":"Rachel","lastName":"Green"} is the best. ✓
+
+
+**  Always create a Root element.  **
+
+Creation of Root element is optional, but it helps when you are generating complicated JSON.
+
+JSON with root element
+{
+"menu": [
+    {
+        "id": "1",
+        "name":"File",
+        "value": "F",
+        "popup": {
+            "menuitem": [
+                {"name":"New", "value": "1N", "onclick": "newDoc()"},
+                {"name":"Open", "value": "1O", "onclick": "openDoc()"},
+                {"name":"Close", "value": "1C", "onclick": "closeDoc()"}
+                ]
+            }
+    },
+    {
+        "id": "2",
+        "name":"Edit",
+        "value": "E",
+        "popup": {
+            "menuitem": [
+                {"name":"Undo", "value": "2U", "onclick": "undo()"},
+                {"name":"Copy", "value": "2C", "onclick": "copy()"},
+                {"name":"Cut", "value": "2T", "onclick": "cut()"}
+                ]
+            }
+    }
+    ]
+}
+
+JSON without root element
+[
+    {
+        "id": "1",
+        "name":"File",
+        "value": "F",
+        "popup": {
+            "menuitem": [
+                {"name":"New", "value": "1N", "onclick": "newDoc()"},
+                {"name":"Open", "value": "1O", "onclick": "openDoc()"},
+                {"name":"Close", "value": "1C", "onclick": "closeDoc()"}
+                ]
+            }
+    },
+    {
+        "id": "2",
+        "name":"Edit",
+        "value": "E",
+        "popup": {
+            "menuitem": [
+                {"name":"Undo", "value": "2U", "onclick": "undo()"},
+                {"name":"Copy", "value": "2C", "onclick": "copy()"},
+                {"name":"Cut", "value": "2T", "onclick": "cut()"}
+                ]
+            }
+    
+    
+    }
+]
+
+
+*****  Conclusion  *****
+JSON is not as complex as other formats and existing programming languages. However, its simplicity makes it stand out, and there is more room to develop this format into a robust system that will benefit the technology world.

@@ -1,0 +1,46 @@
+
+         --------------------------JSON Best of practic----------------------
+Json এর অর্থ হল Javascript Object Notetion.
+##json file এর সাইজ খুব কম হয় আর এটি compeletely  language independent
+###Json file তেরি করব তখন তার extention   এর নাম হবে (.json)application/jon
+### Json fle Send করার সময় encryption and decryption করি ...যাতে এটি human readble না হয় ;
+// যেঁ কোন ওয়েভ বা Thirt party service provide kora hoy ta json file hoy ;
+// Json file লেখার সময় আমাদের খুব খেয়াল রেখে তা simple রাখার চেষ্টা করতে হবে । যদি এটি সিমপল না হয় তা হলে  ঐ ফাইল readable কমে যাবে।। 
+// json file বেশি Herd kore লেখা যাবে না । এর size O  খুব কম রাখার চেষ্টা করতে হবে।  
+/// json file lightweight ba lowSize হতে হবে যেন ওটি খুব দ্রুত send kora যাই।
+             ----------------JSON Best Writing Style -----------------------
+
+// Json file লেখা শুরু খয় একটি ওবজেক্ট {} আকারে এর মধ্যে অনেক "key":"value" থাকে ্‌ 
+       ###  এই jon file  এর key er একাধিক value hole তার একটি Object hoy
+    #### আবার যদি এর value একাধিক 0bject হয় তা হলে তা একটি Array এর মধ্যে হয় 
+/// json লেখার সম্য key: value দুটি String/number/boolean// Object/Arrary/null  হতে পার  ;
+
+//jons file bad charecter & slution  
+###json file backspace এর জন্য /b দিয়ে replace করে দিতে হবে
+ ###json file form feed  এর জন্য /f দিয়ে replace করে দিতে হবে
+### json file newline এর জন্য /n দিয়ে replace করে দিতে হবে
+### json file carriage return এর জন্য /r দিয়ে replace করে দিতে হবে
+ ### json file backslash এর জন্য // দিয়ে replace করে দিতে হবে
+ ###json file tap এর জন্য /t দিয়ে replace করে দিতে হবে
+  ###json file dubble quote এর জন্য /f দিয়ে /' করে দিতে হবে
+
+// json bad charecter গুলো ফারমাট করারা জন্য fremwork বাব্যহার করা ্‌ তা না... 
+
+// json file valid কিনা তা দেখার জন্য json lint use করা ।। 
+// যখন user থেকে input নিব তা valid kina  তা দেখার কজ্য json lint /// json validator use  করা ;
+// যখন json object make করব তখন key: valul  আমাদের ("") এর ভিতরের নিতে হবে ;
+// যখন json object make করব তখন key: valul যদি Number hole  তা  আমাদের ("") এর ভিতরের বা number  কে ও Striong  আকারে রাখা বেস্ট ;
+// json file এ  হাইপেন(-) ব্যবহার না করে 
+// json file e হাইপেন (-)এর বদলে আন্ডারস্কোর (_) ব্যাবাহার করা কিন্তু এটি ভাল  বেস্ট না ্‌, ;
+/ json file এর key lowercase এ লেখা ভাল কিন্তু বেস্ট না ।।
+// আবার json file এর key camelCase এ লেখা বেস্ট  ।।
+// json file Root Element  দিয়ে তার একটা parent key দেওয়া;
+
+
+
+
+
+
+
+
+

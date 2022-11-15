@@ -1,0 +1,228 @@
+
+
+*****  HTTP Request Methods  *****
+Source: https://www.w3schools.com/tags/ref_httpmethods.asp
+***  What is HTTP?  ***
+
+The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
+
+HTTP works as a request-response protocol between a client and server.
+
+Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.
+
+***  HTTP Methods  ***
+. GET
+. POST
+. PUT
+. HEAD
+. DELETE
+. PATCH
+. OPTIONS
+. CONNECT
+. TRACE
+The two most common HTTP methods are: GET and POST.
+
+***  The GET Method  ***
+
+GET is used to request data from a specified resource.
+
+Some notes on GET requests:
+. GET requests can be cached
+. GET requests remain in the browser history
+. GET requests can be bookmarked
+. GET requests should never be used when dealing with sensitive data
+. GET requests have length restrictions
+. GET requests are only used to request data (not modify)
+
+***  The POST Method  ***
+POST is used to send data to a server to create/update a resource.
+
+Some notes on POST requests:
+. POST requests are never cached
+. POST requests do not remain in the browser history
+. POST requests cannot be bookmarked
+. POST requests have no restrictions on data length
+
+***  Compare GET vs. POST  ***
+The following table compares the two HTTP methods: GET and POST.
+
+
+*****  GET  *****
+BACK button/Reload: Harmless.
+Bookmarked: Can be bookmarked.
+Cached:	Can be cached.
+Encoding type: 	application/x-www-form-urlencoded.
+History: Parameters remain in browser history.
+Restrictions on data length: Yes, when sending data, the GET method adds the data to the URL; and the length of a URL is limited (maximum URL length is 2048 characters).
+Restrictions on data type: Only ASCII characters allowed.
+Security: GET is less secure compared to POST because data sent is part of the URL
+Never use GET when sending passwords or other sensitive information!
+Visibility: Data is visible to everyone in the URL.
+
+*****  POST  *****
+BACK button/Reload: Data will be re-submitted (the browser should alert the user that the data are about to be re-submitted).
+Bookmarked: Cannot be bookmarked.
+Cached:	Not cached.
+Encoding type: 	application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data.
+History: Parameters are not saved in browser history.
+Restrictions on data length: No restrictions.
+Restrictions on data type: No restrictions. Binary data is also allowed.
+Security: POST is a little safer than GET because the parameters are not stored in browser history or in web server logs.
+Visibility: Data is not displayed in the URL.
+
+***  PUT Method  ***  
+With the PUT request method, we can update an existing resource by sending the updated data as the content of the request body to the server. The PUT method updates a resource by replacing its entire content completely. If it applies to a collection of resources, it replaces the whole collection, so be careful using it. The server will return the 200 or 204 status codes after the existing resource is updated successfully.
+
+How to test an API with a PUT method?
+The PUT method is idempotent, and it modifies the entire resources, so to test that behavior, we make sure to do the following operations:
+. Send a PUT request to the server many times, and it should always return the same result.
+. When the server completes the PUT request and updates the resource, the response should come with 200 or 204 status codes.
+. After the server completes the PUT request, make a GET request to check if the data is   updated correctly on the resource.
+. If the input is invalid or has the wrong format, the resource must not be updated.
+
+***  PATCH Method  ***
+PATCH is another HTTP method that is not commonly used. Similar to PUT, PATCH updates a resource, but it updates data partially and not entirely. For example, to make it more precise, the request [PUT] customers/{customerid} would update the fields in the Customers entity on the resource entirely. However, the PATCH method does update the provided fields of the customer entity. In general, this modification should be in a standard format like JSON or XML.
+
+How to test an API with a PATCH method?
+To test an API with the PATCH method, follow the steps discussed in this article for the testing API with the PUT and the POST methods. Consider the following results:
+
+. Send a PATCH request to the server; the server will return the 2xx HTTP status code, which means: the request is successfully received, understood, and accepted.
+. Perform the GET request and verify that the content is updated correctly.
+. If the request payload is incorrect or ill-formatted, the operation must fail.
+
+***  DELETE Method  ***
+As the name suggests, the DELETE method deletes a resource. The DELETE method is idempotent; regardless of the number of calls, it returns the same result.
+
+Most APIs always return the 200 status code even if we try to delete a deleted resource but in some APIs, If the target data no longer exists, the method call would return a 404 status code.
+
+How to test a DELETE endpoint?
+When it comes to deleting something on the server, we should be cautious. We are deleting data, and it is critical. First, make sure that deleting data is acceptable, then perform the following actions.
+
+. Call the POST method to create a new resource. Never test DELETE with actual Data. For example, first, create a new customer and then try to delete the customer you just created.
+. Make the DELETE request for a specific resource. For example, the request [DELETE] /customers/ {customer-id} deletes a customer with thee specified customer Id.
+. Call the GET method for the deleted customer, which should return 404, as the resource no longer exists.
+
+Testfully’s Multi-step tests allow you to create resources on the fly and use them for testing DELETE endpoints.
+
+***  HEAD Method  ***
+The HEAD method is similar to the GET method. But it doesn’t have any response body, so if it mistakenly returns the response body, it must be ignored. For example, the [GET] /customers endpoint returns a list of customers in its response body. Also, the [HEAD] /customers do the same, but it doesn’t return a list of customers. Before requesting the GET endpoint, we can make a HEAD request to determine the size (Content-length) of the file or data that we are downloading. Therefore, the HEAD method is safe and idempotent.
+
+How to test a HEAD endpoint
+One of the advantages of the HEAD method is that we can test the server if it is available and accessible as long as the API supports it, and it is much faster than the GET method because it has no response body. The status code we expect to get from the API is 200. Before every other HTTP method, we can first test API with the HEAD method.
+
+
+***  OPTIONS Method  ***
+
+We use This method to get information about the possible communication options (Permitted HTTP methods) for the given URL in the server or an asterisk to refer to the entire server. This method is safe and idempotent.
+
+Various browsers widely use the OPTIONS method to check whether the CORS (Cross-Origin resource sharing) operation is restricted on the targeted API or not.
+
+How to test an OPTIONS endpoint.
+
+Depending on whether the server supports the OPTIONS method, we can test the server for the times of FATAL failure with the OPTIONS method. To try it, consider the following.
+
+. Make an OPTIONS request and check the header and the status code that returns.
+. Test the case of failure with a resource that doesn’t support the OPTIONS method.
+
+
+***  TRACE Method  ***
+
+The TRACE method is for diagnosis purposes. It creates a loop-back test with the same request body that the client sent to the server before, and the successful response code is 200 OK. The TRACE method is safe and idempotent.
+
+The TRACE method could be dangerous because it could reveal credentials. A hacker could steal credentials, including internal authentication headers, using a client-side attack.
+
+How to test an API with a TRACE method?
+
+. Make a standard HTTP request like a GET request to /api/status
+. Replace GET with the TRACE and send it again.
+. Check what the server returns. If the response has the same information as the original request, the TRACE ability is enabled in the server and works correctly.
+
+***  CONNECT Method  ***
+
+The CONNECT method is for making end-to-end connections between a client and a server. It makes a two-way connection like a tunnel between them. For example, we can use this method to safely transfer a large file between the client and the server.
+
+
+
+***  FAQ  ***
+
+What is the difference between POST and PUT?
+
+The PUT method modifies an existing resource, but the POST HTTP method creates a new resource. Therefore, the PUT method is safe and idempotent, while the POST method is neither safe nor idempotent.
+
+What is the difference between PUT and PATCH?
+
+The PUT method updates the resource by replacing the whole data, while the PATCH method partially updates the resource. Thus, The PUT method is safe and idempotent, but the PATCH method is neither safe nor idempotent.
+
+Does the GET method accept the request body?
+
+Requests using the GET methods should only be for fetching data, not carrying it, so it is better to avoid sending data loads to the server as it causes an error if the server doesn’t accept it. However, the specifications don’t prohibit it.
+
+
+***  Comparison of HTTP methods  ***
+
+*** GET  *** 
+Summary: To fetch a single resource or group of resources.
+CRUD: Read.
+Accepts Request Body: No.
+Idempotnent: Yes.	
+Safe: Yes.
+
+
+*** PUT  *** 
+Summary: To update an entire resource in one go.
+CRUD: Update.
+Accepts Request Body: Yes.
+Idempotnent: Yes.	
+Safe: No.
+
+*** POST  *** 
+Summary: To create a new resource.
+CRUD: Create.
+Accepts Request Body: Yes.
+Idempotnent: No.	
+Safe: No.
+
+*** PATCH  *** 
+Summary: To partially update a resource.
+CRUD: Update.
+Accepts Request Body: Yes.
+Idempotnent: No.	
+Safe: No.
+
+*** DELETE  *** 
+Summary: To delete a resource.
+CRUD: Delete.
+Accepts Request Body: No.
+Idempotnent: Yes.	
+Safe: No.
+
+*** OPTIONS  *** 
+Summary: To get information on permitted operations.
+CRUD: Read.
+Accepts Request Body: No.
+Idempotnent: Yes.	
+Safe: Yes.
+
+*** HEAD  *** 
+Summary: To get metadata of the endpoint.
+CRUD: Read.
+Accepts Request Body: No.
+Idempotnent: Yes.	
+Safe: Yes.
+
+*** TRACE  *** 
+Summary: For diagnosing purposes.
+CRUD: Read.
+Accepts Request Body: No.
+Idempotnent: Yes.	
+Safe: Yes.
+
+*** CONNECT  *** 
+Summary: To make the two-way connection between the client and the resource..
+CRUD: .
+Accepts Request Body: No.
+Idempotnent: No.	
+Safe: No.
+
+
+Source: https://testfully.io/blog/http-methods/

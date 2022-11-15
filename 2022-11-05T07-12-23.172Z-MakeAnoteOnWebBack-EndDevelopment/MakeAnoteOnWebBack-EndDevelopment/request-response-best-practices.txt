@@ -1,0 +1,100 @@
+//Request Response - Best Practices//
+
+//HTTP/HTTPS Request Response Communication//
+    1. In request/response communication mode.
+    2. One software module sends a request to a second software module and waits for a response. 
+    3. The First software module performs the role of the client.
+    4. The second, the role of the server,
+    5. This is called client/server interaction.
+
+
+//HTTP Client://
+    - Browser Level Client 
+    - Application Level Client
+
+
+//Browser Level Client //
+    - Browser is the primary HTTP Client responsible for load the web application.
+
+
+//Application Level Client ://
+    - HTTP Client is an application library used in client side application to generate request and receive response. 
+    - HTTP Client’s libraries varies from platform to platform
+
+
+//POSTMAN Http Client //
+Postman is an HTTP Client application, used to test request-response communication. Postman is widely used for API testing and generating documentation. 
+
+1. Quickly and easily send REST, SOAP, and GraphQL requests directly within Postman.
+2. Generate and publish beautiful, machine-readable API documentation. 
+3. Checking performance and response times at scheduled intervals.
+4. Communicate the expected behavior of an API by simulating endpoints and their responses 
+
+
+//HTTP Request//
+HTTP Request is the first step to initiate web request/response communication. Every request is a combination of request header, body and request URL. 
+
+Http Request Segments: 
+Body - Simple String, JSON, Download, Redirect, XML 
+Header - Key Pair Value 
+URL Parameter - String
+
+
+//HTTP Request Methods: //
+GET() - The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+
+Head() - Same as GET, but transfers the status line and header section only.
+
+POST() - A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+PUT() - Replaces all current representations of the target resource with the uploaded content.
+
+DELETE() - Removes all current representations of the target resource given by a URI.
+
+
+
+//Http Request Throttling:  //
+
+Throttle Request refers to a process in which a user is allowed to hit the application maximum time in per second or per minute.  Throttling is also known as request rate limiting. 
+
+* Essential component of Internet security, as DoS attacks can tank a server with unlimited requests.
+* Rate limiting also helps make your API scalable by avoid unexpected spikes in traffic, causing severe lag time.
+
+
+//HTTP Response://
+Http response is the final step of request-response communication. Every response is a combination of response header, body an d cookies. 
+
+//Http Response Segments: //
+Body - Simple String, JSON, Download, Redirect, XML  
+Header - Key Pair Value 
+Cookies - Key Pair Value 
+
+
+//HTTP Response status messages//
+200 - OK - The request is OK (this is the standard response for successful HTTP requests)
+201 - Created - The request has been fulfilled, and a new resource is created 
+202 - Accepted - The request has been accepted for processing, but the processing has not been completed 
+203 - Non-Authoritative Information - The request has been successfully processed, but is not returning any content
+204 - No Content - The request has been successfully processed, but is not returning any content
+
+205 - Reset Content - The request has been successfully processed, but is not returning any content, and requires that the requester reset the document view
+
+
+206 - Partial Content - The server is delivering only part of the resource due to a range header sent by the client
+400 - Bad Request - The request cannot be fulfilled due to bad syntax
+401 - Unauthorized - The request was a legal request, but the server is refusing to respond to it.
+403 - Forbidden - The request was a legal request, but the server is refusing to respond to it
+
+404 - Not Found - The requested page could not be found but may be available again in the future
+405 - Method Not Allowed - A request was made of a page using a request method not supported by that page
+
+408 - Request Timeout - Request Timeout
+500 - Internal Server Error - A generic error message, given when no more specific message is suitable
+502 - Bad Gateway - The server was acting as a gateway or proxy and received an invalid response from the upstream server
+503 - Service Unavailable - The server is currently unavailable (overloaded or down)
+
+
+
+
+
+

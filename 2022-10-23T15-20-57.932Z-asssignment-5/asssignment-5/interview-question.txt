@@ -1,0 +1,281 @@
+50 interview question on back end development :
+
+1. What is nodeJs?❓
+
+   👉🏻 Ans:  NodeJs is an extremely powerful framework development on chrome v8 javascript engine  that compiles the  javascript directly  into teh machine code. It is a lightweight framework used for creating  server side web application and extends javascript API to offer usual server-side functionalities . It is generally used for large-scale  application development, especially for video streaming sites, single page application and other web applications.
+
+2. What is expressJs ?❓
+
+   👉🏻 Ans: ExpressJS is a free open-source , lightweight, and fast backend web application framework for Node js . It is released as open-source software under the MIT License. It is designed for  building single-page , multi-page ,  hybrid web applications and APIs. It is called the de facto standard server framework for nodejs.
+
+3. What is API ?❓
+
+   👉🏻 Ans: API stands for Application Programming Interface.APIs serve as the medium through which data gets transferred. They act as a bridge between the back end and the databases and allows the developers to fetch the user data. Typically, most back-end developers work with Python and NodeJS to create the APIs. API architecture is usually explained in terms of client and server. REST api are the most popular and flexible APIs found on the  web today. REST stands for Representational State Transfer. REST defines a set of functions like GET, PUT, DELETE etc.
+
+
+4. What is Mongoose ?❓
+
+    👉🏻 Ans: Mongoose is a Node.js-based Object Data Modeling (ODM) library for MongoDB.Mongoose is an object modeling tool for MongoDB and Node.js. What this means in practical terms is that you can define your data model in just one place, in your code. It allows defining schemas for our data to fit into, while also abstracting the access to MongoDB. This way we can ensure all saved documents share a structure and contain required properties.The problem that Mongoose aims to solve is allowing developers to enforce a specific schema at the application layer. In addition to enforcing a schema, Mongoose also offers a variety of hooks, model validation, and other features aimed at making it easier to work with MongoDB.
+
+5. What is MongoDB ?❓
+
+   👉🏻 Ans: MongoDB is a document-oriented NoSQL database used for high volume data storage.It uses JSON-like documents with optional schemas. Instead of using tables and rows as in the traditional relational databases, MongoDB makes use of collections and documents. Documents consist of key-value pairs which are the basic unit of data in MongoDB. Collections contain sets of documents and function which is the equivalent of relational database tables. MongoDB is a database which came into light around the mid-2000s.
+    It provides easy scalability and is a cross-platform, document-oriented database.MongoDB works on the concept of Collection and Document.
+
+6. What is Mongo Shell ?❓
+
+   👉🏻 Ans: MongoDB have a JavaScript shell that allows interaction with MongoDB instance from the command line.The shell is useful for performing administrative functions and running instances. The mongo shell allows you to manage data in MongoDB as well as carry out administrative tasks.
+
+7. What is Server?❓
+
+   👉🏻 Ans: A server is a software or hardware device that accepts and responds to requests made over a network.Servers are the backbone of any back-end development. They work round the clock and aid in delivering essential services such as receiving requests for web-based files and transferring such files to the client. On the Internet, the term "server" commonly refers to the computer system that receives requests for a web files and sends those files to the client.
+
+8. What is Client ?❓
+
+   👉🏻 Ans:  A client is a computer that connects to and uses the resources of a remote computer, or server. Many corporate networks comprise a client computer for each employee, each of which connects to the corporate server. The server provides resources like files, information, Internet and intranet access, and external processing power. In the case of processing, any work done on the server is referred to as "server-side" work. Any work done on the local client is similarly called "client-side" .Client is also another name for a software program used to connect to a server.  A client can also be another term used to describe a user.
+
+9.  What are the key features of Node.js ?❓
+
+   👉🏻 Ans: 
+        ●  All APIs of Node.js are asynchronous.This feature means that if a Node receives a request for some Input/Output   operation, it will execute that operation in the background and continue with the processing of other requests.
+        ●  Fast in Code execution.
+        ●  Single Threaded but Highly Scalable.
+        ●  Node.js library uses JavaScript.
+        ●  ode.js applications simply output the data in chunks and never buffer any data.
+        ●  It is a cross-platform run-time environment for applications.
+
+10. What is the purpose of  ExpressJS ?❓
+
+   👉🏻 Ans: ExpressJS can be explained as the web application framework designed to support and host NodeJS projects. ExpressJS is the open-source framework that is available under MIT. It manages the workflow between the front end and the database, facilitating the smooth and secure transfer of the data. In addition, ExpressJS is filled with excellent error-handling web design functionality for optimizing web development procedures.
+
+11. What is Callback Hell ?❓
+
+    👉🏻Ans: The asynchronous function requires callbacks as a return parameter. When multiple asynchronous functions are chained together then callback hell situation comes up. Callbacks are just the name of a convention for using JavaScript functions. There isn't a special thing called a 'callback' in the JavaScript language, it's just a convention. Instead of immediately returning some result like most functions, functions that use callbacks take some time to produce a result. The word 'asynchronous', aka 'async' just means 'takes some time' or 'happens in the future, not right now'. Usually callbacks are only used when doing I/O, e.g. downloading things, reading files, talking to databases, etc.
+
+12. What is DATA modeling?❓
+
+   👉🏻 Ans: Data modeling is a term used in the context of Mongoose and MongoDB. As the name suggests, data modeling refers to the process of creating a data model for the data at hand so it can be stored in a database. A data model is a conceptual representation of data objects, the relation among different data objects, and the rules that define those relations.Data modeling helps to represent the data visually while also enforcing business rules, regulatory compliances, and government policies on the data. It is implemented to ensure consistency in naming conventions, default values, semantics, security, and quality of the data.
+
+13. What is REPL In Node.Js?❓
+
+    👉🏻 Ans :REPL is Read Eval Print Loop, the program for accepting commands, evaluating them, and printing results. Thus, REPL does the same that Unix or Linux used to create an environment for entering commands and systems that will respond to the output.  REPL or “Read Eval Print Loop” is a simple program that can accept commands, evaluate them, and prints the results. What REPL does is to create an environment that is similar to a Unix/Linux shell or a Window console, wherein you can enter command and system, and it will respond with the output. Here are the functions that REPL performs: 
+    READ – This reads the input provided by the user, parses it into JavaScript data structure, and stores it in the memory.
+    EVAL – This executes the data structure.
+    PRINT – This prints the outcome generated after evaluating the command.
+    LOOP – This loops the above command until the user presses Ctrl+C twice. 
+
+14. What is Aggregation in MongoDB ?❓
+
+  👉🏻  Ans: Aggregations operations process data records and return computed results. Aggregation operations group values from multiple documents together, and can perform a variety of operations on the grouped data to return a single result. MongoDB provides three ways to perform aggregation: the aggregation pipeline, the map-reduce function and single purpose aggregation methods and commands.
+
+15. What is scope in JavaScript ?❓
+
+   👉🏻 Ans: Every JavaScript function represents the scope: collecting variables and rules that define the unique name access to the variable. A scope function can be operated through the code in the function. The variables are contained under a particular scope that has unique names. In JavaScript, each function has a scope, which is essentially a collection of variables and rules defining how their unique name accesses those variables. You can access a function’s scoped variables only through the code inside that function. While variables contained in a particular scope must have unique names, a scope can exist within another scope. In this case, the code of the innermost scope can access the variables contained in either of the scopes.
+
+16. What is linear search ?❓
+
+   👉🏻 Ans: Under linear search, the items will be considered one at a time without performing a jumping function. Linear search classified as O(n) within the time limit for searching of the list. 
+
+17. What is binary search ?❓
+
+   👉🏻 Ans: The binary search starts searching under the middle of the item list. A binary search has been performed to identify the values greater or lesser than the desired value. Binary search is classified as O(logn). 
+
+18. What is the difference between linear search and binary search ?❓
+
+   👉🏻 Ans: A linear search considers a list’s item’s one by one without jumping sequence. So, in terms of complexity, it classifies as an O(n) search wherein the time taken to search the list increases proportionally to the increase in the list. Contrary to this, a binary search starts in the middle of a list. This search aims to see whether the item value is greater than or less than the desired value. This further determines the position of the value in the list – whether it will be in the first part or second part of the list. In terms of complexity, it classifies as an O(log n) search where the number of search operations grows relatively slowly than the list. This is mainly because the search space is broken into half in each operation.While binary search requires you to sort the input data first, a linear list doesn’t have any such prerequisites.
+
+19. What is  Dependency Injection ?❓
+
+   👉🏻 Ans: Dependency Injection is a software design concept that allows you to use or inject a service in ways that are independent of any client consumption. By doing so, you essentially prevent the client from modifying dependencies when the underlying service changes.The primary purpose of dependency injection is to separate the creation of clients’ dependencies from their behavior, thereby letting you design loosely coupled programs. In a loosely coupled program, the components usually consume functionality defined by interfaces without having any prior knowledge of which implementation classes are being used.Dependency injection allows you to modify or tweak the behavior of an application by altering the components that implement the interfaces defining an application’s features. Dependency injection is operated for separating the client creation dependencies from the behavior, which lets you design a loosely coupled program. This function also allows the modification or tweaking of the behavior of the application through the components. 
+
+20. What is the purpose of indexing in MongoDB ?❓
+
+   👉🏻 Ans: Indexes are being used for supporting and facilitating the execution of queries in MongoDB. MongoDB needs to scan every document if the index is not there and then select the appropriate form that matches the query statement. Or, if the query has an index assigned to it, MongoDB can use the index to limit the number of documents. In MongoDB, indexes are used to support and facilitate the efficient execution of queries. Without indexes, MongoDB has to perform a collection scan wherein it has to scan every document in a collection and select the appropriate documents that match the query statement. However, if each query has an appropriate index assigned to it, MongoDB can use the index to limit the number of documents it has to inspect.
+
+21. What is meant by “Callback” in Node.js?❓
+
+   👉🏻 Ans: In Node.js, a callback is an asynchronous equivalent for a function. Node.js heavily relies on callbacks that are called at the culmination or completion of a given task. For instance, let’s assume a function that is designed for reading files may start reading files and immediately return the control to the execution environment to facilitate the execution of the next instruction.
+    Once the file I/O is complete, the callback function is set in motion and pass the content of the file as a parameter. This makes sure that there’s no blocking or waiting for the file I/O. It is this feature that makes Node.js highly scalable since it can process a high number of requests without waiting for the results of any function. 
+    All Node APIs are written in ways that they can support callbacks.
+
+22. What is Cross-site Scripting (XSS) ?❓
+
+   👉🏻 Ans: Cross-site Scripting (XSS) is a client-side code injection attack wherein the malicious scripts are executed in a web browser by including malicious code in a legitimate web page or web application. It can also occur when an individual clicks on untrusted links that can pass cookies and other sensitive information to attackers.The XSS or cross-site scripting is the client-side code within the malicious scripts executed in the web browser through including malicious codes in the most legitimate web page or application. Cross-site scripting can also occur when people click on the untrusted link, passing cookies and information to the hackers or attackers. 
+    The attack happens when you visit a webpage or a web app that executes malicious code. Hence, the webpage or web app becomes a vehicle to deliver malicious scripts to the browser of a user. 
+    The most commonly used vehicles for cross-site scripting attacks are forums, message boards, and even web pages that encourage users to comment.
+
+23. What is the difference between MERN Stack and MEAN Stack development?❓
+
+   👉🏻 Ans: MERN and MEAN are full stack frameworks. However, there are a few key differences between the two. MEAN stack includes Angular.js whereas MERN stack has React.js. MEAN is a JavaScript development stack, and MERN is an open-source JavaScript library. While MEAN uses the regular DOM, MERN stack uses virtual DOM.
+
+24. How are child threads handled in Node.js ?❓
+
+   👉🏻 Ans: Nose.js is essentially a single-thread process and does not involve child threads. Developers do not have to worry about thread management in Node.js. However, there are certain tasks like asynchronous I/O where the developers are exposed to child threads. Such threads do not executive JavaScript code applications. Also, the main loop doesn’t get blocked. This is why thread management is not an issue in Node.js. However, if developers need thread support, they can use the ChildProcess module.
+
+25. What is the  meaning of NPM in NodeJS ?❓
+
+   👉🏻 Ans:NPM can be said as a Node package manager. The main functionalities of NPM are given below. 
+    ● NPM works like the command-line utility for installing the packages. NPM carries out the management and dependency version of NodeJS packages. 
+    ● NPM can also work as an online repository in the NodeJS packages. It can be present in the .org file. 
+
+26. What is occasion circle in NodeJS ?❓
+
+   👉🏻 Ans: For processing and handling is an outside occasion, and for changing over them for callback summons, the occasion circle is optimized. With the lines I/O calls, NodeJS can start with demand onto next. 
+
+27. What is the advantages of utilizing NodeJS ?❓
+
+   👉🏻 Ans: 
+        ● Using NodeJS will construct the simple method of adaptable system programs.
+        ● Quick generally.
+        ● Simultaneously great.
+        ● Everything is asynchronous .
+        ● Never pieces.
+
+28. Where to utilize NodeJS ?❓
+
+   👉🏻 Ans:
+        ● Web applications .
+        ● Network applications.
+        ● Distributed applications.
+        ● General reason application.
+
+29.What is the features of MongoDB ?❓
+
+   👉🏻 Ans: 
+        ● The data model is flexible in the documents. 
+        ● It has highly scalable and agile databases. 
+        ● It is faster than traditional databases. 
+        ● It expresses query language. 
+
+30. What is asynchronous API ?❓
+
+   👉🏻 Ans: Every API of Node is asynchronous, which means that it is non-blocking. Asynchronous API means that the server of NodeJS will never wait for API to return data. Instead, the server will move to the following API after calling it from a notification mechanism of events of NodeJS. Thus, it helps in getting the response from previous API calls. 
+
+31. What are node.js buffers ?❓
+
+    👉🏻Ans: In general, buffers is a temporary memory that is mainly used by stream to hold on to some data until consumed. Buffers are introduced with additional use cases than JavaScript’s Unit8Array and are mainly used to represent a fixed-length sequence of bytes. This also supports legacy encodings like ASCII, utf-8, etc. It is a fixed(non-resizable) allocated memory outside the v8.
+
+32. What is a Replica Set in MongoDB ?❓
+
+   👉🏻 Ans: To keep identical copies of your data on multiple servers, we use replication. It is recommended for all production deployments. Use replication to keep your application running and your data safe, even if something happens to one or more of your servers. Such replication can be created by a replica set with MongoDB. A replica set is a group of servers with one primary, the server taking writes, and multiple secondaries, servers that keep copies of the primary’s data. If the primary crashes, the secondaries can elect a new primary from amongst themselves.
+
+33. What is routing and how routing works in Express.js ?❓
+
+   👉🏻 Ans: Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on). Each route can have one or more handler functions, which are executed when the route is matched.
+
+34. What is the solution of avoiding callback hell under NodeJS ?❓
+
+   👉🏻 Ans: 
+        The methods for preventing callback hell are :
+        ● Making the programming modular. 
+        ● By using the async/await mechanism.
+        ● Through the use of the promise mechanism.
+        ● Through the use of generators. 
+
+
+35. What is the advantages of BSON in MongoDB ?❓
+    👉🏻Ans: 
+    ● BSON has been designed to become efficient in space, but it’s not more effective than JSON in some cases. BSON uses more space because of the designer goals and traversability. 
+    ● BSON can easily encode and decode but uses more space than JSON for small integers. 
+    ● BSON adds up the additional data types unavailable in JSON. 
+
+
+36.  What is NPM ?❓
+
+   👉🏻 Ans: NPM stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.Node Package Manager provides two main functionalities:
+    ● Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org.
+    ● Provides command-line utility to install Node.js packages and also manages Node.js versions and dependencies .
+
+
+37. What is the purpose of the module.Exports ?❓
+
+   👉🏻 Ans : In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by moving all relevant functions into a single file. You may export a module with the module and export the function, which lets it be imported into another file with a needed keyword.
+
+
+
+38. What is the package.json file ?❓
+
+   👉🏻 Ans: The package.json file is the heart of a Node.js system. This file holds the metadata for a particular project. The package.json file is found in the root directory of any Node application or module.This is what a package.json file looks like immediately after creating a Node.js project using the command: npm init. We can edit the parameters when we create a Node.js project.
+
+
+39.  What are the concept of middleware in Node.js ?❓
+
+   👉🏻 Ans: Middleware is a function that receives the request and response objects. Most tasks that the middleware functions perform are:  
+       ● Execute any code.
+       ● Update or modify the request and the response objects.
+       ● Finish the request-response cycle.
+       ● Invoke the next middleware in the stack.
+
+
+40. What are the different types of HTTP requests ?❓
+
+    👉🏻Ans: HTTP defines a set of request methods used to perform desired actions. The request methods include:
+        ● GET: Used to retrieve the data.
+        ● POST: Generally used to make a change in state or reactions on the server.
+        ● HEAD: Similar to the GET method, but asks for the response without the response body.
+        ● DELETE: Used to delete the predetermined resource.
+
+41. Why should you separate Express app and server ?❓
+
+  👉🏻  Ans: The server is responsible for initializing the routes, middleware, and other application logic whereas the app has all the business logic which will be served by the routes initiated by the server. This ensures that the business logic is encapsulated and decoupled from the application logic which makes the project more readable and maintainable.
+
+
+42. What is JavaScript ?❓
+
+   👉🏻 Ans: JavaScript is a very powerful client-side scripting language. JavaScript is used mainly for enhancing the interaction of a user with the webpage. In other words, you can make your webpage more lively and interactive, with the help of JavaScript. JavaScript is also being used widely in game development and Mobile application development.
+
+43. What are Cookies ?❓
+
+   👉🏻 Ans: Cookies are text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network. Specific cookies known as HTTP cookies are used to identify specific users and improve your web browsing experience.Data stored in a cookie is created by the server upon your connection. This data is labeled with an ID unique to you and your computer.When the cookie is exchanged between your computer and the network server, the server reads the ID and knows what information to specifically serve to you.
+
+44. What are Higher-Order components ?❓
+
+   👉🏻 Ans: A higher-order component (HOC) is a function that takes a component and returns a new component. Basically, it’s a pattern that is derived from React’s compositional nature We call them as “pure’ components” because they can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components.
+
+
+45. What Is Replication In MongoDB ?
+   👉🏻 Ans: Replication is the process of synchronizing data across multiple servers. Replication provides redundancy and increases data availability. With multiple copies of data on different database servers, replication protects a database from the loss of a single server. Replication also allows you to recover from hardware failure and service interruptions.
+
+46. Does Mongodb Support Foreign Key Constraints ?❓
+
+   👉🏻 Ans: No. MongoDB does not support such relationships. The database does not apply any constraints to the system (i.e.: foreign key constraints), so there are no "cascading deletes" or "cascading updates". Basically, in a NoSQL database it is up to you to decide how to organise the data and its relations if there are any.
+
+
+47. How does Node.js handle child threads ?❓
+
+   👉🏻 Ans: Node.js, in its essence, is a single thread process. It does not expose child threads and thread management methods to the developer. Technically, Node.js does spawn child threads for certain tasks such as asynchronous I/O, but these run behind the scenes and do not execute any application JavaScript code, nor block the main event loop. If threading support is desired in a Node.js application, there are tools available to enable it, such as the ChildProcess module.
+
+48. What's the Event Loop ?❓
+
+   👉🏻 Ans: The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible. Every I/O requires a callback - once they are done they are pushed onto the event loop for execution. Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel tells Node.js so that the appropriate callback may be added to the poll queue to eventually be executed. Async is being managed by an event loop that uses queue and listener. When the async process is committed, the central cord sends the rope authorizing V8 to maintain the fundamental protocol’s performance. It involves various phases with particular tasks like timers, pending callbacks, idle or prepare, poll, check, close callbacks in different queues. 
+
+
+
+49. What is the timing feature used in NodeJS ?❓
+
+   👉🏻 Ans: 
+        ● setTimeout/clearTimeout, which is used for implementing delay in the execution of the code. 
+        ● setInterval/clearInterval used for running the code block multiple times. 
+        ● setImmediate/clear immediate used in the execution of the code at every end of the loop cycle. 
+        ● process.nextTick used in the execution of code at the beginning of the loop cycle. 
+
+
+50. What is the pros and cons of NodeJS ?❓
+
+   👉🏻 Ans: 
+        Pros:
+         ● NodeJS is the fast processing event-based model.
+          ● It uses Javascript 
+           ● It had more than 5000 packages. 
+            ● It is suited best for a high amount of data operations.
+
+        Cons:
+         ● It is not suitable for computational tasks.
+          ● It uses callbacks that are complex and can end up with nested callbacks.
+           ● Cannot deal with relational database.
+            ● It cannot manage intensive tasks. 
+
+
+
+
+ ================================================ THE END  =====================================================

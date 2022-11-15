@@ -1,0 +1,18 @@
+Provide Proper http response status code
+Provide Proper content type, file type if any
+Provide cache status if any
+Authentication token should provide via response header
+Only string data is allowed for response header
+Provide Content length if any
+provide response date and time
+Follow request-response model 
+Avoid providing response status, code ,message via response body
+
+Use JSON Best practices for JSON response body
+
+For single result, can use String, Boolean directly
+Provide proper JSON encode-decode before writing JSON body
+A restful API may send cookies just like a regular web application that serves HTML
+Avoid using response cookies as it is violate stateless principle
+If required use cookie encryption decryption and other policies
+

@@ -1,0 +1,78 @@
+============JavaScript Question  ===========
+
+
+1. What are the different data types present in javascript?
+2. Why do we use the word “debugger” in javascript?
+3. What is NaN property in JavaScript?
+4. What is currying in JavaScript?
+5. What are some advantages of using External JavaScript?
+6. What are object prototypes?
+7. What are callbacks?
+8. What is memoization?
+9. What is recursion in a programming language?
+10. What is the use of a constructor function in javascript?
+
+
+
+11. What are arrow functions?
+12. What do mean by prototype design pattern?
+13. What is the use of promises in javascript?
+14. What are classes in javascript?
+15. What are generator functions?
+16. Why do we use callbacks?
+17. What are the advantages of typescript over javascript
+18. What is an object initializer
+19. What is a constructor method
+20. Why do you need Obfuscation
+
+
+============ Node-js Question  ===========
+
+
+1.  What is Node.js? Where can you use it?
+2.  Why use Node.js?
+3.  How does Node.js work?
+4.  Explain callback in Node.js.
+5.  What are the advantages of using promises instead of callbacks?
+6.  Explain the difference between frontend and backend development?
+7.  What are the pros and cons of Node.js?
+8.  What is the package.json file?
+9.  What is the Express.js package?
+10. What are streams in Node.js?
+
+
+
+11.  What is an event-loop in Node JS?
+12.  How can we use async await in node.js?
+13.  What are node.js buffers?
+14.  What is middleware?
+15.  For Node.js, why Google uses V8 engine?
+16.  What is error-first callback?
+17.  What is a control flow function?
+18.  Why is ExpressJS used?
+19.  What are some distinctive features of Express?
+20.  Which are the arguments available to an Express JS route handler function?
+
+
+============ Others Question  ===========
+
+1	What are the syntax rules of JSON
+2	What is the purpose JSON stringify
+3	How do you parse JSON string
+4	Why do you need JSON
+5	What are PWAs
+6	What is the purpose of clearTimeout method
+7	What is the purpose of clearInterval method
+8	How do you redirect new page in javascript
+9	How do you check whether a string contains a substring
+10	How do you validate an email in javascript
+11	How do you get the current url with javascript
+12	What are the various url properties of location object
+13	How do get query string values in javascript
+14	How do you check if a key exists in an object
+15	How do you loop through or enumerate javascript object
+16	How do you test for an empty object
+17	What is an arguments object
+18	How do you make first letter of the string in an uppercase
+19	What are the pros and cons of for loop
+20	How do you display the current date in javascript

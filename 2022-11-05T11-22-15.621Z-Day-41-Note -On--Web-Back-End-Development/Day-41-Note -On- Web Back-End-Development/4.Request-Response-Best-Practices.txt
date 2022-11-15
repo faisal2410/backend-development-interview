@@ -1,0 +1,98 @@
+******** Request-Response Best Practices ********
+
+
+HTTP Client’s:
+    i. Browser Level Client
+    ii. Application Level Client
+
+
+i. Browser Level Client:
+As a client/server model, the browser is the client run on a computer or mobile device that contacts the Web server and requests information.
+
+A web browser is intermediary between client system and server.
+
+Since it runs in client side sending requests as client submits a query. Server will responce to these requests.
+
+
+ii. Application Level Client:
+    * HTTP Client is an application library used in client side application to generate request and receive response. 
+
+    * HTTP Client’s libraries varies from platform to platform.
+
+HTTP Client Libraries--
+Axios ---> Mobile/Web/Desktop ---> JavaScript
+uURL ---> Web ---> PHP
+Rest Sharp ---> ASP.NET ---> C#
+Volly ---> Native Android ---> Java
+Retrofit ---> Native Android ---> Java
+Alamofire ---> Native IOS ---> Swift
+
+
+
+POSTMAN HTTP Client:
+Postman is one of the most popular software testing tools which is used for API testing. With the help of this tool, developers can easily create, test, share, and document APIs.
+
+Introduction to Postman:
+    * Postman is a standalone software testing API (Application Programming Interface) platform to build, test, design, modify, and document APIs. It is a simple Graphic User Interface for sending and viewing HTTP requests and responses.
+
+    * While using Postman, for testing purposes, one doesn't need to write any HTTP client network code. Instead, we build test suites called collections and let Postman interact with the API.
+
+    * In this tool, nearly any functionality that any developer may need is embedded. This tool has the ability to make various types of HTTP requests like GET, POST, PUT, PATCH, and convert the API to code for languages like JavaScript and Python.
+
+    * Postman is widely used for generationg documentation.
+
+
+HTTP Request:
+An HTTP request is made by a client, to a named host, which is located on a server. The aim of the request is to access a resource on the server.
+
+A correctly composed HTTP request contains the following elements--
+    i. A request line.
+    ii. A series of HTTP headers, of header fields.
+    iii. A message body, if needed.
+
+
+HTTP Request Segments:
+    * Body ---> Simple String, JSON, Download, Redirect, XML
+    * Header ---> Key Pair Value
+    * URL Parameter ---> String
+
+
+HTTP Request Methods:
+    * POST: create resource or search operation
+    * GET: read resource operation
+    * PUT: update resource operation
+    * DELETE: remove resource operation
+    * PATCH: partial update resource operation
+
+
+HTTP Request Throttling/Request Rate Limiting:
+API throttling is the process of limiting the number of API requests a user can make in a certain period. An application programming interface (API) functions as a gateway between a user and a software application.
+
+For example, when a user clicks the post button on social media, the button click triggers an API call. This API interacts with the web server of the social media application and performs the action of posting. This user could be a human or another software application.
+
+    * Essential component of Internet security, as DoS attacks can tank a server with unlimited requests.
+
+    * Rate limiting also helps make your API scalable by avoid unexpected spikes in traffic, causing severe lag time.
+
+
+
+HTTP Response:
+HTTP Response sent by a server to the client. The response is used to provide the client with the resource it requested. It is also used to inform the client that the action requested has been carried out. It can also inform the client that an error occurred in processing its request.
+
+An HTTP response contains the following things:
+    i. Status Line
+    ii. Response Header Fields or a series of HTTP headers
+    iii. Message Body
+
+
+HTTP Response Segments:
+    * Body ---> Simple String, JSON, Download, Redirect, XML
+    * Header ---> Key Pair Value
+    * Cookies ---> Key Pair 
+    
+
+HTTP Response Status Messages:
+408 ---> Request Timeout
+500 ---> Internal Server Error
+502 ---> Bad Gateway
+503 ---> Service Unavailable

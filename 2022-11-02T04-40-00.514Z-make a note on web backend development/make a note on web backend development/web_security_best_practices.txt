@@ -1,0 +1,16 @@
+Header:
+        Provide proper http response status code. 
+        Provide proper content type, file type if any.
+        Provide cache status if any. 
+        Authentication token should provide via response header. 
+        Only string data is allowed for response header. 
+        Provide content length if any. 
+        Provide response date and time. 
+        Follow request-response model described before
+
+BODY:
+    Avoid providing response status, code, message via response body 
+    Use JSON best practices for JSON response body.
+    For single result, can use String, Boolean directly. 
+    Provide proper JSON encode-decode before writing JSON Body. 
+    Follow discussion on JSON described before. 

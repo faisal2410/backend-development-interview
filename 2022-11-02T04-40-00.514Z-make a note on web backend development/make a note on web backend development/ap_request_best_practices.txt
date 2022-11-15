@@ -1,0 +1,34 @@
+API request best practices
+
+request body should be structured in json array/object pattern
+it's should hol multipart/form data like images,audio,video etc.
+request body should not hold any auth related information
+request body should associated with specific request data model, setter getter can used for this
+
+
+Header:
+    Request header should carry all security related information, like token, auth etc
+    Only string Key:Pair value is allowed for header 
+    Request header should provide user agent information of client application
+    If necessary CSRF/ XSRF should provide via header
+    Request header should associated with middleware controller, where necessary 
+
+controller:
+        The controllers should always be as clean as possible. We shouldn’t place any business logic inside it.
+        Controllers should be responsible for accepting http request 
+        Consider API versioning 
+        Use async/await if at all possible.
+        Follow solid principles to manage controller classes. 
+        Mention which method is responsible for GET() and which for POST(). 
+        Controller should be only responsible for calling model, return response , redirect to action etc. 
+
+
+Middleware:
+        Use to implement API key, user-agent restriction, CSRF, XSRF security, token based API authentication.
+        Use to implement API request rate limit.
+        Logging of incoming HTTP requests.
+        Redirecting the users based on requests.
+        Middleware can inspect a request and decorate it, or reject it, based on what it finds. 
+        Middleware is most often considered separate from your application logic.
+        Middleware gives you enough freedom to create your own security mechanism
+

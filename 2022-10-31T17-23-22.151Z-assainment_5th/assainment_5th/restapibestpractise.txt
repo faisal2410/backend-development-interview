@@ -1,0 +1,37 @@
+Rest api best practise
+
+1.Versioning
+// Version 1 
+"/api/v1/workouts" 
+
+// Version 2 
+"/api/v2/workouts" 
+
+// ...
+
+
+2.আমরা কখনও (Creat,Read,update,delete)  এমন Functionality  গুলা use করবো না
+
+ভুল
+/CreateUser,
+/getUser/{id},
+/UpdateUser/{id},
+/deleteUser{id}
+
+
+
+3।Rest API তে যদি কোন ধারাবাহিক action বা কোন গ্রুপিং  থাকে যেমন category এর মধ্যে সাব category  এর মধ্যে আবার category  থাকে  তাহলে সেগুলাকে (Forward Slash) এর মাধ্যমে মেইন টেইন করতে হবে।
+
+example:/User/{id}/address 
+
+4. Multiple acess  নিয়ে কাজ করার সময় কমা অথবা সেমি কললন use করতে হবে
+
+৫।Query parameters 
+
+? use করে আমরা কোন কিচু কে filtering বা sort করার জন্য URLএর মধ্যে query parameters  পাস করব।
+
+৬।।No file extensions.
+
+ফাইল এর মধ্যে কখন ও file extinsions এর নাম প্রকাশ করা যাবে না
+
+

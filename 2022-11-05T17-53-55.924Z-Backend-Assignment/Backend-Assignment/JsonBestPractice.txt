@@ -1,0 +1,42 @@
+---------------------------------------Json best practice -----------------------------
+1)Json structure
+-----------------
+		=>Curly braces {} hold objects
+		=>The data are in key, value pairs
+		=>Square brackets [] hold arrays
+		=>Each data element is enclosed with quotes if it‘s a character, or without quotes if it is a numeric value
+		=>Commas are used to separate pieces of data
+		
+2)JSON Data Types
+-------------------
+		=>string – Literal text that’s enclosed in quotes.
+		=>number – Positive or negative integers or floating point numbers.
+		=>object – A key, value pair enclosed in curly braces
+		=>array – A collection of one or more JSON objects.
+		=>boolean – A value of either true or false with no quotes.
+		=>null – Indicates the absence of data for a key value pair, represented as “null” with no quotes.
+		
+3)Json Syntax
+--------------
+		=>Always enclose the key, value pair within double quotes
+		=>Never use hyphens in your key fields. Use underscores  ( _ ), all lower case, or camel case.
+		=>Use a JSON linter to confirm valid JSON. Install a command line linter or use an online tool like JSONLint. If you copy this next example into a JSON linter, 
+			you should get a parse error for the pesky single quotes around the value for last_name.
+
+4)Bad special characters and solutions :
+-----------------------------------------
+characters       |  solutions
+--------------------------------
+Backspace        | \b
+------------------------------
+Form feed        | \f
+------------------------------
+Newline          |  \n
+------------------------------
+Carriage return  | \r
+--------------------------------
+Tab              | \t
+-------------------------------
+Double quotes    | \"
+------------------------------
+Backslash        | \\

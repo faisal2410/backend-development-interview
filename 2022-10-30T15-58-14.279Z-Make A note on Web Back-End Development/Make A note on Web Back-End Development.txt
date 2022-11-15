@@ -1,0 +1,253 @@
+1) what is JSON?
+JSON is a simple data exchange format.  JSON means JavaScript Object Notation; it is language and platform independent.
+
+2. What is payload?
+ Payload refers to the data in the body of the HTTP request and/or response messages in GET or POST requests.
+
+3) what are the data types supported by JSON?
+Data types supported by JSON includes
+Number
+String
+Boolean
+Array
+Object
+Null
+
+4.what is the meaning of ASCII ?
+    (American Standard Code for Information Interchange)
+
+
+
+ 5.Query parameter  where  necessary?
+        Answer:In order to sort or filter a collection, a REST API should <b>ALLOW query parameter </b> to be passed in the URL.
+        FOR example:/users?location=USA (to find all users living in the usa.)
+
+
+6. how  can we Practice of api response header best ?
+    We should provide proper http response status code,(content-type,file type if any),cache status if any, Authentication token provide via response header, Only string data is allowed for response header,provide content length if any,
+    provide response date and time
+
+7 . how  can we Practice of api response body best ?
+    Avoid providing response status,code,message via response body. 
+    For single result ,can use string ,boolean directty. 
+    provide proper Json encode-decode before writing json body. 
+
+8.When we use  get() method ?
+    when we pass less amount of less-important data  we can use  get method. 
+      when nothing should change on the server because of my action. 
+      In case of get method Data is visible to everyone in the URL.
+
+9.When we use  post() method ?
+      POST is a little safer than GET because the parameters are not stored in browser history or in web server logs so when we need to pass(large or the most important data ) in that case we should use post () method.  Post method has no  restrictions on data length.
+      When we want to upload documents , images , video  from client to server . 
+
+10..Web API supports which protocol?
+    Web API generally supports only HTTP protocol.
+
+11.What is MVC?
+     MVC (Model, View, and Controller) is basically an application design model that comprises three interconnect parts  (model, view, and controller).
+
+12.What is URI?
+     Uniform Resource Identifier is the full form of URI which is used for identifying each resource of the REST architecture. URI is of the format:
+
+    
+
+13 .  What is HTTP Security?
+
+HTTP is used to communicate over the internet, so users, information providers, and application developers should be aware of the limitations of security in HTTP/1.1. There are two methods to establish a secure HTTP connection: https URI scheme and the HTTP/1.1 Upgrade header.
+
+14 . What do you understand by HTTP headers?
+HTTP headers are the key-value pairs that are sent along with an HTTP request or response. They provide information about the request or response, such as the content type, the date and time, the server, and so on.
+
+15 . What’s the difference between authorization and authentication?
+Authentication is the process of verifying that a user is who they say they are, while authorization is the process of verifying that a user has the permissions necessary to access a particular resource. In other words, authentication is about verifying identity, while authorization is about verifying permissions.
+
+16. What’s the difference between a GET and POST request?
+A GET request is used when you are trying to retrieve data from a server. A POST request is used when you are trying to send data to a server.
+
+17. What do you understand by cookies?
+Cookies are small pieces of data that are sent from a website to a user’s web browser. They are used to store information about the user’s interactions with the website, such as login information, preferences, and shopping cart contents.
+
+18.what is http client?
+HTTP client is a client that is able to send a request to and get a response from the server in HTTP format.
+
+19.What’s a web browser?
+The web browser itself has some access to your machine, whether that be a cell phone, or a desktop, and it also has some protocols for talking to web-servers.
+
+
+20. What is REST?
+    REST stands for Representational State Transfer. 
+
+
+21. What is a REST API?
+    An API is an application programming interface, which is a software-to-software interface that allows otherwise separate applications to interact and share data. In a REST API, all data is treated as resources, each one represented by a unique uniform resource identifier (URI).
+
+22 . What is an API endpoint?
+        Answer : An API endpoint is a point at which an API. the code that allows two software programs to communicate with each other -- connects with the software program. APIs work by sending requests for information from a web application or web server and receiving a response.
+
+23 . what is mean by URI?
+  URI stands for the "Uniform Resource Identifier" .It is used to define the identity of something on thr web. It can also be used to represent a piece of an URL.
+
+24 . What are the considerations in URL naiming?
+    a.URIs should be named with noun instead of verb .
+
+    b.you should use https://api.example.com/users instead of https://api.example.com/getUsers
+
+    c .we should not use CRUD (create, read, update, delete) as a api end point name.It is a  functionality of rest API. it increase our rest api security risk.
+     For example, This is because CRUD (create, read, update, delete) functionality should already be specified in the HTTP request (e.g. HTTP GET https://api.example.com/users).
+
+
+     d.A content-type header can be a good way to name the URI. In rare cases, you can use HTTP verbs, but it’s best to stick to nouns for the rest endpoint name.
+
+25 .Where Are Forward Slashes to Denote URI Hierarchy ?
+    a .Forward slashes are suitable for denoting the hierarchy of your API, they’re not necessary at the very end of the URL. Adding this extraneous slash increases complexity without adding clarity.
+
+26.   . What are the considerations to Denote URI Hierarchy?
+
+    a .  Avoid Special Characters and try to avoid the use of “unsafe” ASCII characters which are typically encoded in order to prevent confusion and   security issues such as (“%20” for the space character),space character (“ “),brackets (“[]”), angle brackets (“<>”),braces (“{}”),pipes (“|”).
+        Keep your names as simple as possible.
+
+
+27 . what is the full form of ASCII?
+American Standard Code for Information Interchange
+
+
+28. What Is Client?
+Client : The client hardware is the desktop machine that runs client software. It could be a micro or a workstation. The client software formulates data request and passes the request to the network software. This software sends the request to the server, accepts the result from the server and passes the request back to the client software.
+
+
+29. What Is server?
+Server : A server is the machine that runs data management software that has been designed for server functionality. A server has operating system software, data management software and a  portion of the network software.
+
+30 . Explain two Middleware Best Practices.
+ a.Put in Place Suitable Security Protocols.
+ b.Complexity and Completeness Must be Balanced.
+ 
+
+31 . why we use Middleware?
+
+a. we use middleware to implement API key,user-agent restriction , CCSRF,XSRF-security, token based API authentication.
+b . we use middleware to implement API request rate limit.
+c . Logging of incoming HTTP requests.
+d. redirecting the users based on request.
+
+
+32. What is CSRF?
+CSRF stands for Cross-Site Request Forgery. It is a type of attack that tricks a user into performing an action on a website that they did not intend to do. 
+
+33 . Where can we use CSRF tokens and why?
+CSRF tokens can be used on any website that allows users to submit data. This is because CSRF tokens help to prevent cross-site request forgery attacks.
+
+34. What’s the difference between XSS and CSRF?
+Cross-site scripting (XSS) is a type of security vulnerability that allows an attacker to inject malicious code into a web page. This code is then executed by the browser of any unsuspecting user who visits the page. CSRF, on the other hand, is a type of attack that tricks a user’s browser into making a request to a web application on behalf of the attacker. This request can perform any action that the user is authorized to perform, such as changing their password or making a purchase.
+
+35 . Is it possible to prevent CSRF using HTTP headers? If yes, then how?
+
+Yes, it is possible to prevent CSRF using HTTP headers. One way to do this is to set the ‘X-Frame-Options’ header to ‘SAMEORIGIN’, which will prevent the page from being loaded in an iframe on another domain. Another way to prevent CSRF is to use a ‘Content-Security-Policy’ header with a value of ‘frame-ancestors ‘self”. This will also prevent the page from being loaded in an iframe on another domain.
+
+36 .  What is cross-site request forgery?
+        Cross-site request forgery, also known as CSRF or XSRF, is a type of attack that tricks a user into unknowingly executing an unwanted action on a website. 
+        
+37. What is Data Sanitization?
+Data sanitization involves purposely, permanently deleting, or destroying data from a storage device, to ensure it cannot be recovered.
+
+
+38 .What is Rate Limiting?
+Rate limiting is a technique used to control the number of requests a user can make to an API over a given period of time. It's usually used to prevent abuse or misuse of the API.
+
+39 .What is API Throttling?
+
+API throttling is a technique used to control the amount of traffic that an API can handle and is typically used in conjunction with rate limiting. It's used to prevent overloading the server or network the API is hosted on.
+
+40 . What is an API key?
+API keys provide project authorization
+By identifying the calling project, you can use API keys to associate usage information with that project. API keys allow the Extensible Service Proxy (ESP) to reject calls from projects that haven't been granted access or enabled in the API.
+
+41 . What is Bearer Authentication
+Bearer authentication (also called token authentication) is an HTTP authentication scheme that involves security tokens called bearer tokens. 
+
+42 . What Is JWT?
+JWT or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. 
+
+
+43.When should you use JSON Web Tokens?
+Here are some scenarios where JSON Web Tokens are useful:
+
+a . Authorization: This is the most common scenario for using JWT. Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token. Single Sign On is a feature that widely uses JWT nowadays, because of its small overhead and its ability to be easily used across different domains.
+
+b . Information Exchange: JSON Web Tokens are a good way of securely transmitting information between parties. Because JWTs can be signed—for example, using public/private key pairs—you can be sure the senders are who they say they are. Additionally, as the signature is calculated using the header and the payload, you can also verify that the content hasn't been tampered with.
+
+44 . What is the JSON Web Token structure?
+ JSON Web Tokens consist of three parts separated by dots (.), which are:
+
+Header
+Payload
+Signature
+
+45 . HOW MANY PARTS OF THE JSON WEB TOKEN HEADER?
+The header typically consists of two parts: the type of the token, which is JWT, and the signing algorithm being used, such as HMAC SHA256 or RSA.
+
+            For example:
+            {
+            "alg": "HS256",
+            "typ": "JWT"
+            }
+
+46 .  What is json web token payload ?
+        The second part of the token is the payload, which contains the claims.
+
+        payload could be :
+                {
+        "sub": "1234567890",
+        "name": "John Doe",
+        "admin": true
+        }
+
+47 .  How many parts of  payload claims?
+        There are three types of claims:.
+        a .Registered claims.
+        a .Public claims. 
+        a .Private claims. 
+
+
+48 . How do you keep REST APIs secure?
+     we keep REST APIs secure by using :
+     a.Authentication and authorization.
+     b.Validation.
+     c. Encryption.
+     d.Rate-limiting.
+     e .No sensitive information in URIs.
+
+
+  49. What is CRUD?
+      Answer: CRUD stands for “Create, Read, Update, Delete.” These are the four basic actions that can be performed on databases through a REST API. Each action corresponds to an HTTP request method:
+
+      Create = POST
+      Read = GET
+      Update = PUT
+      Delete = DELETE
+      It’s not the most elegant of acronyms, but it works.
+
+    50.How do you escape the special characters in a JSON string?
+        Backspace to be replaced with \b.
+        Form feed to be replaced with \f.
+        Newline to be replaced with \n.
+        Carriage return to be replaced with \r.
+        Tab to be replaced with \t.
+        Double quote to be replaced with \"
+        Backslash to be replaced with \\
+
+    51.what are the JSON Best practices?
+        a .JSON is no doubt a flexible way to share data across systems. But that doesn’t mean JSON can be created any way.
+        b.Always enclose the Key : Value pair within double quotes.
+        c.Instead of Hyphens use underscores (_).
+        d.using alllower case or camel Case is the best. See samples below. 
+        e.Always create a Root element.
+
+
+    52. What is HTTP?
+    HTTP stands for Hypertext Transfer Protocol. 
+
+
+
+
